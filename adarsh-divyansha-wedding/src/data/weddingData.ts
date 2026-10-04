@@ -8,6 +8,10 @@ export const weddingData = {
     date: "14 November 2026",
     tagline: "A celebration of love, wisdom, and togetherness",
     note: "We eagerly look forward to celebrating this auspicious day with you.",
+    photos: [
+      { url: "https://images.unsplash.com/photo-1519741497674-611481863552", caption: "Pre-Wedding Moments" },
+      { url: "https://images.unsplash.com/photo-1583939003579-730e3918a45a", caption: "Together Forever" }
+    ]
   },
   hero: {
     subtitle: "A CELEBRATION OF LOVE",
@@ -33,6 +37,7 @@ export const weddingData = {
       venue: "Deekshabhoomi Complex Premises",
       address: "South Ambazari Road, Nagpur, Maharashtra",
       description: "A serene morning of traditional prayers, blessings, and familial gatherings.",
+      note: "Traditional attire recommended.",
     },
     {
       id: "2",
@@ -42,6 +47,7 @@ export const weddingData = {
       venue: "Main Vihar Ceremony Hall",
       address: "Nagpur, Maharashtra",
       description: "The sacred exchange of vows under the guiding light of Dhamma and love.",
+      note: "Join us for the main ceremony.",
     },
     {
       id: "3",
@@ -51,6 +57,7 @@ export const weddingData = {
       venue: "Grand Celebration Lawn",
       address: "Nagpur, Maharashtra",
       description: "An evening of joy, dining, music, and celebration with family and friends.",
+      note: "Dinner to follow.",
     },
   ],
   venue: {
@@ -59,20 +66,26 @@ export const weddingData = {
     mapUrl: "https://maps.google.com/?q=Deekshabhoomi+Nagpur",
   },
   contact: {
+    label: "Contact Coordinator",
     person: "Family Coordinator",
     phone: "+91 98765 43210",
   },
   reminder: {
+    label: "Important Reminder",
     text: "Please arrive 15 minutes prior to the scheduled ceremony time.",
   },
   instagram: {
+    title: "#AdarshWedsDivyansha",
     hashtag: "#AdarshWedsDivyansha",
     subtitle: "Share the Love",
+    text: "Tag us in your photos and stories",
     description: "Use our official hashtag on Instagram to share your favorite moments with us.",
+    handle: "@adarsh_divyansha",
   },
   video: {
     title: "Our Pre-Wedding Story",
     url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    youtubeEmbedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
     subtitle: "Watch our journey together",
   },
   music: {
@@ -81,6 +94,7 @@ export const weddingData = {
   },
   footer: {
     message: "We can't wait to celebrate this special day with you!",
+    text: "Made with love for Adarsh & Divyansha",
   },
   venueDetails: {
     mainVenue: "Deekshabhoomi & Associated Halls",
