@@ -1,30 +1,36 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 export default {
-  content: ["./index.html", "./src/**/*.{ts,tsx}"],
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       colors: {
         ivory: {
-          50: "#FFF9EF",
-          100: "#F8F0E3",
+          DEFAULT: '#F8F0E3',
+          light: '#FFF9EF',
+          dark: '#EADFC9',
         },
-        maroon: {
-          700: "#6E1F2E",
-          950: "#42131E",
+        royalBlue: {
+          DEFAULT: '#1E3A8A',
+          dark: '#0F172A',
+          light: '#3B82F6',
         },
-        gold: "#B5965A",
-        brown: "#291C1A",
+        saffron: {
+          DEFAULT: '#D97706',
+          light: '#F59E0B',
+        },
+        gold: {
+          DEFAULT: '#B5965A',
+          light: '#D4AF37',
+        },
+        darkCharcoal: '#291C1A',
       },
       fontFamily: {
-        serif: ['"Playfair Display"', "Georgia", "serif"],
-        sans: ['Inter', "ui-sans-serif", "system-ui", "sans-serif"],
-      },
-      letterSpacing: {
-        editorial: "0.18em",
-      },
-      boxShadow: {
-        soft: "0 24px 70px rgba(66, 19, 30, 0.10)",
+        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
       },
     },
   },
