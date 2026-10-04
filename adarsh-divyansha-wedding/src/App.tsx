@@ -1,6 +1,6 @@
 import React from 'react';
-import Hero from './components/Hero';
-import Invitation from './components/Invitation';
+import { Hero } from './components/Hero';
+import { Invitation } from './components/Invitation';
 import DateReveal from './components/DateReveal';
 import Functions from './components/Functions';
 import Couple from './components/Couple';
