@@ -1,10 +1,13 @@
 export const weddingData = {
+  weddingDateISO: "2026-11-14T11:30:00",
+  weddingDateDisplay: "14 November 2026",
   couple: {
     groom: "Adarsh",
     bride: "Divyansha",
     hashtag: "#AdarshWedsDivyansha",
     date: "14 November 2026",
     tagline: "A celebration of love, wisdom, and togetherness",
+    note: "We eagerly look forward to celebrating this auspicious day with you.",
   },
   hero: {
     subtitle: "A CELEBRATION OF LOVE",
@@ -14,11 +17,14 @@ export const weddingData = {
   },
   invitation: {
     greeting: "With the blessings of the Triple Gem and our beloved families",
-    message:
-      "We joyfully invite you to celebrate the auspicious union of Adarsh and Divyansha, inspired by the serene grace and architectural majesty of Deekshabhoomi, Nagpur.",
+    message: "We joyfully invite you to celebrate the auspicious union of Adarsh and Divyansha, inspired by the serene grace and architectural majesty of Deekshabhoomi, Nagpur.",
     familyNames: "The Family & Friends of Adarsh & Divyansha",
   },
-  events: [
+  photos: [
+    { url: "https://images.unsplash.com/photo-1519741497674-611481863552", caption: "Pre-Wedding Moments" },
+    { url: "https://images.unsplash.com/photo-1583939003579-730e3918a45a", caption: "Together Forever" }
+  ],
+  functions: [
     {
       id: "1",
       title: "Buddha Vandana & Pre-Wedding Rituals",
@@ -47,6 +53,35 @@ export const weddingData = {
       description: "An evening of joy, dining, music, and celebration with family and friends.",
     },
   ],
+  venue: {
+    name: "Deekshabhoomi & Associated Halls",
+    address: "South Ambazari Road, Nagpur, Maharashtra",
+    mapUrl: "https://maps.google.com/?q=Deekshabhoomi+Nagpur",
+  },
+  contact: {
+    person: "Family Coordinator",
+    phone: "+91 98765 43210",
+  },
+  reminder: {
+    text: "Please arrive 15 minutes prior to the scheduled ceremony time.",
+  },
+  instagram: {
+    hashtag: "#AdarshWedsDivyansha",
+    subtitle: "Share the Love",
+    description: "Use our official hashtag on Instagram to share your favorite moments with us.",
+  },
+  video: {
+    title: "Our Pre-Wedding Story",
+    url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    subtitle: "Watch our journey together",
+  },
+  music: {
+    title: "Serene Flute Instrumental",
+    src: "https://example.com/audio.mp3",
+  },
+  footer: {
+    message: "We can't wait to celebrate this special day with you!",
+  },
   venueDetails: {
     mainVenue: "Deekshabhoomi & Associated Halls",
     city: "Nagpur, Maharashtra, India",
