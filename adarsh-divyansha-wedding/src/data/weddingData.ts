@@ -1,85 +1,55 @@
-export type WeddingFunction = {
-  title: string;
-  date: string;
-  time: string;
-  note: string;
-};
-
 export const weddingData = {
-  weddingDateISO: "2026-11-14T19:00:00+05:30",
-  weddingDateDisplay: "14 November 2026",
-  hero: {
-    eyebrow: "A celebration of love",
-    scrollCue: "Scroll to explore",
-    templeAsset: "/temple-mandap.png"
-  },
-  invitation: {
-    blessing: "With the blessings of the divine and the love of our families",
-    invite: "Invite",
-    familyOne: "The family of Adarsh",
-    familyTwo: "The family of Divyansha",
-    line: "to join them in celebrating a union written in warmth, laughter and grace."
-  },
-  functions: [
-    {
-      title: "Haldi",
-      date: "12 November 2026",
-      time: "11:00 AM",
-      note: "Sunlit rituals, marigolds and joyful colour."
-    },
-    {
-      title: "Mehendi",
-      date: "13 November 2026",
-      time: "4:00 PM",
-      note: "An evening of henna, music and old stories."
-    },
-    {
-      title: "Wedding",
-      date: "14 November 2026",
-      time: "7:00 PM",
-      note: "Sacred vows beneath the mandap, followed by dinner."
-    }
-  ] as WeddingFunction[],
   couple: {
     groom: "Adarsh",
     bride: "Divyansha",
-    display: "Adarsh weds Divyansha",
-    hashtag: "#DIVYADARSHAN",
-    alternateHashtag: "#DIVYANlyADARSH",
-    note: "Two lives, one home, and a lifetime of shared sunsets.",
-    photos: [
-      "/couple/couple-1.jpg",
-      "/couple/couple-2.jpg",
-      "/couple/couple-3.jpg"
-    ]
+    hashtag: "#AdarshWedsDivyansha",
+    date: "14 November 2026",
+    tagline: "A celebration of love, wisdom, and togetherness",
   },
-  instagram: {
-    title: "Celebrate with us",
-    text: "Share your favourite frames, little moments and dance-floor memories.",
-    handle: "#DIVYADARSHAN"
+  hero: {
+    subtitle: "A CELEBRATION OF LOVE",
+    title: "Adarsh weds Divyansha",
+    date: "14 November 2026",
+    location: "Nagpur, Maharashtra",
   },
-  video: {
-    title: "Our story, before the vows",
-    youtubeEmbedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  invitation: {
+    greeting: "With the blessings of the Triple Gem and our beloved families",
+    message:
+      "We joyfully invite you to celebrate the auspicious union of Adarsh and Divyansha, inspired by the serene grace and architectural majesty of Deekshabhoomi, Nagpur.",
+    familyNames: "The Family & Friends of Adarsh & Divyansha",
   },
-  venue: {
-    name: "Wedding Venue",
-    address: "Add venue name and full address in weddingData.ts",
-    mapsUrl: "https://maps.google.com"
+  events: [
+    {
+      id: "1",
+      title: "Buddha Vandana & Pre-Wedding Rituals",
+      date: "13 November 2026",
+      time: "10:00 AM onwards",
+      venue: "Deekshabhoomi Complex Premises",
+      address: "South Ambazari Road, Nagpur, Maharashtra",
+      description: "A serene morning of traditional prayers, blessings, and familial gatherings.",
+    },
+    {
+      id: "2",
+      title: "Wedding Ceremony & Vows",
+      date: "14 November 2026",
+      time: "11:30 AM",
+      venue: "Main Vihar Ceremony Hall",
+      address: "Nagpur, Maharashtra",
+      description: "The sacred exchange of vows under the guiding light of Dhamma and love.",
+    },
+    {
+      id: "3",
+      title: "Reception Celebration",
+      date: "14 November 2026",
+      time: "7:00 PM onwards",
+      venue: "Grand Celebration Lawn",
+      address: "Nagpur, Maharashtra",
+      description: "An evening of joy, dining, music, and celebration with family and friends.",
+    },
+  ],
+  venueDetails: {
+    mainVenue: "Deekshabhoomi & Associated Halls",
+    city: "Nagpur, Maharashtra, India",
+    mapLink: "https://maps.google.com/?q=Deekshabhoomi+Nagpur",
   },
-  contact: {
-    label: "Family contact",
-    phone: "+91 00000 00000"
-  },
-  reminder: {
-    label: "A gentle reminder",
-    text: "Please arrive a little early so we can begin the ceremony together."
-  },
-  music: {
-    src: "/music/wedding-theme.mp3",
-    title: "Wedding Theme"
-  },
-  footer: {
-    text: "With love, Adarsh & Divyansha"
-  }
-} as const;
+};
