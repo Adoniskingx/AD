@@ -1,29 +1,37 @@
-import { motion } from "framer-motion";
-import { weddingData } from "../data/weddingData";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { weddingData } from '../data/weddingData';
 
-export default function Invitation() {
+export const Invitation: React.FC = () => {
   return (
-    <section className="indian-pattern relative overflow-hidden bg-ivory-50 px-6 py-24 sm:py-32">
-      <motion.div
-        initial={{ opacity: 0, y: 24 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.25 }}
-        transition={{ duration: 0.8 }}
-        className="mx-auto max-w-3xl text-center"
-      >
-        <div className="mx-auto mb-8 grid h-16 w-16 place-items-center rounded-full border border-gold/50 text-gold" aria-hidden="true">
-          <span className="serif text-3xl">☸</span>
-        </div>
-        <p className="text-xs uppercase tracking-[0.28em] text-maroon-700">{weddingData.invitation.blessing}</p>
-        <div className="editorial-rule mx-auto my-8 w-32" />
-        <p className="serif text-2xl italic text-maroon-950">{weddingData.invitation.familyOne}</p>
-        <p className="my-2 text-[11px] uppercase tracking-[0.32em] text-gold">{weddingData.invitation.invite}</p>
-        <p className="serif text-2xl italic text-maroon-950">{weddingData.invitation.familyTwo}</p>
-        <h2 className="serif mt-12 text-5xl leading-tight text-maroon-700 sm:text-6xl">
-          {weddingData.couple.groom}<span className="mx-3 text-gold">&</span>{weddingData.couple.bride}
-        </h2>
-        <p className="mx-auto mt-7 max-w-xl text-sm leading-7 text-brown/75">{weddingData.invitation.line}</p>
-      </motion.div>
+    <section className="py-24 px-6 bg-ivory text-darkCharcoal relative overflow-hidden">
+      <div className="max-w-3xl mx-auto text-center border-y border-gold/40 py-16 px-6 relative bg-white/40 backdrop-blur-sm shadow-sm rounded-xl">
+        
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          <span className="text-xs uppercase tracking-[0.25em] text-saffron font-semibold block mb-4">
+            Auspicious Invitation
+          </span>
+          
+          <h2 className="text-2xl md:text-3xl font-serif text-royalBlue mb-6">
+            {weddingData.invitation.greeting}
+          </h2>
+
+          <p className="text-base md:text-lg font-light leading-relaxed text-darkCharcoal/80 max-w-2xl mx-auto mb-10">
+            {weddingData.invitation.message}
+          </p>
+
+          <div className="pt-6 border-t border-gold/20">
+            <p className="text-sm uppercase tracking-widest text-gold font-medium mb-2">Cordially Invited By</p>
+            <p className="text-lg font-serif italic text-darkCharcoal">{weddingData.invitation.familyNames}</p>
+          </div>
+        </motion.div>
+
+      </div>
     </section>
   );
-}
+};
