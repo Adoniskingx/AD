@@ -9,8 +9,8 @@ export const weddingData = {
     tagline: "A celebration of love, wisdom, and togetherness",
     note: "We eagerly look forward to celebrating this auspicious day with you.",
     photos: [
-      { url: "https://images.unsplash.com/photo-1519741497674-611481863552", caption: "Pre-Wedding Moments" },
-      { url: "https://images.unsplash.com/photo-1583939003579-730e3918a45a", caption: "Together Forever" }
+      "https://images.unsplash.com/photo-1519741497674-611481863552",
+      "https://images.unsplash.com/photo-1583939003579-730e3918a45a"
     ]
   },
   hero: {
@@ -25,8 +25,8 @@ export const weddingData = {
     familyNames: "The Family & Friends of Adarsh & Divyansha",
   },
   photos: [
-    { url: "https://images.unsplash.com/photo-1519741497674-611481863552", caption: "Pre-Wedding Moments" },
-    { url: "https://images.unsplash.com/photo-1583939003579-730e3918a45a", caption: "Together Forever" }
+    "https://images.unsplash.com/photo-1519741497674-611481863552",
+    "https://images.unsplash.com/photo-1583939003579-730e3918a45a"
   ],
   functions: [
     {
