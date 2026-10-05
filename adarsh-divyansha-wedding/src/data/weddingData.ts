@@ -1,16 +1,16 @@
 export const weddingData = {
-  weddingDateISO: "2026-11-14T11:30:00",
+  weddingDateISO: "2026-11-14T19:00:00",
   weddingDateDisplay: "14 November 2026",
   couple: {
     groom: "Adarsh",
     bride: "Divyansha",
-    hashtag: "#AdarshWedsDivyansha",
+    hashtag: "#DivyAdarshan",
     date: "14 November 2026",
     tagline: "A celebration of love, wisdom, and togetherness",
     note: "We eagerly look forward to celebrating this auspicious day with you.",
     photos: [
-      "https://images.unsplash.com/photo-1519741497674-611481863552",
-      "https://images.unsplash.com/photo-1583939003579-730e3918a45a"
+      "https://nagpurtourism.co.in/deeksha-bhoomi-nagpur",
+      "https://nagpurtourism.co.in/deeksha-bhoomi-nagpur"
     ]
   },
   hero: {
@@ -20,55 +20,55 @@ export const weddingData = {
     location: "Nagpur, Maharashtra",
   },
   invitation: {
-    greeting: "With the blessings of the Triple Gem and our beloved families",
-    message: "We joyfully invite you to celebrate the auspicious union of Adarsh and Divyansha, inspired by the serene grace and architectural majesty of Deekshabhoomi, Nagpur.",
-    familyNames: "The Family & Friends of Adarsh & Divyansha",
+    greeting: "With the blessings of the Triratnas and our beloved families",
+    message: "We joyfully invite you to celebrate the auspicious union of Adarsh and Divyansha.",
+    familyNames: "The Tabhane & Bagde Family",
   },
   photos: [
-    "https://images.unsplash.com/photo-1519741497674-611481863552",
-    "https://images.unsplash.com/photo-1583939003579-730e3918a45a"
+    "https://nagpurtourism.co.in/deeksha-bhoomi-nagpur",
+    "https://nagpurtourism.co.in/deeksha-bhoomi-nagpur"
   ],
   functions: [
     {
       id: "1",
-      title: "Buddha Vandana & Pre-Wedding Rituals",
-      date: "13 November 2026",
-      time: "10:00 AM onwards",
-      venue: "Deekshabhoomi Complex Premises",
-      address: "South Ambazari Road, Nagpur, Maharashtra",
-      description: "A serene morning of traditional prayers, blessings, and familial gatherings.",
+      title: "Buddha Vandana & Rituals",
+      date: "14 November 2026",
+      time: "07:00 PM onwards",
+      venue: "The Grand Jashan",
+      address: "12/1, Kamptee Rd, Khairy, Nagpur, Maharashtra 440029",
+      description: "A serene evening of traditional prayers, blessings, and familial gatherings.",
       note: "Traditional attire recommended.",
     },
     {
       id: "2",
       title: "Wedding Ceremony & Vows",
       date: "14 November 2026",
-      time: "11:30 AM",
-      venue: "Main Vihar Ceremony Hall",
-      address: "Nagpur, Maharashtra",
+      time: "07:30 AM",
+      venue: "The Grand Jashan",
+      address: "12/1, Kamptee Rd, Khairy, Nagpur, Maharashtra 440029",
       description: "The sacred exchange of vows under the guiding light of Dhamma and love.",
       note: "Join us for the main ceremony.",
     },
     {
       id: "3",
-      title: "Reception Celebration",
+      title: "Celebrations (&Dinner)",
       date: "14 November 2026",
-      time: "7:00 PM onwards",
-      venue: "Grand Celebration Lawn",
-      address: "Nagpur, Maharashtra",
+      time: "8:00 PM onwards",
+      venue: "The Grand Jashan",
+      address: "12/1, Kamptee Rd, Khairy, Nagpur, Maharashtra 440029",
       description: "An evening of joy, dining, music, and celebration with family and friends.",
       note: "Dinner to follow.",
     },
   ],
   venue: {
-    name: "Deekshabhoomi & Associated Halls",
-    address: "South Ambazari Road, Nagpur, Maharashtra",
-    mapUrl: "https://maps.google.com/?q=Deekshabhoomi+Nagpur",
+    name: "The Grand Jashan",
+    address: "12/1, Kamptee Rd, Khairy, Nagpur, Maharashtra 440029",
+    mapUrl: "https://maps.app.goo.gl/9cYzw81gBNh2HZnt7",
   },
   contact: {
     label: "Contact Coordinator",
-    person: "Family Coordinator",
-    phone: "+91 98765 43210",
+    person: "Adarsh Tabhane",
+    phone: "+91 8149276509",
   },
   reminder: {
     label: "Important Reminder",
@@ -76,11 +76,11 @@ export const weddingData = {
   },
   instagram: {
     title: "#AdarshWedsDivyansha",
-    hashtag: "#AdarshWedsDivyansha",
+    hashtag: "#DivyAdarshan",
     subtitle: "Share the Love",
     text: "Tag us in your photos and stories",
     description: "Use our official hashtag on Instagram to share your favorite moments with us.",
-    handle: "@adarsh_divyansha",
+    handle: "@DivyAdarshan",
   },
   video: {
     title: "Our Pre-Wedding Story",
@@ -97,8 +97,7 @@ export const weddingData = {
     text: "Made with love for Adarsh & Divyansha",
   },
   venueDetails: {
-    mainVenue: "Deekshabhoomi & Associated Halls",
+    mainVenue: "The Grand Jashan",
     city: "Nagpur, Maharashtra, India",
-    mapLink: "https://maps.google.com/?q=Deekshabhoomi+Nagpur",
-  },
+    mapLink: "https://maps.app.goo.gl/9cYzw81gBNh2HZnt7"
 };
