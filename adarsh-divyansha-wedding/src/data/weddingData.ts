@@ -100,5 +100,5 @@ export const weddingData = {
     mainVenue: "The Grand Jashan",
     city: "Nagpur, Maharashtra, India",
     mapLink: "https://maps.app.goo.gl/9cYzw81gBNh2HZnt7",
-  },@
+  },
 };
