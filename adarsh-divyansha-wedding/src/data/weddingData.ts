@@ -28,7 +28,7 @@ export const weddingData = {
     "https://nagpurtourism.co.in/images/v2/places-to-visit/deeksha-bhoomi-nagpur-tourism-header.jpg",
     "https://nagpurtourism.co.in/images/v2/places-to-visit/deeksha-bhoomi-nagpur-tourism-header.jpg"
   ],
-  functions: [
+    functions: [
     {
       id: "1",
       title: "Buddha Vandana & Rituals",
@@ -36,6 +36,7 @@ export const weddingData = {
       time: "07:00 PM onwards",
       venue: "The Grand Jashan",
       address: "12/1, Kamptee Rd, Khairy, Nagpur, Maharashtra 440029",
+      mapUrl: "https://maps.app.goo.gl/9cYzw81gBNh2HZnt7",
       description: "A serene evening of traditional prayers, blessings, and familial gatherings.",
       note: "Traditional attire recommended.",
     },
@@ -46,6 +47,7 @@ export const weddingData = {
       time: "07:30 AM",
       venue: "The Grand Jashan",
       address: "12/1, Kamptee Rd, Khairy, Nagpur, Maharashtra 440029",
+      mapUrl: "https://maps.app.goo.gl/9cYzw81gBNh2HZnt7",
       description: "The sacred exchange of vows under the guiding light of Dhamma and love.",
       note: "Join us for the main ceremony.",
     },
@@ -56,6 +58,7 @@ export const weddingData = {
       time: "8:00 PM onwards",
       venue: "The Grand Jashan",
       address: "12/1, Kamptee Rd, Khairy, Nagpur, Maharashtra 440029",
+      mapUrl: "https://maps.app.goo.gl/9cYzw81gBNh2HZnt7",
       description: "An evening of joy, dining, music, and celebration with family and friends.",
       note: "Dinner to follow.",
     },
