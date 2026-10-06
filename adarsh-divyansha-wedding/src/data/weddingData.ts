@@ -9,8 +9,8 @@ export const weddingData = {
     tagline: "A celebration of love, wisdom, and togetherness",
     note: "We eagerly look forward to celebrating this auspicious day with you.",
     photos: [
-      "https://nagpurtourism.co.in/deeksha-bhoomi-nagpur",
-      "https://nagpurtourism.co.in/deeksha-bhoomi-nagpur"
+      "https://nagpurtourism.co.in/images/v2/places-to-visit/deeksha-bhoomi-nagpur-tourism-header.jpg",
+      "https://nagpurtourism.co.in/images/v2/places-to-visit/deeksha-bhoomi-nagpur-tourism-header.jpg"
     ]
   },
   hero: {
@@ -25,8 +25,8 @@ export const weddingData = {
     familyNames: "The Tabhane & Bagde Family",
   },
   photos: [
-    "https://nagpurtourism.co.in/deeksha-bhoomi-nagpur",
-    "https://nagpurtourism.co.in/deeksha-bhoomi-nagpur"
+    "https://nagpurtourism.co.in/images/v2/places-to-visit/deeksha-bhoomi-nagpur-tourism-header.jpg",
+    "https://nagpurtourism.co.in/images/v2/places-to-visit/deeksha-bhoomi-nagpur-tourism-header.jpg"
   ],
   functions: [
     {
