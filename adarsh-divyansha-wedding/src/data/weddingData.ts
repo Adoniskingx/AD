@@ -75,8 +75,8 @@ export const weddingData = {
     text: "Please arrive 15 minutes prior to the scheduled ceremony time.",
   },
   instagram: {
-    title: "#AdarshWedsDivyansha",
-    hashtag: "#DivyAdarshan",
+    title: "#DIVYADARSHAN",
+    hashtag: "#DIVYADARSHAN",
     subtitle: "Share the Love",
     text: "Tag us in your photos and stories",
     description: "Use our official hashtag on Instagram to share your favorite moments with us.",
