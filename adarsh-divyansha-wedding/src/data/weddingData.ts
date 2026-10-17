@@ -62,6 +62,9 @@ export const weddingData = {
   invitation: {
     heading: "Wedding Invitation",
     text: "In the peaceful and sacred light of the Triratna",
+    greeting: "In the peaceful and sacred light of the Triratna",
+    message: "We cordially invite you to celebrate with us.",
+    familyNames: "The Tabhane & Bagde Family",
     groomParents: "Smt. Vandana & Shri Anil Tabhane",
     brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
   },
@@ -112,34 +115,42 @@ export const weddingData = {
   venue: {
     name: "The Grand Jashan",
     address: "Kamptee Road, Khairy, Nagpur 440029",
+    label: "Venue Details",
   },
 
   contact: {
     name: "Tabhane Family",
     phone: "",
+    label: "Contact Us",
   },
 
   reminder: {
     text: "Please join us on time.",
+    label: "Save the Date",
   },
 
   footer: {
     text: "Awaiting to Welcome You",
     family: "Tabhane Family, Relatives & Friends",
+    weddingDateDisplay: "Saturday, 14 November 2026",
   },
 
   instagram: {
     hashtag: "#DIVYADARSHAN",
     handle: "@adarsh_divyansha",
+    title: "Instagram",
+    text: "Tag your moments",
   },
 
   music: {
     track: "wedding-song.mp3",
     title: "Our Special Song",
+    src: "wedding-song.mp3",
   },
 
   video: {
     url: "",
+    youtubeEmbedUrl: "",
     title: "Our Story",
   },
 };
