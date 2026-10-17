@@ -24,3 +24,5 @@ export const Carousel: React.FC = () => {
     </section>
   );
 };
+
+export default Carousel;
