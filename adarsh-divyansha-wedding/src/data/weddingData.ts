@@ -1,107 +1,78 @@
+export interface FunctionEvent {
+  title: string;
+  date: string;
+  time: string;
+  venue: string;
+  address: string;
+  mapLink: string;
+}
+
+export interface ThingToKnow {
+  title: string;
+  description: string;
+  iconName: string;
+}
+
 export const weddingData = {
-  weddingDateISO: "2026-11-14T19:00:00",
-  weddingDateDisplay: "14 November 2026",
   couple: {
     groom: "Adarsh",
     bride: "Divyansha",
-    hashtag: "#DivyAdarshan",
-    date: "14 November 2026",
-    tagline: "A celebration of love, wisdom, and togetherness",
-    note: "We eagerly look forward to celebrating this auspicious day with you.",
-    photos: [
-      "https://nagpurtourism.co.in/images/v2/places-to-visit/deeksha-bhoomi-nagpur-tourism-header.jpg",
-      "https://nagpurtourism.co.in/images/v2/places-to-visit/deeksha-bhoomi-nagpur-tourism-header.jpg"
-    ]
-  },
-  hero: {
-    subtitle: "A CELEBRATION OF LOVE",
-    title: "Adarsh weds Divyansha",
-    date: "14 November 2026",
-    location: "Nagpur, Maharashtra",
-  },
-  invitation: {
-    greeting: "With the blessings of the Triratnas and our beloved families",
-    message: "We joyfully invite you to celebrate the auspicious union of Adarsh and Divyansha.",
-    familyNames: "The Tabhane & Bagde Family",
-  },
-  photos: [
-    "https://nagpurtourism.co.in/images/v2/places-to-visit/deeksha-bhoomi-nagpur-tourism-header.jpg",
-    "https://nagpurtourism.co.in/images/v2/places-to-visit/deeksha-bhoomi-nagpur-tourism-header.jpg"
-  ],
-    functions: [
-    {
-      id: "1",
-      title: "Buddha Vandana & Rituals",
-      date: "14 November 2026",
-      time: "07:00 PM onwards",
-      venue: "The Grand Jashan",
-      address: "12/1, Kamptee Rd, Khairy, Nagpur, Maharashtra 440029",
-      mapUrl: "https://maps.app.goo.gl/9cYzw81gBNh2HZnt7",
-      description: "A serene evening of traditional prayers, blessings, and familial gatherings.",
-      note: "Traditional attire recommended.",
-    },
-    {
-      id: "2",
-      title: "Wedding Ceremony & Vows",
-      date: "14 November 2026",
-      time: "07:30 AM",
-      venue: "The Grand Jashan",
-      address: "12/1, Kamptee Rd, Khairy, Nagpur, Maharashtra 440029",
-      mapUrl: "https://maps.app.goo.gl/9cYzw81gBNh2HZnt7",
-      description: "The sacred exchange of vows under the guiding light of Dhamma and love.",
-      note: "Join us for the main ceremony.",
-    },
-    {
-      id: "3",
-      title: "Celebrations (&Dinner)",
-      date: "14 November 2026",
-      time: "8:00 PM onwards",
-      venue: "The Grand Jashan",
-      address: "12/1, Kamptee Rd, Khairy, Nagpur, Maharashtra 440029",
-      mapUrl: "https://maps.app.goo.gl/9cYzw81gBNh2HZnt7",
-      description: "An evening of joy, dining, music, and celebration with family and friends.",
-      note: "Dinner to follow.",
-    },
-  ],
-  venue: {
-    name: "The Grand Jashan",
-    address: "12/1, Kamptee Rd, Khairy, Nagpur, Maharashtra 440029",
-    mapUrl: "https://maps.app.goo.gl/9cYzw81gBNh2HZnt7",
-  },
-  contact: {
-    label: "Contact Coordinator",
-    person: "Adarsh Tabhane",
-    phone: "+91 8149276509",
-  },
-  reminder: {
-    label: "Important Reminder",
-    text: "Please arrive 15 minutes prior to the scheduled ceremony time.",
-  },
-  instagram: {
-    title: "#DIVYADARSHAN",
+    groomParents: "Smt. Vandana & Shri Anil Tabhane",
+    brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
     hashtag: "#DIVYADARSHAN",
-    subtitle: "Share the Love",
-    text: "Tag us in your photos and stories",
-    description: "Use our official hashtag on Instagram to share your favorite moments with us.",
-    handle: "@DivyAdarshan",
+    // Main couple image pointing to public/Photos/
+    coupleImage: "/Photos/1 (1).jpg",
   },
-  video: {
-    title: "Our Pre-Wedding Story",
-    url: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    youtubeEmbedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    subtitle: "Watch our journey together",
+  
+  eventDetails: {
+    tagline: "Two Souls. One Promise • A Lifetime Together",
+    blessingText: "In the peaceful and sacred light of the Triratna",
+    motto: "Atta Deep Bhava",
   },
-  music: {
-    title: "Serene Flute Instrumental",
-    src: "https://example.com/audio.mp3",
-  },
-  footer: {
-    message: "We can't wait to celebrate this special day with you!",
-    text: "Made with love for Adarsh & Divyansha",
-  },
-  venueDetails: {
-    mainVenue: "The Grand Jashan",
-    city: "Nagpur, Maharashtra, India",
-    mapLink: "https://maps.app.goo.gl/9cYzw81gBNh2HZnt7",
-  },
+
+  // Gallery array using exact image filenames from your GitHub repo
+  galleryImages: [
+    "/Photos/1 (1).jpg",
+    "/Photos/1 (2).jpg",
+    "/Photos/1 (3).jpg",
+    "/Photos/1 (4).jpg",
+    "/Photos/1 (5).jpg",
+  ],
+
+  functions: [
+    {
+      title: "Haldi Ceremony",
+      date: "Friday, 13 November 2026",
+      time: "7:00 PM Onwards",
+      venue: "Residence",
+      address: "Plot No 9, Rathi Layout, Layout No 2, Godhani Road, Nagpur 440030",
+      mapLink: "https://maps.google.com/?q=Plot+No+9+Rathi+Layout+Godhani+Road+Nagpur",
+    },
+    {
+      title: "Wedding Ceremony & Rituals",
+      date: "Saturday, 14 November 2026",
+      time: "7:00 PM Onwards",
+      venue: "The Grand Jashan",
+      address: "Kamptee Road, Khairy, Nagpur 440029",
+      mapLink: "https://maps.google.com/?q=The+Grand+Jashan+Kamptee+Road+Khairy+Nagpur",
+    },
+  ] as FunctionEvent[],
+
+  thingsToKnow: [
+    {
+      title: "Venue & Parking",
+      description: "Ample parking space available at both venues with valet assistance.",
+      iconName: "MapPin",
+    },
+    {
+      title: "Dress Code",
+      description: "Traditional / Ethnic wear for both events.",
+      iconName: "Sparkles",
+    },
+    {
+      title: "Photography",
+      description: "Tag your photos with #DIVYADARSHAN on Instagram!",
+      iconName: "Camera",
+    },
+  ] as ThingToKnow[],
 };
