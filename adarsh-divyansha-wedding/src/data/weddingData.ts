@@ -1,10 +1,13 @@
 export interface FunctionEvent {
+  id?: string;
   title: string;
   date: string;
   time: string;
   venue: string;
   address: string;
-  mapLink: string;
+  mapLink?: string;
+  mapUrl?: string;
+  description?: string;
 }
 
 export interface ThingToKnow {
@@ -20,8 +23,8 @@ export const weddingData = {
     groomParents: "Smt. Vandana & Shri Anil Tabhane",
     brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
     hashtag: "#DIVYADARSHAN",
-    // Main couple image pointing to public/Photos/
     coupleImage: "/Photos/1 (1).jpg",
+    note: "Two Souls. One Promise • A Lifetime Together",
   },
   
   eventDetails: {
@@ -30,7 +33,17 @@ export const weddingData = {
     motto: "Atta Deep Bhava",
   },
 
-  // Gallery array using exact image filenames from your GitHub repo
+  weddingDateISO: "2026-11-14T19:00:00",
+  weddingDateDisplay: "Saturday, 14 November 2026",
+
+  photos: [
+    "/Photos/1 (1).jpg",
+    "/Photos/1 (2).jpg",
+    "/Photos/1 (3).jpg",
+    "/Photos/1 (4).jpg",
+    "/Photos/1 (5).jpg",
+  ],
+
   galleryImages: [
     "/Photos/1 (1).jpg",
     "/Photos/1 (2).jpg",
@@ -39,22 +52,42 @@ export const weddingData = {
     "/Photos/1 (5).jpg",
   ],
 
+  hero: {
+    title: "#DIVYADARSHAN",
+    subtitle: "Adarsh & Divyansha",
+    date: "14 November 2026",
+    image: "/Photos/1 (1).jpg",
+  },
+
+  invitation: {
+    heading: "Wedding Invitation",
+    text: "In the peaceful and sacred light of the Triratna",
+    groomParents: "Smt. Vandana & Shri Anil Tabhane",
+    brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
+  },
+
   functions: [
     {
+      id: "haldi",
       title: "Haldi Ceremony",
       date: "Friday, 13 November 2026",
       time: "7:00 PM Onwards",
       venue: "Residence",
       address: "Plot No 9, Rathi Layout, Layout No 2, Godhani Road, Nagpur 440030",
+      description: "Haldi Ceremony & Rituals",
       mapLink: "https://maps.google.com/?q=Plot+No+9+Rathi+Layout+Godhani+Road+Nagpur",
+      mapUrl: "https://maps.google.com/?q=Plot+No+9+Rathi+Layout+Godhani+Road+Nagpur",
     },
     {
+      id: "wedding",
       title: "Wedding Ceremony & Rituals",
       date: "Saturday, 14 November 2026",
       time: "7:00 PM Onwards",
       venue: "The Grand Jashan",
       address: "Kamptee Road, Khairy, Nagpur 440029",
+      description: "Wedding Ceremony & Reception",
       mapLink: "https://maps.google.com/?q=The+Grand+Jashan+Kamptee+Road+Khairy+Nagpur",
+      mapUrl: "https://maps.google.com/?q=The+Grand+Jashan+Kamptee+Road+Khairy+Nagpur",
     },
   ] as FunctionEvent[],
 
@@ -75,4 +108,38 @@ export const weddingData = {
       iconName: "Camera",
     },
   ] as ThingToKnow[],
+
+  venue: {
+    name: "The Grand Jashan",
+    address: "Kamptee Road, Khairy, Nagpur 440029",
+  },
+
+  contact: {
+    name: "Tabhane Family",
+    phone: "",
+  },
+
+  reminder: {
+    text: "Please join us on time.",
+  },
+
+  footer: {
+    text: "Awaiting to Welcome You",
+    family: "Tabhane Family, Relatives & Friends",
+  },
+
+  instagram: {
+    hashtag: "#DIVYADARSHAN",
+    handle: "@adarsh_divyansha",
+  },
+
+  music: {
+    track: "wedding-song.mp3",
+    title: "Our Special Song",
+  },
+
+  video: {
+    url: "",
+    title: "Our Story",
+  },
 };
