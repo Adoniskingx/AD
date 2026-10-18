@@ -23,20 +23,27 @@ export const Carousel: React.FC = () => {
         <p className="text-gray-600 mb-8 italic">Glimpses of our journey together #DIVYADARSHAN</p>
 
         {/* Carousel Container */}
-        <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden border-4 border-amber-200">
-          {/* Main Active Image Display */}
-          <div className="relative h-[400px] sm:h-[500px] w-full bg-black/5 flex items-center justify-center">
+        <div className="relative bg-black/90 rounded-2xl shadow-xl overflow-hidden border-4 border-amber-200">
+          {/* Main Active Image Display with Subtle Blur Backdrop */}
+          <div className="relative h-[400px] sm:h-[550px] w-full flex items-center justify-center overflow-hidden">
+            {/* Blurred background layer to fill empty margins gracefully */}
+            <div 
+              className="absolute inset-0 bg-cover bg-center filter blur-xl opacity-40 scale-110"
+              style={{ backgroundImage: `url(${photos[currentIndex]})` }}
+            />
+
+            {/* Actual Image fitted fully without any cropping */}
             <img 
               src={photos[currentIndex]} 
               alt={`Wedding memory ${currentIndex + 1}`}
-              className="w-full h-full object-cover transition-all duration-500 ease-in-out"
+              className="relative z-10 max-h-full max-w-full object-contain transition-all duration-500 ease-in-out drop-shadow-lg"
             />
 
             {/* Left Arrow Button */}
             <button 
               onClick={prevSlide}
               aria-label="Previous photo"
-              className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white p-3 rounded-full transition-colors shadow-lg focus:outline-none"
+              className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-black/50 hover:bg-black/75 text-white p-3 rounded-full transition-colors shadow-lg focus:outline-none"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
@@ -45,25 +52,25 @@ export const Carousel: React.FC = () => {
             <button 
               onClick={nextSlide}
               aria-label="Next photo"
-              className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white p-3 rounded-full transition-colors shadow-lg focus:outline-none"
+              className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-black/50 hover:bg-black/75 text-white p-3 rounded-full transition-colors shadow-lg focus:outline-none"
             >
               <ChevronRight className="w-6 h-6" />
             </button>
 
             {/* Counter Badge */}
-            <div className="absolute bottom-4 right-4 bg-black/60 text-white text-xs px-3 py-1.5 rounded-full tracking-wider backdrop-blur-sm">
+            <div className="absolute bottom-4 right-4 z-20 bg-black/60 text-white text-xs px-3 py-1.5 rounded-full tracking-wider backdrop-blur-sm">
               {currentIndex + 1} / {photos.length}
             </div>
           </div>
 
           {/* Thumbnail Preview Navigation */}
-          <div className="p-4 bg-amber-50/80 flex items-center justify-center gap-3 overflow-x-auto">
+          <div className="p-4 bg-amber-50/90 flex items-center justify-center gap-3 overflow-x-auto">
             {photos.map((photo: string, index: number) => (
               <button
                 key={index}
                 onClick={() => setCurrentIndex(index)}
                 aria-label={`Go to photo ${index + 1}`}
-                className={`relative w-16 h-16 rounded-lg overflow-hidden border-2 transition-all duration-300 focus:outline-none flex-shrink-0 ${
+                className={`relative w-16 h-16 rounded-lg overflow-hidden border-2 transition-all duration-300 focus:outline-none flex-shrink-0 bg-white ${
                   currentIndex === index 
                     ? 'border-amber-600 scale-105 shadow-md ring-2 ring-amber-400' 
                     : 'border-amber-200 opacity-60 hover:opacity-100'
