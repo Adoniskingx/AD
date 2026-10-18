@@ -4,25 +4,25 @@
 
 @layer base {
   body {
-    @apply bg-[#FDFBF7] text-[#2C221E] antialiased selection:bg-amber-200 selection:text-amber-900;
-    background-image: radial-gradient(circle at 50% 0%, rgba(245, 230, 211, 0.4) 0%, rgba(253, 251, 247, 1) 70%);
+    @apply bg-[#FDF8F0] text-[#2C221E] antialiased selection:bg-amber-200 selection:text-amber-900;
+    background-image: 
+      radial-gradient(circle at 10% 15%, rgba(212, 175, 55, 0.08) 0%, transparent 35%),
+      radial-gradient(circle at 90% 85%, rgba(120, 53, 15, 0.06) 0%, transparent 40%),
+      radial-gradient(circle at 50% 50%, rgba(254, 243, 199, 0.4) 0%, rgba(253, 248, 240, 1) 90%);
     min-height: 100vh;
   }
 }
 
-/* Custom Gold Gradient Utilities */
-.bg-gold-gradient {
-  background: linear-gradient(135deg, #D4AF37 0%, #AA771C 50%, #8C6215 100%);
+/* Rich Gold & Jewel Borders */
+.border-gold-ornate {
+  border: 3px solid #D4AF37;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.25), inset 0 0 10px rgba(212, 175, 55, 0.15);
 }
 
-.text-gold {
-  color: #C5A059;
+.shadow-festive {
+  box-shadow: 0 20px 40px -10px rgba(44, 34, 30, 0.15), 0 0 25px rgba(212, 175, 55, 0.12);
 }
 
-.border-gold-subtle {
-  border-color: rgba(197, 160, 89, 0.3);
-}
-
-.shadow-wedding {
-  box-shadow: 0 10px 30px -5px rgba(44, 34, 30, 0.08), 0 0 15px rgba(197, 160, 89, 0.1);
+.bg-festive-gradient {
+  background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 50%, #FDE68A 100%);
 }
