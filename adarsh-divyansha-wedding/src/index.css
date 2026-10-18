@@ -4,42 +4,47 @@
 
 @layer base {
   body {
-    @apply bg-[#121212] text-[#FDF8F0] antialiased selection:bg-amber-200 selection:text-amber-900 min-h-screen relative;
+    @apply bg-[#0D0C0B] text-[#FDF8F0] antialiased selection:bg-amber-200 selection:text-amber-900 min-h-screen relative;
   }
 
-  /* Fixed Sacred Artwork Background Layer */
+  /* High-End Subtle Watermark Background Layer */
   body::before {
     content: "";
     position: fixed;
     inset: 0;
     background-image: url('/Photos/buddha-bg.jpg');
     background-size: cover;
-    background-position: center top;
+    background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.25; /* Subtle watermark opacity so text remains crystal clear */
+    opacity: 0.15; /* Subtle watermark opacity for elegance */
+    mix-blend-mode: luminosity; /* Professional blending mode */
     z-index: -2;
-    filter: brightness(0.8) contrast(1.1);
   }
 
-  /* Gradient Overlay for Text Contrast */
+  /* Soft Dark Overlay to guarantee 100% text readability */
   body::after {
     content: "";
     position: fixed;
     inset: 0;
-    background: radial-gradient(circle at 50% 20%, rgba(18, 18, 18, 0.4) 0%, rgba(18, 18, 18, 0.85) 80%);
+    background: linear-gradient(
+      to bottom,
+      rgba(13, 12, 11, 0.82) 0%,
+      rgba(13, 12, 11, 0.90) 50%,
+      rgba(13, 12, 11, 0.95) 100%
+    );
     z-index: -1;
-    pointer-events-none: true;
+    pointer-events: none;
   }
 }
 
-/* Rich Gold & Decorative Styling */
+/* Luxury Gold & Festive Accents */
 .border-gold-ornate {
-  border: 2px solid #D4AF37;
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3), inset 0 0 10px rgba(212, 175, 55, 0.15);
+  border: 2px solid rgba(212, 175, 55, 0.6);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.2), inset 0 0 12px rgba(212, 175, 55, 0.1);
 }
 
 .shadow-festive {
-  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6), 0 0 25px rgba(212, 175, 55, 0.2);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 30px rgba(212, 175, 55, 0.15);
 }
 
 .text-gold {
