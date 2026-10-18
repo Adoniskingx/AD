@@ -3,48 +3,46 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-[#0D0C0B] text-[#FDF8F0] antialiased selection:bg-amber-200 selection:text-amber-900 min-h-screen relative;
-  }
-
-  /* High-End Subtle Watermark Background Layer */
-  body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background-image: url('/Photos/buddha-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.15; /* Subtle watermark opacity for elegance */
-    mix-blend-mode: luminosity; /* Professional blending mode */
-    z-index: -2;
-  }
-
-  /* Soft Dark Overlay to guarantee 100% text readability */
-  body::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: linear-gradient(
-      to bottom,
-      rgba(13, 12, 11, 0.82) 0%,
-      rgba(13, 12, 11, 0.90) 50%,
-      rgba(13, 12, 11, 0.95) 100%
-    );
-    z-index: -1;
-    pointer-events: none;
+  html, body {
+    @apply bg-[#0D0C0B] text-[#FDF8F0] antialiased selection:bg-amber-200 selection:text-amber-900 min-h-screen m-0 p-0;
   }
 }
 
-/* Luxury Gold & Festive Accents */
-.border-gold-ornate {
-  border: 2px solid rgba(212, 175, 55, 0.6);
-  box-shadow: 0 0 25px rgba(212, 175, 55, 0.2), inset 0 0 12px rgba(212, 175, 55, 0.1);
+/* Fixed Background Layer for sacred artwork */
+.sacred-bg-layer {
+  position: fixed;
+  inset: 0;
+  background-image: url('/Photos/buddha-bg.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  opacity: 0.35; /* Clear, elegant watermark opacity */
+  pointer-events: none;
+  z-index: 0;
 }
 
-.shadow-festive {
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 30px rgba(212, 175, 55, 0.15);
+/* Soft Radial Gradient Overlay for text contrast */
+.sacred-overlay-layer {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at 50% 30%, rgba(13, 12, 11, 0.40) 0%, rgba(13, 12, 11, 0.88) 85%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Main Content Wrapper */
+.site-content-wrapper {
+  position: relative;
+  z-index: 10;
+}
+
+/* Glassmorphic Dark Card Styling */
+.card-dark-gold {
+  background: rgba(26, 24, 22, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 175, 55, 0.15);
 }
 
 .text-gold {
