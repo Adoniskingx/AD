@@ -2,51 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  color: #291C1A;
-  background: #F8F0E3;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
+@layer base {
+  body {
+    @apply bg-[#FDFBF7] text-[#2C221E] antialiased selection:bg-amber-200 selection:text-amber-900;
+    background-image: radial-gradient(circle at 50% 0%, rgba(245, 230, 211, 0.4) 0%, rgba(253, 251, 247, 1) 70%);
+    min-height: 100vh;
+  }
 }
 
-html {
-  scroll-behavior: smooth;
+/* Custom Gold Gradient Utilities */
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #AA771C 50%, #8C6215 100%);
 }
 
-body {
-  margin: 0;
-  min-width: 320px;
-  background: #F8F0E3;
-  color: #291C1A;
-  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+.text-gold {
+  color: #C5A059;
 }
 
-* {
-  box-sizing: border-box;
+.border-gold-subtle {
+  border-color: rgba(197, 160, 89, 0.3);
 }
 
-::selection {
-  background: #B5965A;
-  color: #42131E;
-}
-
-:focus-visible {
-  outline: 2px solid #B5965A;
-  outline-offset: 4px;
-}
-
-.editorial-rule {
-  background-image: linear-gradient(to right, transparent, rgba(181,150,90,.65), transparent);
-  height: 1px;
-}
-
-.indian-pattern {
-  background-image:
-    radial-gradient(circle at 10px 10px, rgba(181,150,90,.11) 1.2px, transparent 1.2px),
-    radial-gradient(circle at 22px 22px, rgba(110,31,46,.06) 1.2px, transparent 1.2px);
-  background-size: 32px 32px;
-}
-
-.serif {
-  font-family: "Playfair Display", Georgia, serif;
+.shadow-wedding {
+  box-shadow: 0 10px 30px -5px rgba(44, 34, 30, 0.08), 0 0 15px rgba(197, 160, 89, 0.1);
 }
