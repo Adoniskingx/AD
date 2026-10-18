@@ -35,3 +35,9 @@ export const Invitation: React.FC = () => {
     </section>
   );
 };
+export const Invitation: React.FC = () => {
+  // ... existing component code ...
+};
+
+export default Invitation;
+
