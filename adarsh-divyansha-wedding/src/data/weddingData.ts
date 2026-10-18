@@ -31,6 +31,7 @@ export const weddingData = {
     tagline: "Two Souls. One Promise • A Lifetime Together",
     blessingText: "In the peaceful and sacred light of the Triratna",
     motto: "Atta Deep Bhava",
+    weddingDateDisplay: "Saturday, 14 November 2026",
   },
 
   weddingDateISO: "2026-11-14T19:00:00",
@@ -57,6 +58,8 @@ export const weddingData = {
     subtitle: "Adarsh & Divyansha",
     date: "14 November 2026",
     image: "/Photos/1 (1).jpg",
+    locationName: "Deekshabhoomi Stupa & Torana Gateway",
+    locationCity: "Nagpur, Maharashtra",
   },
 
   invitation: {
@@ -119,13 +122,14 @@ export const weddingData = {
   },
 
   contact: {
-    name: "Tabhane Family",
-    phone: "",
+    name: "Tabhane & Bagde Family",
+    phone: "Nagpur, Maharashtra",
     label: "Contact Us",
+    description: "We look forward to welcoming you with family and friends.",
   },
 
   reminder: {
-    text: "Please join us on time.",
+    text: "Please join us on time to grace the auspicious occasion.",
     label: "Save the Date",
   },
 
@@ -152,5 +156,6 @@ export const weddingData = {
     url: "",
     youtubeEmbedUrl: "",
     title: "Our Story",
+    thumbnail: "/Photos/1 (3).jpg",
   },
 };
