@@ -4,25 +4,44 @@
 
 @layer base {
   body {
-    @apply bg-[#FDF8F0] text-[#2C221E] antialiased selection:bg-amber-200 selection:text-amber-900;
-    background-image: 
-      radial-gradient(circle at 10% 15%, rgba(212, 175, 55, 0.08) 0%, transparent 35%),
-      radial-gradient(circle at 90% 85%, rgba(120, 53, 15, 0.06) 0%, transparent 40%),
-      radial-gradient(circle at 50% 50%, rgba(254, 243, 199, 0.4) 0%, rgba(253, 248, 240, 1) 90%);
-    min-height: 100vh;
+    @apply bg-[#121212] text-[#FDF8F0] antialiased selection:bg-amber-200 selection:text-amber-900 min-h-screen relative;
+  }
+
+  /* Fixed Sacred Artwork Background Layer */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url('/Photos/buddha-bg.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    opacity: 0.25; /* Subtle watermark opacity so text remains crystal clear */
+    z-index: -2;
+    filter: brightness(0.8) contrast(1.1);
+  }
+
+  /* Gradient Overlay for Text Contrast */
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at 50% 20%, rgba(18, 18, 18, 0.4) 0%, rgba(18, 18, 18, 0.85) 80%);
+    z-index: -1;
+    pointer-events-none: true;
   }
 }
 
-/* Rich Gold & Jewel Borders */
+/* Rich Gold & Decorative Styling */
 .border-gold-ornate {
-  border: 3px solid #D4AF37;
-  box-shadow: 0 0 15px rgba(212, 175, 55, 0.25), inset 0 0 10px rgba(212, 175, 55, 0.15);
+  border: 2px solid #D4AF37;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3), inset 0 0 10px rgba(212, 175, 55, 0.15);
 }
 
 .shadow-festive {
-  box-shadow: 0 20px 40px -10px rgba(44, 34, 30, 0.15), 0 0 25px rgba(212, 175, 55, 0.12);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.6), 0 0 25px rgba(212, 175, 55, 0.2);
 }
 
-.bg-festive-gradient {
-  background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 50%, #FDE68A 100%);
+.text-gold {
+  color: #E5C158;
 }
