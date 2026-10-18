@@ -14,7 +14,7 @@ export const Hero: React.FC = () => {
         <div className="flex items-center justify-center gap-2 text-amber-700 mb-4">
           <span className="h-[1px] w-12 bg-amber-300" />
           <Sparkles className="w-5 h-5" />
-          <span className="text-xs uppercase tracking-[0.2em] font-serif">Atta Deep Bhava</span>
+          <span className="text-xs uppercase tracking-[0.2em] font-serif">{weddingData.eventDetails.motto || "Atta Deep Bhava"}</span>
           <Sparkles className="w-5 h-5" />
           <span className="h-[1px] w-12 bg-amber-300" />
         </div>
@@ -29,13 +29,13 @@ export const Hero: React.FC = () => {
         </h1>
 
         <div className="inline-block px-6 py-2 rounded-full bg-amber-50 border border-amber-200 text-amber-900 font-serif text-lg mb-8 shadow-sm">
-          {weddingData.eventDetails.weddingDateDisplay || "Saturday, 14 November 2026"}
+          {weddingData.eventDetails.weddingDateDisplay || weddingData.weddingDateDisplay}
         </div>
 
         {/* Location Card */}
         <div className="flex items-center justify-center gap-2 text-stone-600 bg-stone-50 py-3 px-4 rounded-xl border border-stone-200/60 text-sm">
           <MapPin className="w-4 h-4 text-amber-700 flex-shrink-0" />
-          <span>{weddingData.hero?.locationName || "Deekshabhoomi Stupa & Torana Gateway"}, {weddingData.hero?.locationCity || "Nagpur, Maharashtra"}</span>
+          <span>{weddingData.hero.locationName}, {weddingData.hero.locationCity}</span>
         </div>
       </div>
     </section>
