@@ -1,43 +1,45 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { weddingData } from '../data/weddingData';
+import { Sparkles } from 'lucide-react';
 
 export const Invitation: React.FC = () => {
   return (
-    <section className="py-24 px-6 bg-ivory text-darkCharcoal relative overflow-hidden">
-      <div className="max-w-3xl mx-auto text-center border-y border-gold/40 py-16 px-6 relative bg-white/40 backdrop-blur-sm shadow-sm rounded-xl">
+    <section className="py-16 px-4 max-w-3xl mx-auto text-center">
+      <div className="card-dark-gold p-8 sm:p-12 rounded-3xl relative overflow-hidden">
         
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-        >
-          <span className="text-xs uppercase tracking-[0.25em] text-saffron font-semibold block mb-4">
+        {/* Decorative Motif */}
+        <div className="flex items-center justify-center gap-2 text-amber-400 mb-6">
+          <span className="h-[1px] w-12 bg-amber-500/50" />
+          <Sparkles className="w-5 h-5" />
+          <span className="text-xs uppercase tracking-[0.25em] font-serif text-amber-300">
             Auspicious Invitation
           </span>
-          
-          <h2 className="text-2xl md:text-3xl font-serif text-royalBlue mb-6">
-            {weddingData.invitation.greeting}
-          </h2>
+          <Sparkles className="w-5 h-5" />
+          <span className="h-[1px] w-12 bg-amber-500/50" />
+        </div>
 
-          <p className="text-base md:text-lg font-light leading-relaxed text-darkCharcoal/80 max-w-2xl mx-auto mb-10">
-            {weddingData.invitation.message}
+        <h2 className="text-2xl sm:text-3xl font-serif text-amber-100 mb-4">
+          {weddingData.invitation.greeting || "In the peaceful and sacred light of the Triratna"}
+        </h2>
+
+        <p className="text-stone-300 font-serif italic text-base sm:text-lg mb-8">
+          {weddingData.invitation.message || "We cordially invite you to celebrate with us."}
+        </p>
+
+        <div className="w-24 h-[1px] bg-amber-500/40 mx-auto my-6" />
+
+        <div className="space-y-3">
+          <p className="text-xs uppercase tracking-widest text-amber-300/80 font-medium">
+            Cordially Invited By
           </p>
-
-          <div className="pt-6 border-t border-gold/20">
-            <p className="text-sm uppercase tracking-widest text-gold font-medium mb-2">Cordially Invited By</p>
-            <p className="text-lg font-serif italic text-darkCharcoal">{weddingData.invitation.familyNames}</p>
-          </div>
-        </motion.div>
+          <p className="text-xl sm:text-2xl font-serif text-amber-100 font-medium">
+            {weddingData.invitation.familyNames || "The Tabhane & Bagde Family"}
+          </p>
+        </div>
 
       </div>
     </section>
   );
 };
-export const Invitation: React.FC = () => {
-  // ... existing component code ...
-};
 
 export default Invitation;
-
