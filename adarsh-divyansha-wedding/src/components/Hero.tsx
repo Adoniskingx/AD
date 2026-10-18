@@ -1,52 +1,45 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { ChevronDown } from 'lucide-react';
 import { weddingData } from '../data/weddingData';
+import { Sparkles, MapPin } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative h-screen w-full overflow-hidden bg-gradient-to-b from-sky-400 via-sky-200 to-white flex flex-col items-center justify-between py-12 px-4">
-      {/* Top Header Content */}
-      <motion.div 
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        className="text-center z-10 mt-6"
-      >
-        <p className="text-xs md:text-sm tracking-[0.3em] uppercase text-royalBlue font-semibold mb-2">
-          {weddingData.hero.subtitle}
-        </p>
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif text-darkCharcoal font-bold tracking-tight">
-          {weddingData.hero.title}
-        </h1>
-        <p className="mt-3 text-lg md:text-xl font-medium text-royalBlue">
-          {weddingData.hero.date}
-        </p>
-      </motion.div>
+    <section className="relative min-h-[90vh] flex flex-col items-center justify-center px-4 py-16 text-center overflow-hidden">
+      {/* Decorative Background Glow */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-100/60 via-transparent to-transparent pointer-events-none" />
 
-      {/* Central Stupa Artwork Area */}
-      <motion.div 
-        initial={{ scale: 0.9, opacity: 0 }}
-        animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 1.2, delay: 0.3 }}
-        className="relative w-full max-w-lg h-72 md:h-96 flex items-center justify-center my-auto"
-      >
-        <div className="absolute inset-0 bg-radial from-white/80 to-transparent rounded-full filter blur-xl" />
-        <div className="relative z-10 text-center text-darkCharcoal/70 font-serif italic border border-gold/40 p-8 rounded-2xl bg-white/60 backdrop-blur-md shadow-xl">
-          <p className="text-base font-semibold text-royalBlue">Deekshabhoomi Stupa & Torana Gateway</p>
-          <p className="text-xs mt-2 text-darkCharcoal/60">Nagpur, Maharashtra</p>
+      <div className="relative z-10 max-w-2xl mx-auto w-full bg-white/80 backdrop-blur-md p-8 sm:p-12 rounded-3xl shadow-wedding border-2 border-amber-200/60">
+        
+        {/* Top Decorative Motif */}
+        <div className="flex items-center justify-center gap-2 text-amber-700 mb-4">
+          <span className="h-[1px] w-12 bg-amber-300" />
+          <Sparkles className="w-5 h-5" />
+          <span className="text-xs uppercase tracking-[0.2em] font-serif">Atta Deep Bhava</span>
+          <Sparkles className="w-5 h-5" />
+          <span className="h-[1px] w-12 bg-amber-300" />
         </div>
-      </motion.div>
 
-      {/* Scroll Down Indicator */}
-      <motion.div 
-        animate={{ y: [0, 10, 0] }}
-        transition={{ repeat: Infinity, duration: 2 }}
-        className="z-10 flex flex-col items-center text-darkCharcoal/80 cursor-pointer"
-      >
-        <span className="text-xs uppercase tracking-widest mb-1 font-medium">Scroll to explore</span>
-        <ChevronDown size={20} />
-      </motion.div>
+        {/* Main Hashtag & Couple Names */}
+        <p className="text-sm uppercase tracking-widest text-amber-800 font-medium mb-2">
+          {weddingData.couple.groom} & {weddingData.couple.bride}
+        </p>
+        
+        <h1 className="text-4xl sm:text-6xl font-serif text-stone-900 tracking-tight mb-4">
+          {weddingData.couple.hashtag}
+        </h1>
+
+        <div className="inline-block px-6 py-2 rounded-full bg-amber-50 border border-amber-200 text-amber-900 font-serif text-lg mb-8 shadow-sm">
+          {weddingData.eventDetails.weddingDateDisplay || "Saturday, 14 November 2026"}
+        </div>
+
+        {/* Location Card */}
+        <div className="flex items-center justify-center gap-2 text-stone-600 bg-stone-50 py-3 px-4 rounded-xl border border-stone-200/60 text-sm">
+          <MapPin className="w-4 h-4 text-amber-700 flex-shrink-0" />
+          <span>{weddingData.hero?.locationName || "Deekshabhoomi Stupa & Torana Gateway"}, {weddingData.hero?.locationCity || "Nagpur, Maharashtra"}</span>
+        </div>
+      </div>
     </section>
   );
 };
+
+export default Hero;
