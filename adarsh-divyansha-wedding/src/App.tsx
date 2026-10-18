@@ -5,7 +5,7 @@ import Carousel from './components/Carousel';
 import Functions from './components/Functions';
 import ThingsToKnow from './components/ThingsToKnow';
 import Video from './components/Video';
-import Invitation from './components/Invitation';
+import { Invitation } from './components/Invitation';
 import Footer from './components/Footer';
 
 export const App: React.FC = () => {
@@ -33,4 +33,3 @@ export const App: React.FC = () => {
 };
 
 export default App;
-
