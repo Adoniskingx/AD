@@ -1,38 +1,35 @@
 import React from 'react';
 import { Hero } from './components/Hero';
+import { Couple } from './components/Couple';
+import { Carousel } from './components/Carousel';
+import { Functions } from './components/Functions';
+import { ThingsToKnow } from './components/ThingsToKnow';
+import { Video } from './components/Video';
 import { Invitation } from './components/Invitation';
-import DateReveal from './components/DateReveal';
-import Functions from './components/Functions';
-import Couple from './components/Couple';
-import Carousel from './components/Carousel';
-import Instagram from './components/Instagram';
-import Video from './components/Video';
-import Countdown from './components/Countdown';
-import ThingsToKnow from './components/ThingsToKnow';
-import RSVP from './components/RSVP';
-import Wishes from './components/Wishes';
-import MusicPlayer from './components/MusicPlayer';
-import Footer from './components/Footer';
+import { Footer } from './components/Footer';
 
-export function App() {
+export const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-ivory text-darkCharcoal selection:bg-gold/30">
-      <MusicPlayer />
-      <Hero />
-      <Invitation />
-      <DateReveal />
-      <Functions />
-      <Couple />
-      <Carousel />
-      <Countdown />
-      <ThingsToKnow />
-      <Video />
-      <Instagram />
-      <RSVP />
-      <Wishes />
-      <Footer />
+    <div className="relative min-h-screen text-[#FDF8F0] overflow-x-hidden">
+      {/* Fixed Background Artwork */}
+      <div className="sacred-bg-layer" />
+      
+      {/* Soft Dark Overlay for Contrast */}
+      <div className="sacred-overlay-layer" />
+
+      {/* Main Content Sections */}
+      <main className="site-content-wrapper space-y-12 py-6">
+        <Hero />
+        <Couple />
+        <Invitation />
+        <Carousel />
+        <Functions />
+        <Video />
+        <ThingsToKnow />
+        <Footer />
+      </main>
     </div>
   );
-}
+};
 
 export default App;
