@@ -8,10 +8,11 @@ interface BackgroundSelectorProps {
 
 export const BackgroundSelector: React.FC<BackgroundSelectorProps> = ({ currentBg, setBg }) => {
   const themes = [
-    { id: '/Photos/buddha-bg1.jpg', name: 'Theme 1: Sacred & Cultural (Ambedkar & Buddha)' },
-    { id: '/Photos/buddha-bg2.jpg', name: 'Theme 2: Warm Golden Meditative' },
+    { id: '/Photos/buddha-bg1.jpeg', name: 'Theme 1: Sacred & Cultural (Ambedkar & Buddha)' },
+    { id: '/Photos/buddha-bg2.jpeg', name: 'Theme 2: Warm Golden Meditative' },
     { id: '/Photos/buddha-bg3.jpg', name: 'Theme 3: Modern Minimalist Halo' },
     { id: '/Photos/buddha-bg4.jpg', name: 'Theme 4: Cinematic Chiaroscuro' },
+     { id: '/Photos/buddha-bg.jpg', name: 'Theme 5: Buddha Dark' },
   ];
 
   return (
