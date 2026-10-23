@@ -39,5 +39,133 @@ export const weddingData = {
     tagline: "Two Souls. One Promise • A Lifetime Together",
     blessingText: "In the peaceful and sacred light of the Triratna",
     motto: "Atta Deep Bhava",
-    weddingDateDisplay: "Saturday, 
-      
+    weddingDateDisplay: "Saturday, 14 November 2026"
+  },
+
+  weddingDateISO: "2026-11-14T19:00:00",
+  weddingDateDisplay: "Saturday, 14 November 2026",
+
+  photos: [
+    photo6,
+    photo7,
+    photo5,
+    photo4,
+    photo9,
+    photo8
+  ],
+
+  galleryImages: [
+    photo6,
+    photo7,
+    photo5,
+    photo4,
+    photo9,
+    photo8
+  ],
+
+  hero: {
+    title: "#DIVYADARSHAN",
+    subtitle: "Adarsh & Divyansha",
+    date: "14 November 2026",
+    image: photo10,
+    locationName: "Deekshabhoomi Stupa & Torana Gateway",
+    locationCity: "Nagpur, Maharashtra"
+  },
+
+  invitation: {
+    heading: "Wedding Invitation",
+    text: "In the peaceful and sacred light of the Triratna",
+    greeting: "In the peaceful and sacred light of the Triratna",
+    message: "We cordially invite you to celebrate with us.",
+    familyNames: "The Tabhane & Bagde Family",
+    groomParents: "Smt. Vandana & Shri Anil Tabhane",
+    brideParents: "Late Smt. Sangita & Shri Sanjay Bagde"
+  },
+
+  functions: [
+    {
+      id: "haldi",
+      title: "Haldi Ceremony",
+      date: "Friday, 13 November 2026",
+      time: "7:00 PM Onwards",
+      venue: "Residence",
+      address: "Plot No 9, Rathi Layout, Layout No 2, Godhani Road, Nagpur 440030",
+      description: "Haldi Ceremony & Rituals",
+      mapLink: "https://maps.google.com/?q=Plot+No+9+Rathi+Layout+Godhani+Road+Nagpur",
+      mapUrl: "https://maps.google.com/?q=Plot+No+9+Rathi+Layout+Godhani+Road+Nagpur"
+    },
+    {
+      id: "wedding",
+      title: "Wedding Ceremony & Rituals",
+      date: "Saturday, 14 November 2026",
+      time: "7:00 PM Onwards",
+      venue: "The Grand Jashan",
+      address: "Kamptee Road, Khairy, Nagpur 440029",
+      description: "Wedding Ceremony & Reception",
+      mapLink: "https://maps.google.com/?q=The+Grand+Jashan+Kamptee+Road+Khairy+Nagpur",
+      mapUrl: "https://maps.google.com/?q=The+Grand+Jashan+Kamptee+Road+Khairy+Nagpur"
+    }
+  ] as FunctionEvent[],
+
+  thingsToKnow: [
+    {
+      title: "Venue & Parking",
+      description: "Ample parking space available at both venues with valet assistance.",
+      iconName: "MapPin"
+    },
+    {
+      title: "Dress Code",
+      description: "Traditional / Ethnic wear for both events.",
+      iconName: "Sparkles"
+    },
+    {
+      title: "Photography",
+      description: "Tag your photos with #DIVYADARSHAN on Instagram!",
+      iconName: "Camera"
+    }
+  ] as ThingToKnow[],
+
+  venue: {
+    name: "The Grand Jashan",
+    address: "Kamptee Road, Khairy, Nagpur 440029",
+    label: "Venue Details"
+  },
+
+  contact: {
+    name: "Tabhane & Bagde Family",
+    phone: "Nagpur, Maharashtra",
+    label: "Contact Us",
+    description: "We look forward to welcoming you with family and friends."
+  },
+
+  reminder: {
+    text: "Please join us on time to grace the auspicious occasion.",
+    label: "Save the Date"
+  },
+
+  footer: {
+    text: "Awaiting to Welcome You",
+    family: "Tabhane Family, Relatives & Friends",
+    weddingDateDisplay: "Saturday, 14 November 2026"
+  },
+
+  instagram: {
+    hashtag: "#DIVYADARSHAN",
+    handle: "@adarsh_divyansha",
+    title: "Instagram",
+    text: "Tag your moments"
+  },
+
+  music: {
+    track: "wedding-song.mp3",
+    title: "Our Special Song",
+    src: "wedding-song.mp3"
+  },
+
+  video: {
+    url: "",
+    youtubeEmbedUrl: "",
+    title: "Our Story",
+    thumbnail: photo6
+  }
+};
