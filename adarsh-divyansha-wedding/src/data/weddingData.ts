@@ -31,7 +31,7 @@ export const weddingData = {
     groomParents: "Smt. Vandana & Shri Anil Tabhane",
     brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
     hashtag: "#DIVYADARSHAN",
-    coupleImage: photo10, // Image 10 featured on top
+    coupleImage: photo10,
     note: "Two Souls. One Promise • A Lifetime Together",
   },
 
@@ -42,42 +42,5 @@ export const weddingData = {
     weddingDateDisplay: "Saturday, 14 November 2026",
   },
 
-  weddingDateISO: "2026-11-14T19:00:00",
-  weddingDateDisplay: "Saturday, 14 November 2026",
-
-  // Carousel & Browsable Gallery Sequence: 6, 7, 5, 4, 9, 8 (Excludes 10)
-  photos: [
-    photo6,
-    photo7,
-    photo5,
-    photo4,
-    photo9,
-    photo8,
-  ],
-
-  galleryImages: [
-    photo6,
-    photo7,
-    photo5,
-    photo4,
-    photo9,
-    photo8,
-  ],
-
-  hero: {
-    title: "#DIVYADARSHAN",
-    subtitle: "Adarsh & Divyansha",
-    date: "14 November 2026",
-    image: photo10, // Image 10 featured on top
-    locationName: "Deekshabhoomi Stupa & Torana Gateway",
-    locationCity: "Nagpur, Maharashtra",
-  },
-
-  invitation: {
-    heading: "Wedding Invitation",
-    text: "In the peaceful and sacred light of the Triratna",
-    greeting: "In the peaceful and sacred light of the Triratna",
-    message: "We cordially invite you to celebrate with us.",
-    familyNames: "The Tabhane & Bagde Family",
-    groomParents: "Smt
-      
+  weddingDateISO: "2026
+    
