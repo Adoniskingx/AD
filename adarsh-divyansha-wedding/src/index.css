@@ -8,20 +8,20 @@
   }
 }
 
-/* Fixed Background Layer for sacred artwork */
+/* Fixed Background Layer for Buddha.png */
 .sacred-bg-layer {
   position: fixed;
   inset: 0;
-  background-image: url('/Photos/buddha-bg.jpg');
+  background-image: url('/Photos/Buddha.png');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  opacity: 0.35; /* Clear, elegant watermark opacity */
+  opacity: 0.35; /* Crisp, elegant watermark opacity */
   pointer-events: none;
   z-index: 0;
 }
 
-/* Soft Radial Gradient Overlay for text contrast */
+/* Soft Radial Dark Overlay for Text Readability */
 .sacred-overlay-layer {
   position: fixed;
   inset: 0;
@@ -30,13 +30,13 @@
   z-index: 1;
 }
 
-/* Main Content Wrapper */
+/* Content Container Wrapper */
 .site-content-wrapper {
   position: relative;
   z-index: 10;
 }
 
-/* Glassmorphic Dark Card Styling */
+/* Glassmorphic Dark-Gold Card Styling */
 .card-dark-gold {
   background: rgba(26, 24, 22, 0.85);
   backdrop-filter: blur(12px);
