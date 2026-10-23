@@ -1,9 +1,8 @@
-
 import React from 'react';
 import Hero from './components/Hero';
 import Couple from './components/Couple';
 import Carousel from './components/Carousel';
-import { Functions } from './components/Functions'; // Fixed to named import
+import Functions from './components/Functions'; // Changed to default import
 import ThingsToKnow from './components/ThingsToKnow';
 import Video from './components/Video';
 import { Invitation } from './components/Invitation';
