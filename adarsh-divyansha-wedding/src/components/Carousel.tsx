@@ -15,64 +15,68 @@ export default function Carousel() {
   };
 
   return (
-    <section className="py-12 px-4 max-w-2xl mx-auto text-center relative z-10">
+    <section className="py-12 px-4 max-w-xl mx-auto text-center relative z-10">
       <div className="mb-6">
         <p className="text-amber-400 text-xs uppercase tracking-[0.3em] font-serif mb-1">
-          #DIVYADARSHAN
+          {weddingData.couple.hashtag}
         </p>
         <h2 className="text-2xl md:text-3xl font-serif text-amber-100 font-medium">
           Our Moments
         </h2>
       </div>
 
-      {/* Main Single Photo Viewer */}
-      <div className="relative bg-stone-900/80 backdrop-blur-md border border-amber-500/30 rounded-3xl p-3 md:p-4 shadow-2xl">
-        <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-amber-500/20">
+      <div className="bg-[#FAF7F2] text-stone-900 rounded-[2.5rem] p-4 md:p-6 shadow-2xl border-2 border-amber-400/40 space-y-6">
+        
+        {/* Main Active Photo Display */}
+        <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl shadow-md border-2 border-amber-300/50 bg-stone-950">
           <img
             src={photos[currentIndex]}
             alt={`Moment ${currentIndex + 1}`}
             className="w-full h-full object-cover transition-all duration-500 ease-in-out"
           />
 
-          {/* Navigation Overlay Buttons */}
+          {/* Navigation Arrows */}
           <button
             onClick={handlePrev}
-            className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-amber-300 p-2 md:p-3 rounded-full border border-amber-500/40 backdrop-blur-sm transition-all active:scale-95"
+            className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-amber-300 p-2.5 rounded-full border border-amber-400/40 backdrop-blur-sm transition-all active:scale-95"
             aria-label="Previous photo"
           >
-            <ChevronLeft className="w-6 h-6" />
+            <ChevronLeft className="w-5 h-5" />
           </button>
 
           <button
             onClick={handleNext}
-            className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-amber-300 p-2 md:p-3 rounded-full border border-amber-500/40 backdrop-blur-sm transition-all active:scale-95"
+            className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-amber-300 p-2.5 rounded-full border border-amber-400/40 backdrop-blur-sm transition-all active:scale-95"
             aria-label="Next photo"
           >
-            <ChevronRight className="w-6 h-6" />
+            <ChevronRight className="w-5 h-5" />
           </button>
         </div>
 
-        {/* Counter & Dots */}
-        <div className="mt-4 flex items-center justify-between px-2">
-          <span className="text-xs font-serif text-amber-400/80 tracking-widest">
-            {currentIndex + 1} / {photos.length}
-          </span>
-
-          <div className="flex gap-2">
-            {photos.map((_, idx) => (
+        {/* Horizontal Scrollable Thumbnail Preview Bar */}
+        <div className="flex items-center gap-3 overflow-x-auto pb-2 scrollbar-thin scrollbar-thumb-amber-300">
+          {photos.map((photoUrl, idx) => {
+            const isSelected = idx === currentIndex;
+            return (
               <button
                 key={idx}
                 onClick={() => setCurrentIndex(idx)}
-                className={`h-2 rounded-full transition-all ${
-                  idx === currentIndex 
-                    ? 'w-6 bg-amber-400' 
-                    : 'w-2 bg-stone-700 hover:bg-stone-500'
+                className={`relative flex-shrink-0 w-16 h-20 rounded-xl overflow-hidden transition-all duration-300 ${
+                  isSelected 
+                    ? 'ring-4 ring-amber-500 scale-105 shadow-md opacity-100' 
+                    : 'opacity-60 hover:opacity-90 ring-1 ring-amber-300/50'
                 }`}
-                aria-label={`Go to slide ${idx + 1}`}
-              />
-            ))}
-          </div>
+              >
+                <img
+                  src={photoUrl}
+                  alt={`Thumbnail ${idx + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </button>
+            );
+          })}
         </div>
+
       </div>
     </section>
   );
