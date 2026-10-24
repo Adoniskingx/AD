@@ -35,8 +35,7 @@ export const weddingData = {
   },
 
   eventDetails: {
-    tagline: "Two Souls. One Promise.",
-    tagline: "A Lifetime Together",
+    tagline: "Two Souls. One Promise. <br /> A Lifetime Together",
     blessingText: "In the peaceful and sacred light of the Triratna",
     motto: "Atta Deep Bhava",
     weddingDateDisplay: "Saturday, 14 November 2026"
