@@ -32,7 +32,7 @@ export const weddingData = {
     brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
     hashtag: "#DIVYADARSHAN",
     coupleImage: photo10,
-    note: "Two Souls. One Promise • A Lifetime Together"
+    note: "Two Souls. One Promise. <br /> A Lifetime Together"
   },
 
   eventDetails: {
@@ -139,7 +139,7 @@ export const weddingData = {
   },
 
   reminder: {
-    text: "Please join us on time to grace the auspicious occasion.",
+    text: "At 7:00 PM <br /> Please join us on time to grace the auspicious occasion.",
     label: "Save the Date: 14 November 2026"
   },
 
