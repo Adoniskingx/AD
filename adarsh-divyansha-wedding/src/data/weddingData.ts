@@ -25,18 +25,18 @@ export interface ThingToKnow {
 }
 
 export const weddingData = {
-  couple: {
+    couple: {
     groom: "Adarsh",
     bride: "Divyansha",
     groomParents: "Smt. Vandana & Shri Anil Tabhane",
     brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
     hashtag: "#DIVYADARSHAN",
     coupleImage: photo10,
-    note: "Two Souls. One Promise. <br /> A Lifetime Together"
+    note: "Two Souls. One Promise.\nA Lifetime Together" // Using \n forces a clean new line
   },
 
   eventDetails: {
-    tagline: "Two Souls. One Promise. <br /> A Lifetime Together",
+    tagline: "Two Souls. One Promise.\nA Lifetime Together", // Using \n forces a clean new line
     blessingText: "In the peaceful and sacred light of the Triratna",
     motto: "Atta Deep Bhava",
     weddingDateDisplay: "Saturday, 14 November 2026"
@@ -139,7 +139,7 @@ export const weddingData = {
   },
 
   reminder: {
-    text: "At 7:00 PM <br /> Please join us on time to grace the auspicious occasion.",
+    text: "At 7:00 PM \nPlease join us on time to grace the auspicious occasion.",
     label: "Save the Date: 14 November 2026"
   },
 
