@@ -31,7 +31,7 @@ export const weddingData = {
     groomParents: "Smt. Vandana & Shri Anil Tabhane",
     brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
     hashtag: "#DIVYADARSHAN",
-    coupleImage: photo10
+    coupleImage: photo10, // Added missing comma here
     note: "Two Souls. One Promise • A Lifetime Together"
   },
 
