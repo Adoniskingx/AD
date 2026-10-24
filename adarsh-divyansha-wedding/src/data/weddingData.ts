@@ -96,7 +96,7 @@ export const weddingData = {
     },
     {
       id: "wedding",
-      title: "Wedding Ceremony & Rituals",
+      title: "Wedding Ceremony",
       date: "Saturday, 14 November 2026",
       time: "7:00 PM Onwards",
       venue: "The Grand Jashan",
@@ -133,14 +133,14 @@ export const weddingData = {
 
   contact: {
     name: "Tabhane & Bagde Family",
-    phone: "Nagpur, Maharashtra",
+    phone: "8087142596, 9922337877",
     label: "Contact Us",
     description: "We look forward to welcoming you with family and friends."
   },
 
   reminder: {
     text: "Please join us on time to grace the auspicious occasion.",
-    label: "Save the Date"
+    label: "Save the Date: 14 November 2026"
   },
 
   footer: {
