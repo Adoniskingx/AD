@@ -31,7 +31,7 @@ export const weddingData = {
     groomParents: "Smt. Vandana & Shri Anil Tabhane",
     brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
     hashtag: "#DIVYADARSHAN",
-    coupleImage: photo10 // Fixed: removed stray quote
+    coupleImage: photo10
   },
 
   eventDetails: {
@@ -145,5 +145,26 @@ export const weddingData = {
   footer: {
     text: "Awaiting to Welcome You",
     family: "Tabhane Family, Relatives & Friends",
-    wedding
-    
+    weddingDateDisplay: "Saturday, 14 November 2026"
+  },
+
+  instagram: {
+    hashtag: "#DIVYADARSHAN",
+    handle: "@adarsh_divyansha",
+    title: "Instagram",
+    text: "Tag your moments"
+  },
+
+  music: {
+    track: "wedding-song.mp3",
+    title: "Our Special Song",
+    src: "wedding-song.mp3"
+  },
+
+  video: {
+    url: "",
+    youtubeEmbedUrl: "",
+    title: "Our Story",
+    thumbnail: photo6
+  }
+};
