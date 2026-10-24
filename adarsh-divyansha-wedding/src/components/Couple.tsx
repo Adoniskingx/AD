@@ -3,20 +3,25 @@ import { weddingData } from '../data/weddingData';
 
 export default function Couple() {
   return (
-    <section className="py-12 px-4 max-w-4xl mx-auto text-center relative z-10">
-      <div className="bg-stone-900/70 backdrop-blur-md border border-amber-500/30 rounded-3xl p-8 shadow-xl space-y-6">
-        <h2 className="text-3xl md:text-4xl font-serif text-amber-100 font-medium">
-          {weddingData.couple.groom} & {weddingData.couple.bride}
-        </h2>
+    <section className="py-12 px-4 max-w-xl mx-auto text-center relative z-10">
+      <div className="bg-[#FAF7F2] text-stone-900 rounded-[2.5rem] p-6 md:p-10 shadow-2xl border-2 border-amber-400/40 space-y-8">
         
-        {/* whitespace-pre-line renders \n cleanly as new lines */}
-        {weddingData.couple.note && (
-          <p className="text-stone-300 italic font-serif text-base md:text-lg leading-relaxed whitespace-pre-line">
-            {weddingData.couple.note}
-          </p>
-        )}
+        {/* Header Title & Note */}
+        <div>
+          <div className="flex items-center justify-center gap-2 mb-2 text-amber-600">
+            <span>✨</span>
+            <h2 className="text-3xl font-serif font-medium text-stone-900 tracking-wide">The Couple</h2>
+            <span>✨</span>
+          </div>
+          {weddingData.couple.note && (
+            <p className="text-stone-600 italic font-serif text-sm md:text-base leading-relaxed whitespace-pre-line mt-2">
+              {weddingData.couple.note}
+            </p>
+          )}
+        </div>
 
-        <div className="relative mx-auto max-w-sm aspect-[4/5] rounded-2xl overflow-hidden border-2 border-amber-500/40 shadow-2xl">
+        {/* Featured Image with Glow */}
+        <div className="relative mx-auto max-w-sm aspect-[4/5] rounded-3xl overflow-hidden shadow-[0_0_30px_rgba(245,158,11,0.25)] border-4 border-amber-300/60 bg-stone-900">
           <img 
             src={weddingData.couple.coupleImage} 
             alt={`${weddingData.couple.groom} & ${weddingData.couple.bride}`}
@@ -24,10 +29,32 @@ export default function Couple() {
           />
         </div>
 
-        <div className="text-stone-300 text-sm md:text-base space-y-1 pt-2 font-serif">
-          <p><span className="text-amber-400 font-semibold">{weddingData.couple.groom}</span> — Son of {weddingData.couple.groomParents}</p>
-          <p><span className="text-amber-400 font-semibold">{weddingData.couple.bride}</span> — Daughter of {weddingData.couple.brideParents}</p>
+        {/* Groom Details Card */}
+        <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-5 shadow-sm border border-amber-200/50 space-y-1">
+          <h3 className="text-2xl font-serif font-semibold text-stone-900">
+            {weddingData.couple.groom}
+          </h3>
+          <p className="text-xs uppercase tracking-[0.2em] text-amber-700 font-semibold">
+            Groom
+          </p>
+          <p className="text-sm text-stone-600 pt-1">
+            Son of {weddingData.couple.groomParents}
+          </p>
         </div>
+
+        {/* Bride Details Card */}
+        <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-5 shadow-sm border border-amber-200/50 space-y-1">
+          <h3 className="text-2xl font-serif font-semibold text-stone-900">
+            {weddingData.couple.bride}
+          </h3>
+          <p className="text-xs uppercase tracking-[0.2em] text-amber-700 font-semibold">
+            Bride
+          </p>
+          <p className="text-sm text-stone-600 pt-1">
+            Daughter of {weddingData.couple.brideParents}
+          </p>
+        </div>
+
       </div>
     </section>
   );
