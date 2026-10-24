@@ -9,7 +9,7 @@
   }
 }
 
-/* Sacred Buddha Background Layer */
+/* Sacred Buddha Background Layer - Higher opacity & fixed positioning */
 .sacred-bg-layer {
   position: fixed;
   inset: 0;
@@ -18,46 +18,24 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.18;
+  opacity: 0.38; /* Increased so artwork is clearly visible */
   pointer-events: none;
 }
 
-/* Soft Dark Gradient Overlay */
+/* Light dark gradient so artwork shows through clearly */
 .sacred-overlay-layer {
   position: fixed;
   inset: 0;
   z-index: 1;
-  background: radial-gradient(circle at center, rgba(12, 10, 9, 0.4) 0%, rgba(12, 10, 9, 0.85) 100%);
+  background: radial-gradient(circle at center, rgba(12, 10, 9, 0.2) 0%, rgba(12, 10, 9, 0.75) 100%);
   pointer-events: none;
 }
 
-/* Content Wrapper Layer */
 .site-content-wrapper {
   position: relative;
   z-index: 10;
 }
 
-/* Frosted Dark Gold Card Styling */
-.card-dark-gold {
-  background: rgba(20, 16, 12, 0.8) !important;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(217, 119, 6, 0.3);
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
-}
-
-/* Standalone Header Backdrop Pill */
-.section-title-pill {
-  background: rgba(15, 12, 9, 0.75);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  display: inline-block;
-  padding: 0.5rem 1.5rem;
-  border-radius: 9999px;
-  border: 1px solid rgba(217, 119, 6, 0.25);
-}
-
-/* Line break helper */
 .line-break-text {
   white-space: pre-line;
 }
