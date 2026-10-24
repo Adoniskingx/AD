@@ -31,12 +31,12 @@ export const weddingData = {
     groomParents: "Smt. Vandana & Shri Anil Tabhane",
     brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
     hashtag: "#DIVYADARSHAN",
-    coupleImage: photo10,
-    note: "Two Souls. One Promise • A Lifetime Together"
+    coupleImage: photo10"
   },
 
   eventDetails: {
-    tagline: "Two Souls. One Promise • A Lifetime Together",
+    tagline: "Two Souls. One Promise. 
+    A Lifetime Together",
     blessingText: "In the peaceful and sacred light of the Triratna",
     motto: "Atta Deep Bhava",
     weddingDateDisplay: "Saturday, 14 November 2026"
