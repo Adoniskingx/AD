@@ -31,7 +31,7 @@ export const weddingData = {
     groomParents: "Smt. Vandana & Shri Anil Tabhane",
     brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
     hashtag: "#DIVYADARSHAN",
-    coupleImage: photo10, // Added missing comma here
+    coupleImage: photo10,
     note: "Two Souls. One Promise • A Lifetime Together"
   },
 
@@ -68,8 +68,8 @@ export const weddingData = {
     subtitle: "Adarsh & Divyansha",
     date: "14 November 2026",
     image: photo10,
-    locationName: "Deekshabhoomi Stupa & Torana Gateway",
-    locationCity: "Nagpur, Maharashtra"
+    locationName: "The Grand Jashan",
+    locationCity: "Kamptee Road, Khairy, Nagpur"
   },
 
   invitation: {
