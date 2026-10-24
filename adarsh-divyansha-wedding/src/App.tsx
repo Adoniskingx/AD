@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from './components/Hero';
-import Countdown from './components/Countdown'; // Added back
+import Countdown from './components/Countdown';
 import Couple from './components/Couple';
 import Carousel from './components/Carousel';
 import Functions from './components/Functions';
@@ -11,17 +11,17 @@ import Footer from './components/Footer';
 
 export const App: React.FC = () => {
   return (
-    <div className="relative min-h-screen text-[#FDF8F0] overflow-x-hidden">
-      {/* Sacred Background Layer */}
+    <div className="relative min-h-screen text-[#FDF8F0] overflow-x-hidden bg-stone-950">
+      {/* 1. Sacred Background Layer */}
       <div className="sacred-bg-layer" />
       
-      {/* Soft Dark Gradient Overlay */}
+      {/* 2. Soft Dark Overlay Layer */}
       <div className="sacred-overlay-layer" />
 
-      {/* Main Site Content */}
+      {/* 3. Main Site Content */}
       <main className="site-content-wrapper space-y-12 py-6">
         <Hero />
-        <Countdown /> {/* Countdown / Reveal Section restored here */}
+        <Countdown />
         <Couple />
         <Invitation />
         <Carousel />
