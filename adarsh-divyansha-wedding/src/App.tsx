@@ -9,16 +9,13 @@ import Video from './components/Video';
 import { Invitation } from './components/Invitation';
 import Footer from './components/Footer';
 
-// Direct import guarantees Vite bundles Buddha.png with the correct production URL
-import buddhaBg from './assets/photos/Buddha.png';
-
 export const App: React.FC = () => {
   return (
     <div className="relative min-h-screen text-[#FDF8F0] overflow-x-hidden bg-stone-950">
-      {/* Sacred Background Layer - Rendered directly via imported asset */}
+      {/* Sacred Background Layer via Public Asset URL */}
       <div 
         className="fixed inset-0 z-0 pointer-events-none bg-cover bg-center bg-no-repeat opacity-35"
-        style={{ backgroundImage: `url(${buddhaBg})` }}
+        style={{ backgroundImage: `url('/Buddha.png')` }}
       />
       
       {/* Soft Dark Radial Gradient Overlay */}
