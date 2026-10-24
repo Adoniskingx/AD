@@ -1,23 +1,63 @@
-/* Card backdrop to ensure high contrast against background artwork */
-.card-dark-gold {
-  background: rgba(20, 16, 12, 0.75);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(217, 119, 6, 0.25);
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-stone-950 text-[#FDF8F0] antialiased min-h-screen font-sans;
+    background-color: #0c0a09;
+  }
 }
 
-/* Section title background pill for standalone headers */
+/* Sacred Buddha Background Layer */
+.sacred-bg-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background-image: url('./assets/photos/Buddha.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+/* Soft Dark Gradient Overlay */
+.sacred-overlay-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  background: radial-gradient(circle at center, rgba(12, 10, 9, 0.4) 0%, rgba(12, 10, 9, 0.85) 100%);
+  pointer-events: none;
+}
+
+/* Content Wrapper Layer */
+.site-content-wrapper {
+  position: relative;
+  z-index: 10;
+}
+
+/* Frosted Dark Gold Card Styling */
+.card-dark-gold {
+  background: rgba(20, 16, 12, 0.8) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(217, 119, 6, 0.3);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+}
+
+/* Standalone Header Backdrop Pill */
 .section-title-pill {
-  background: rgba(15, 12, 9, 0.65);
+  background: rgba(15, 12, 9, 0.75);
   backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   display: inline-block;
   padding: 0.5rem 1.5rem;
   border-radius: 9999px;
-  border: 1px solid rgba(217, 119, 6, 0.2);
+  border: 1px solid rgba(217, 119, 6, 0.25);
 }
 
-/* Render HTML tags like <br /> safely when passed inside data strings */
+/* Line break helper */
 .line-break-text {
   white-space: pre-line;
 }
