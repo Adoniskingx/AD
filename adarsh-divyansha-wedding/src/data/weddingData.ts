@@ -32,6 +32,7 @@ export const weddingData = {
     brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
     hashtag: "#DIVYADARSHAN",
     coupleImage: photo10
+    note: "Two Souls. One Promise • A Lifetime Together"
   },
 
   eventDetails: {
