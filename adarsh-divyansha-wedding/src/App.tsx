@@ -1,12 +1,12 @@
 import React from 'react';
-import { Hero } from './components/Hero';
-import { Functions } from './components/Functions';
-import { Gallery } from './components/Gallery';
-import { Venue } from './components/Venue';
-import { ThingsToKnow } from './components/ThingsToKnow';
-import { Contact } from './components/Contact';
-import { Footer } from './components/Footer';
-import { MusicPlayer } from './components/MusicPlayer';
+import Hero from './components/Hero';
+import Functions from './components/Functions';
+import Gallery from './components/Gallery';
+import Venue from './components/Venue';
+import ThingsToKnow from './components/ThingsToKnow';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import MusicPlayer from './components/MusicPlayer';
 
 export function App() {
   return (
