@@ -23,7 +23,7 @@ export const weddingData = {
     groomParents: "Smt. Vandana & Shri Anil Tabhane",
     brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
     hashtag: "#DIVYADARSHAN",
-    coupleImage: "/Photos/And.jpg",
+    coupleImage: "/Photos/And.webp",
     note: "Two Souls. One Promise • A Lifetime Together"
   },
 
@@ -38,21 +38,21 @@ export const weddingData = {
   weddingDateDisplay: "Saturday, 14 November 2026",
 
   photos: [
-    "/Photos/6.jpg",
-    "/Photos/7.jpg",
-    "/Photos/5.jpg",
-    "/Photos/4.jpg",
-    "/Photos/9.jpg",
-    "/Photos/8.jpg"
+    "/Photos/6.webp",
+    "/Photos/7.webp",
+    "/Photos/5.webp",
+    "/Photos/4.webp",
+    "/Photos/9.webp",
+    "/Photos/8.webp"
   ],
 
   galleryImages: [
-    "/Photos/6.jpg",
-    "/Photos/7.jpg",
-    "/Photos/5.jpg",
-    "/Photos/4.jpg",
-    "/Photos/9.jpg",
-    "/Photos/8.jpg"
+    "/Photos/6.webp",
+    "/Photos/7.webp",
+    "/Photos/5.webp",
+    "/Photos/4.webp",
+    "/Photos/9.webp",
+    "/Photos/8.webp"
   ],
 
   hero: {
@@ -61,7 +61,7 @@ export const weddingData = {
     invitationText: "We cordially invite your esteemed presence and blessings with family on the auspicious occasion of the wedding ceremony of",
     title: "#DIVYADARSHAN",
     date: "Saturday, 14 November 2026",
-    image: "/Photos/And.jpg",
+    image: "/Photos/And.webp",
     locationName: "The Grand Jashan",
     locationCity: "Kamptee Road, Khairy, Nagpur",
     groomParents: "Smt. Vandana & Shri Anil Tabhane",
@@ -119,39 +119,5 @@ export const weddingData = {
 
   contact: {
     name: "Tabhane & Bagde Family",
-    phone: "8087142596, 9922337877",
-    label: "Contact Us",
-    description: "We look forward to welcoming you with family and friends."
-  },
-
-  reminder: {
-    text: "At 7:00 PM \nPlease join us on time to grace the auspicious occasion.",
-    label: "Save the Date: 14 November 2026"
-  },
-
-  footer: {
-    text: "Awaiting to Welcome You",
-    family: "The Tabhane & Bagde Family",
-    weddingDateDisplay: "Saturday, 14 November 2026"
-  },
-
-  instagram: {
-    hashtag: "#DIVYADARSHAN",
-    handle: "@adarsh_divyansha",
-    title: "Instagram",
-    text: "Tag your moments"
-  },
-
-  music: {
-    track: "wedding-song.mp3",
-    title: "Our Special Song",
-    src: "wedding-song.mp3"
-  },
-
-  video: {
-    url: "",
-    youtubeEmbedUrl: "",
-    title: "Our Story",
-    thumbnail: "/Photos/6.jpg"
-  }
-};
+    phone: "80
+      
