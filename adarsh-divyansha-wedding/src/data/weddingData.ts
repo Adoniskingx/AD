@@ -63,7 +63,9 @@ export const weddingData = {
     date: "Saturday, 14 November 2026",
     image: "/Photos/And.jpg",
     locationName: "The Grand Jashan",
-    locationCity: "Kamptee Road, Khairy, Nagpur"
+    locationCity: "Kamptee Road, Khairy, Nagpur",
+    groomParents: "Smt. Vandana & Shri Anil Tabhane",
+    brideParents: "Late Smt. Sangita & Shri Sanjay Bagde"
   },
 
   functions: [
