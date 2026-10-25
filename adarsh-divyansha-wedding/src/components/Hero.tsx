@@ -33,18 +33,18 @@ export const Hero: React.FC = () => {
           </h2>
         </div>
 
-        {/* Couple Photo (Image 10) - Increased Size & Incorporating '&' */}
+        {/* Enlarged Couple Photo with '&' Overlaid Inside */}
         {weddingData.hero.image && (
           <div className="my-4 flex justify-center relative">
-            <div className="relative w-44 h-44 md:w-52 md:h-52 rounded-full overflow-hidden border-2 border-amber-400/60 shadow-xl p-1 bg-black/40">
+            <div className="relative w-52 h-52 md:w-60 md:h-60 rounded-full overflow-hidden border-2 border-amber-400/60 shadow-xl p-1 bg-black/40">
               <img 
                 src={weddingData.hero.image} 
                 alt="Adarsh & Divyansha" 
                 className="w-full h-full object-cover rounded-full"
               />
-              {/* Incorporated '&' Badge */}
-              <div className="absolute bottom-1 right-1 md:bottom-2 md:right-2 w-9 h-9 md:w-10 md:h-10 bg-[#1A1816] border border-amber-400 rounded-full flex items-center justify-center shadow-lg">
-                <span className="text-amber-300 font-serif italic text-base md:text-lg">&</span>
+              {/* Overlaid '&' Symbol slightly inside the image frame */}
+              <div className="absolute bottom-3 right-6 md:bottom-4 md:right-8 w-11 h-11 md:w-12 md:h-12 bg-[#1A1816]/90 backdrop-blur-sm border-2 border-amber-400 rounded-full flex items-center justify-center shadow-2xl z-20">
+                <span className="text-amber-300 font-serif italic text-xl">&</span>
               </div>
             </div>
           </div>
@@ -57,26 +57,11 @@ export const Hero: React.FC = () => {
           </h2>
         </div>
 
-        {/* Hashtag / Main Title (Reduced font size & italicized) */}
+        {/* Hashtag / Main Title (Italicized and reduced font size) */}
         <div className="my-6 py-4 border-y border-amber-500/25">
           <h1 className="text-2xl md:text-3xl font-serif text-gold tracking-wider italic">
             {weddingData.hero.title}
           </h1>
-        </div>
-
-        {/* Family Details */}
-        <div className="mt-6 pt-4 border-t border-amber-500/20 text-xs md:text-sm text-amber-100/80 space-y-3">
-          <p className="font-serif italic text-amber-300">{weddingData.hero.familyNames}</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
-            <div>
-              <p className="text-[10px] uppercase tracking-widest text-amber-400/70 mb-0.5">Groom's Parents</p>
-              <p className="font-medium text-amber-100">{weddingData.hero.groomParents}</p>
-            </div>
-            <div>
-              <p className="text-[10px] uppercase tracking-widest text-amber-400/70 mb-0.5">Bride's Parents</p>
-              <p className="font-medium text-amber-100">{weddingData.hero.brideParents}</p>
-            </div>
-          </div>
         </div>
 
         {/* Date & Venue Info */}
