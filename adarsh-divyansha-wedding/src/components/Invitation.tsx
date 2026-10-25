@@ -1,56 +1,41 @@
 import React from 'react';
-import { Sparkles } from 'lucide-react';
 
-export const Invitation: React.FC = () => {
+interface InvitationProps {
+  onOpen?: () => void;
+}
+
+export const Invitation: React.FC<InvitationProps> = ({ onOpen }) => {
   return (
-    <section className="py-12 px-4 max-w-xl mx-auto relative z-10 text-center">
-      <div className="bg-stone-900/90 backdrop-blur-md rounded-3xl p-8 md:p-10 shadow-2xl border border-amber-500/30 text-[#FDF8F0] space-y-6 relative overflow-hidden">
+    <section className="relative z-10 flex flex-col items-center justify-center py-6 px-4 max-w-xl mx-auto text-center">
+      <div className="relative w-full max-w-md bg-[#16100F]/90 backdrop-blur-md rounded-[2.5rem] p-8 border-2 border-amber-500/40 shadow-[0_0_40px_rgba(217,119,6,0.15)] space-y-6">
         
-        {/* Top Gold Accent Line */}
-        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent" />
-
-        {/* Header Motto */}
+        {/* Top Decorative Header */}
         <div className="space-y-2">
-          <div className="flex items-center justify-center gap-2 text-amber-400">
-            <Sparkles className="w-4 h-4" />
-            <span className="text-xs uppercase tracking-[0.3em] font-serif font-medium">
-              Atta Deep Bhava
-            </span>
-            <Sparkles className="w-4 h-4" />
-          </div>
-        </div>
-
-        {/* Sacred Light Intro */}
-        <p className="text-amber-200/90 font-serif italic text-sm md:text-base leading-relaxed">
-          "In the peaceful and sacred light of the Triratna, we cordially invite your esteemed presence and blessings with family on the auspicious occasion of the wedding ceremony of"
-        </p>
-
-        {/* Couple Names */}
-        <div className="py-2 space-y-2">
-          <h2 className="text-4xl md:text-5xl font-serif text-amber-100 font-medium tracking-wide">
-            Adarsh
+          <div className="w-12 h-[1px] bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto mb-2" />
+          <p className="text-amber-400 font-serif text-[11px] tracking-[0.3em] uppercase">
+            Two Souls. One Promise. A Lifetime Together
+          </p>
+          <h2 className="text-2xl md:text-3xl font-serif text-amber-100 font-medium">
+            Adarsh & Divyansha
           </h2>
-          <span className="text-amber-400 font-serif text-xl block">&</span>
-          <h2 className="text-4xl md:text-5xl font-serif text-amber-100 font-medium tracking-wide">
-            Divyansha
-          </h2>
-        </div>
-
-        {/* Hashtag */}
-        <div className="pt-2">
-          <span className="inline-block bg-amber-500/10 border border-amber-400/30 text-amber-300 font-serif tracking-widest text-sm py-1.5 px-6 rounded-full">
+          <h1 className="text-3xl md:text-4xl font-serif font-bold text-amber-300 tracking-wider">
             #DIVYADARSHAN
-          </span>
+          </h1>
+          <p className="text-stone-300 font-serif text-xs italic pt-1">
+            "Atta Deep Bhava — Be a light unto yourself."
+          </p>
+          <div className="w-12 h-[1px] bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto mt-2" />
         </div>
 
-        {/* Date & Venue Summary */}
-        <div className="border-t border-stone-800 pt-6 space-y-3 font-serif text-stone-300">
-          <p className="text-amber-200 font-medium text-base">
-            Saturday, 14 November 2026
-          </p>
-          <p className="text-xs text-stone-400 leading-relaxed max-w-sm mx-auto">
-            The Grand Jashan, Kamptee Road, Khairy, Nagpur 440029
-          </p>
+        {/* Date & Venue Quick Snippet */}
+        <div className="space-y-3 pt-2">
+          <div className="inline-block px-6 py-2 rounded-full bg-stone-900/80 border border-amber-500/40 text-amber-200 font-serif text-sm tracking-widest shadow-inner">
+            14 November 2026
+          </div>
+          <div className="flex items-center justify-center gap-2 text-stone-300 text-xs font-serif pt-1">
+            <span className="text-amber-400">📍</span>
+            <span>The Grand Jashan Lawn, Nagpur</span>
+          </div>
         </div>
 
       </div>
