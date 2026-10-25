@@ -26,33 +26,40 @@ export const Hero: React.FC = () => {
           {weddingData.hero.invitationText}
         </p>
 
-        {/* Couple Photo (Image 10) */}
+        {/* Adarsh Name */}
+        <div className="mt-4 mb-2">
+          <h2 className="text-3xl md:text-4xl font-serif text-amber-200 tracking-wider">
+            {weddingData.couple.groom}
+          </h2>
+        </div>
+
+        {/* Couple Photo (Image 10) - Increased Size & Incorporating '&' */}
         {weddingData.hero.image && (
-          <div className="my-6 flex justify-center">
-            <div className="w-36 h-36 md:w-44 md:h-44 rounded-full overflow-hidden border-2 border-amber-400/60 shadow-xl p-1 bg-black/40">
+          <div className="my-4 flex justify-center relative">
+            <div className="relative w-44 h-44 md:w-52 md:h-52 rounded-full overflow-hidden border-2 border-amber-400/60 shadow-xl p-1 bg-black/40">
               <img 
                 src={weddingData.hero.image} 
                 alt="Adarsh & Divyansha" 
                 className="w-full h-full object-cover rounded-full"
               />
+              {/* Incorporated '&' Badge */}
+              <div className="absolute bottom-1 right-1 md:bottom-2 md:right-2 w-9 h-9 md:w-10 md:h-10 bg-[#1A1816] border border-amber-400 rounded-full flex items-center justify-center shadow-lg">
+                <span className="text-amber-300 font-serif italic text-base md:text-lg">&</span>
+              </div>
             </div>
           </div>
         )}
 
-        {/* Names */}
-        <div className="my-6">
-          <h2 className="text-3xl md:text-4xl font-serif text-amber-200 tracking-wider mb-1">
-            {weddingData.couple.groom}
-          </h2>
-          <span className="text-amber-400 font-serif text-xl italic">&</span>
-          <h2 className="text-3xl md:text-4xl font-serif text-amber-200 tracking-wider mt-1">
+        {/* Divyansha Name */}
+        <div className="mt-2 mb-6">
+          <h2 className="text-3xl md:text-4xl font-serif text-amber-200 tracking-wider">
             {weddingData.couple.bride}
           </h2>
         </div>
 
-        {/* Hashtag / Main Title */}
-        <div className="my-6 py-4 border-y border-amber-500/20">
-          <h1 className="text-3xl md:text-5xl font-serif text-gold tracking-wider">
+        {/* Hashtag / Main Title (Reduced font size & italicized) */}
+        <div className="my-6 py-4 border-y border-amber-500/25">
+          <h1 className="text-2xl md:text-3xl font-serif text-gold tracking-wider italic">
             {weddingData.hero.title}
           </h1>
         </div>
