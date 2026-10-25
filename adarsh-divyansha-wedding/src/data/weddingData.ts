@@ -1,11 +1,3 @@
-import img10 from '../assets/photos/10.jpg';
-import img4 from '../assets/photos/4.jpg';
-import img5 from '../assets/photos/5.jpg';
-import img6 from '../assets/photos/6.jpg';
-import img7 from '../assets/photos/7.jpg';
-import img8 from '../assets/photos/8.jpg';
-import img9 from '../assets/photos/9.jpg';
-
 export interface FunctionEvent {
   id?: string;
   title: string;
@@ -31,7 +23,7 @@ export const weddingData = {
     groomParents: "Smt. Vandana & Shri Anil Tabhane",
     brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
     hashtag: "#DIVYADARSHAN",
-    coupleImage: img10, // Image 10 on top
+    coupleImage: "/Photos/10.jpg", // Image 10 on top
     note: "Two Souls. One Promise • A Lifetime Together",
   },
 
@@ -45,30 +37,30 @@ export const weddingData = {
   weddingDateISO: "2026-11-14T19:00:00",
   weddingDateDisplay: "Saturday, 14 November 2026",
 
-  // Browsable carousel & gallery in requested order: 6, 7, 5, 4, 9, 8 (No 10)
+  // Browsable carousel & gallery in exact order: 6, 7, 5, 4, 9, 8 (No 10 repetition)
   photos: [
-    img6,
-    img7,
-    img5,
-    img4,
-    img9,
-    img8,
+    "/Photos/6.jpg",
+    "/Photos/7.jpg",
+    "/Photos/5.jpg",
+    "/Photos/4.jpg",
+    "/Photos/9.jpg",
+    "/Photos/8.jpg",
   ],
 
   galleryImages: [
-    img6,
-    img7,
-    img5,
-    img4,
-    img9,
-    img8,
+    "/Photos/6.jpg",
+    "/Photos/7.jpg",
+    "/Photos/5.jpg",
+    "/Photos/4.jpg",
+    "/Photos/9.jpg",
+    "/Photos/8.jpg",
   ],
 
   hero: {
     title: "#DIVYADARSHAN",
     subtitle: "Adarsh & Divyansha",
     date: "14 November 2026",
-    image: img10, // Image 10 on top
+    image: "/Photos/10.jpg", // Image 10 on top
     locationName: "Deekshabhoomi Stupa & Torana Gateway",
     locationCity: "Nagpur, Maharashtra",
   },
@@ -167,6 +159,6 @@ export const weddingData = {
     url: "",
     youtubeEmbedUrl: "",
     title: "Our Story",
-    thumbnail: img6,
+    thumbnail: "/Photos/6.jpg",
   },
 };
