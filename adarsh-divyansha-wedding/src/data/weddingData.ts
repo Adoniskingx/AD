@@ -37,8 +37,6 @@ export const weddingData = {
 
   eventDetails: {
     tagline: "Two Souls. One Promise.\nA Lifetime Together",
-    blessingText: "In the peaceful and sacred light of the Triratna,",
-    motto: "|| Atta Deep Bhava ||",
     weddingDateDisplay: "Saturday, 14 November 2026"
   },
 
@@ -64,22 +62,13 @@ export const weddingData = {
   ],
 
   hero: {
-    motto: "|| Atta Deep Bhava ||",
-    blessing: "In the peaceful and sacred light of the Triratna,",
-    invitationText: "We cordially invite your esteemed presence and blessings with family on the auspicious occasion of the wedding ceremony of",
-    subtitle: "Adarsh & Divyansha",
+    heading: "Wedding Invitation",
+    message: "We cordially invite your esteemed presence and blessings with family on the auspicious occasion of the wedding ceremony of",
     title: "#DIVYADARSHAN",
     date: "Saturday, 14 November 2026",
     image: photo10,
     locationName: "The Grand Jashan",
-    locationCity: "Kamptee Road, Khairy, Nagpur"
-  },
-
-  invitation: {
-    heading: "Wedding Invitation",
-    text: "In the peaceful and sacred light of the Triratna,",
-    greeting: "In the peaceful and sacred light of the Triratna,",
-    message: "We cordially invite your esteemed presence and blessings with family on the auspicious occasion of the wedding ceremony of",
+    locationCity: "Kamptee Road, Khairy, Nagpur",
     familyNames: "The Tabhane & Bagde Family",
     groomParents: "Smt. Vandana & Shri Anil Tabhane",
     brideParents: "Late Smt. Sangita & Shri Sanjay Bagde"
