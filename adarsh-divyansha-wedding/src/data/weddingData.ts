@@ -1,12 +1,3 @@
-import photo4 from '../assets/photos/4.jpg';
-import photo5 from '../assets/photos/5.jpg';
-import photo6 from '../assets/photos/6.jpg';
-import photo7 from '../assets/photos/7.jpg';
-import photo8 from '../assets/photos/8.jpg';
-import photo9 from '../assets/photos/9.jpg';
-import photo10 from '../assets/photos/10.jpg';
-import andPhoto from '../assets/photos/And.jpg';
-
 export interface FunctionEvent {
   id?: string;
   title: string;
@@ -32,7 +23,7 @@ export const weddingData = {
     groomParents: "Smt. Vandana & Shri Anil Tabhane",
     brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
     hashtag: "#DIVYADARSHAN",
-    coupleImage: andPhoto,
+    coupleImage: "/Photos/And.jpg",
     note: "Two Souls. One Promise • A Lifetime Together"
   },
 
@@ -47,21 +38,21 @@ export const weddingData = {
   weddingDateDisplay: "Saturday, 14 November 2026",
 
   photos: [
-    photo6,
-    photo7,
-    photo5,
-    photo4,
-    photo9,
-    photo8
+    "/Photos/6.jpg",
+    "/Photos/7.jpg",
+    "/Photos/5.jpg",
+    "/Photos/4.jpg",
+    "/Photos/9.jpg",
+    "/Photos/8.jpg"
   ],
 
   galleryImages: [
-    photo6,
-    photo7,
-    photo5,
-    photo4,
-    photo9,
-    photo8
+    "/Photos/6.jpg",
+    "/Photos/7.jpg",
+    "/Photos/5.jpg",
+    "/Photos/4.jpg",
+    "/Photos/9.jpg",
+    "/Photos/8.jpg"
   ],
 
   hero: {
@@ -70,7 +61,7 @@ export const weddingData = {
     invitationText: "We cordially invite your esteemed presence and blessings with family on the auspicious occasion of the wedding ceremony of",
     title: "#DIVYADARSHAN",
     date: "Saturday, 14 November 2026",
-    image: andPhoto,
+    image: "/Photos/And.jpg",
     locationName: "The Grand Jashan",
     locationCity: "Kamptee Road, Khairy, Nagpur"
   },
@@ -159,6 +150,6 @@ export const weddingData = {
     url: "",
     youtubeEmbedUrl: "",
     title: "Our Story",
-    thumbnail: photo6
+    thumbnail: "/Photos/6.jpg"
   }
 };
