@@ -1,3 +1,14 @@
+import photo1 from '../assets/photos/1.jpg';
+import photo2 from '../assets/photos/2.jpg';
+import photo3 from '../assets/photos/3.jpg';
+import photo4 from '../assets/photos/4.jpg';
+import photo5 from '../assets/photos/5.jpg';
+import photo6 from '../assets/photos/6.jpg';
+import photo7 from '../assets/photos/7.jpg';
+import photo8 from '../assets/photos/8.jpg';
+import photo9 from '../assets/photos/9.jpg';
+import photo10 from '../assets/photos/10.jpg';
+
 export interface FunctionEvent {
   id?: string;
   title: string;
@@ -23,7 +34,7 @@ export const weddingData = {
     groomParents: "Smt. Vandana & Shri Anil Tabhane",
     brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
     hashtag: "#DIVYADARSHAN",
-    coupleImage: "/Photos/1 (1).jpg",
+    coupleImage: photo10,
     note: "Two Souls. One Promise • A Lifetime Together",
   },
   
@@ -38,26 +49,32 @@ export const weddingData = {
   weddingDateDisplay: "Saturday, 14 November 2026",
 
   photos: [
-    "/Photos/1 (1).jpg",
-    "/Photos/1 (2).jpg",
-    "/Photos/1 (3).jpg",
-    "/Photos/1 (4).jpg",
-    "/Photos/1 (5).jpg",
+    photo1,
+    photo2,
+    photo3,
+    photo4,
+    photo5,
+    photo6,
+    photo7,
+    photo8,
+    photo9,
+    photo10,
   ],
 
   galleryImages: [
-    "/Photos/1 (1).jpg",
-    "/Photos/1 (2).jpg",
-    "/Photos/1 (3).jpg",
-    "/Photos/1 (4).jpg",
-    "/Photos/1 (5).jpg",
+    photo6,
+    photo7,
+    photo5,
+    photo4,
+    photo9,
+    photo8,
   ],
 
   hero: {
     title: "#DIVYADARSHAN",
     subtitle: "Adarsh & Divyansha",
     date: "14 November 2026",
-    image: "/Photos/1 (1).jpg",
+    image: photo10,
     locationName: "The Grand Jashan",
     locationCity: "Kamptee Road, Khairy, Nagpur 440029",
   },
@@ -156,6 +173,6 @@ export const weddingData = {
     url: "",
     youtubeEmbedUrl: "",
     title: "Our Story",
-    thumbnail: "/Photos/1 (3).jpg",
+    thumbnail: photo3,
   },
 };
