@@ -15,7 +15,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('/Photos/Buddha.png');
+  background-image: url('/Photos/Buddha.webp');
   background-size: 100% auto; /* Fits the width perfectly while keeping image proportions */
   background-repeat: repeat-y; /* Repeats vertically as you scroll down the page */
   background-position: center top;
