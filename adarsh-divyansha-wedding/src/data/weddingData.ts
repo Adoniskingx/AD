@@ -119,5 +119,39 @@ export const weddingData = {
 
   contact: {
     name: "Tabhane & Bagde Family",
-    phone: "80
-      
+    phone: "8087142596, 9922337877",
+    label: "Contact Us",
+    description: "We look forward to welcoming you with family and friends."
+  },
+
+  reminder: {
+    text: "At 7:00 PM \nPlease join us on time to grace the auspicious occasion.",
+    label: "Save the Date: 14 November 2026"
+  },
+
+  footer: {
+    text: "Awaiting to Welcome You",
+    family: "The Tabhane & Bagde Family",
+    weddingDateDisplay: "Saturday, 14 November 2026"
+  },
+
+  instagram: {
+    hashtag: "#DIVYADARSHAN",
+    handle: "@adarsh_divyansha",
+    title: "Instagram",
+    text: "Tag your moments"
+  },
+
+  music: {
+    track: "wedding-song.mp3",
+    title: "Our Special Song",
+    src: "wedding-song.mp3"
+  },
+
+  video: {
+    url: "",
+    youtubeEmbedUrl: "",
+    title: "Our Story",
+    thumbnail: "/Photos/6.webp"
+  }
+};
