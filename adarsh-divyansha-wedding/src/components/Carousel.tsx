@@ -31,7 +31,7 @@ export default function Carousel() {
       </div>
 
       <div className="bg-[#FAF7F2] text-stone-900 rounded-[2.5rem] p-4 md:p-6 shadow-2xl border-2 border-amber-400/40 space-y-6">
-        {/* Main Carousel Display */}
+        {/* Main Display */}
         <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl shadow-md border-2 border-amber-300/50 bg-stone-950">
           <img 
             src={photos[activeIdx]} 
@@ -50,7 +50,7 @@ export default function Carousel() {
           </button>
         </div>
 
-        {/* Thumbnail Strip */}
+        {/* Thumbnails */}
         <div className="flex items-center gap-3 overflow-x-auto pb-2 no-scrollbar justify-center">
           {photos.map((photo, idx) => (
             <button
