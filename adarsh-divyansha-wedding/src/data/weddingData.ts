@@ -5,6 +5,7 @@ import photo7 from '../assets/photos/7.jpg';
 import photo8 from '../assets/photos/8.jpg';
 import photo9 from '../assets/photos/9.jpg';
 import photo10 from '../assets/photos/10.jpg';
+import andPhoto from '../assets/photos/And.jpg';
 
 export interface FunctionEvent {
   id?: string;
@@ -31,7 +32,7 @@ export const weddingData = {
     groomParents: "Smt. Vandana & Shri Anil Tabhane",
     brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
     hashtag: "#DIVYADARSHAN",
-    coupleImage: photo10,
+    coupleImage: andPhoto,
     note: "Two Souls. One Promise • A Lifetime Together"
   },
 
@@ -69,7 +70,7 @@ export const weddingData = {
     invitationText: "We cordially invite your esteemed presence and blessings with family on the auspicious occasion of the wedding ceremony of",
     title: "#DIVYADARSHAN",
     date: "Saturday, 14 November 2026",
-    image: photo10,
+    image: andPhoto,
     locationName: "The Grand Jashan",
     locationCity: "Kamptee Road, Khairy, Nagpur"
   },
@@ -137,7 +138,7 @@ export const weddingData = {
 
   footer: {
     text: "Awaiting to Welcome You",
-    family: "Tabhane & Bagde Family",
+    family: "The Tabhane & Bagde Family",
     weddingDateDisplay: "Saturday, 14 November 2026"
   },
 
