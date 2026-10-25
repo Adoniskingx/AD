@@ -1,35 +1,57 @@
-import { useEffect, useMemo, useState } from "react";
-import { weddingData } from "../data/weddingData";
-
-function getRemaining() {
-  const ms = Math.max(0, new Date(weddingData.weddingDateISO).getTime() - Date.now());
-  return {
-    days: Math.floor(ms / 86400000),
-    hours: Math.floor((ms / 3600000) % 24),
-    minutes: Math.floor((ms / 60000) % 60),
-    seconds: Math.floor((ms / 1000) % 60),
-  };
-}
+import React, { useEffect, useState } from 'react';
 
 export default function Countdown() {
-  const [remaining, setRemaining] = useState(getRemaining());
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+
   useEffect(() => {
-    const id = window.setInterval(() => setRemaining(getRemaining()), 1000);
-    return () => window.clearInterval(id);
+    const weddingDate = new Date('2026-11-14T19:00:00+05:30').getTime();
+    const timer = setInterval(() => {
+      const now = new Date().getTime();
+      const diff = weddingDate - now;
+
+      if (diff > 0) {
+        setTimeLeft({
+          days: Math.floor(diff / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+          minutes: Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)),
+          seconds: Math.floor((diff % (1000 * 60)) / 1000),
+        });
+      }
+    }, 1000);
+
+    return () => clearInterval(timer);
   }, []);
-  const items = useMemo(() => Object.entries(remaining), [remaining]);
 
   return (
-    <section className="bg-ivory-50 px-6 py-24 text-center">
-      <p className="text-xs uppercase tracking-[0.3em] text-gold">Until forever begins</p>
-      <h2 className="serif mt-3 text-4xl text-maroon-950">Counting down with love</h2>
-      <div className="mx-auto mt-10 grid max-w-2xl grid-cols-2 gap-px border border-gold/30 bg-gold/30 sm:grid-cols-4" role="timer" aria-live="polite">
-        {items.map(([label, value]) => (
-          <div key={label} className="bg-ivory-50 px-4 py-8">
-            <div className="serif text-4xl text-maroon-700">{String(value).padStart(2, "0")}</div>
-            <div className="mt-2 text-[10px] uppercase tracking-[0.2em] text-brown/55">{label}</div>
+    <section className="relative z-10 max-w-xl mx-auto px-4 text-center space-y-4">
+      <h3 className="text-amber-100 font-serif text-xl md:text-2xl font-medium tracking-wide drop-shadow">
+        Counting down with love
+      </h3>
+
+      <div className="bg-[#16100F]/90 backdrop-blur-md rounded-[2.5rem] p-6 md:p-8 border-2 border-amber-500/40 shadow-2xl space-y-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          
+          <div className="bg-stone-950/80 p-4 rounded-2xl border border-amber-500/20 shadow-inner">
+            <span className="text-3xl font-serif text-amber-200 font-bold block">{timeLeft.days}</span>
+            <p className="text-[11px] text-amber-400/80 uppercase tracking-[0.2em] mt-1 font-serif">Days</p>
           </div>
-        ))}
+
+          <div className="bg-stone-950/80 p-4 rounded-2xl border border-amber-500/20 shadow-inner">
+            <span className="text-3xl font-serif text-amber-200 font-bold block">{timeLeft.hours}</span>
+            <p className="text-[11px] text-amber-400/80 uppercase tracking-[0.2em] mt-1 font-serif">Hours</p>
+          </div>
+
+          <div className="bg-stone-950/80 p-4 rounded-2xl border border-amber-500/20 shadow-inner">
+            <span className="text-3xl font-serif text-amber-200 font-bold block">{timeLeft.minutes}</span>
+            <p className="text-[11px] text-amber-400/80 uppercase tracking-[0.2em] mt-1 font-serif">Minutes</p>
+          </div>
+
+          <div className="bg-stone-950/80 p-4 rounded-2xl border border-amber-500/20 shadow-inner">
+            <span className="text-3xl font-serif text-amber-200 font-bold block">{timeLeft.seconds}</span>
+            <p className="text-[11px] text-amber-400/80 uppercase tracking-[0.2em] mt-1 font-serif">Seconds</p>
+          </div>
+
+        </div>
       </div>
     </section>
   );
