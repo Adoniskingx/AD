@@ -137,7 +137,7 @@ export const weddingData = {
 
   footer: {
     text: "Awaiting to Welcome You",
-    family: "The Tabhane & Bagde Family",
+    family: "Tabhane & Bagde Family",
     weddingDateDisplay: "Saturday, 14 November 2026"
   },
 
