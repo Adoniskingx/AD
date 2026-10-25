@@ -47,5 +47,32 @@ export const weddingData = {
   },
   instagram: {
     handle: "@divyadarshan",
+    url: "#",
+    title: "#DIVYADARSHAN",
+    text: "Share your moments with us"
+  },
+  music: {
+    title: "Wedding Ambient",
+    src: "https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3"
+  },
+  venue: {
+    name: "The Grand Jashan Lawn",
+    address: "Kamptee Road, Khairy, Nagpur, Maharashtra"
+  },
+  contact: {
+    phone: "+91 9876543210",
+    email: "contact@divyadarshan.com",
+    label: "Contact Us"
+  },
+  reminder: {
+    text: "Save the Date",
+    label: "Add to Calendar"
+  },
+  video: {
+    url: "#",
+    title: "Our Journey",
+    youtubeEmbedUrl: "#"
+  }
+};
 
-    
+export default weddingData;
