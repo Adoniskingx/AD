@@ -1,85 +1,60 @@
 import React from 'react';
-import { Calendar, Clock, MapPin } from 'lucide-react';
 import { weddingData } from '../data/weddingData';
+import { MapPin, Clock, Calendar } from 'lucide-react';
 
-export const Functions: React.FC = () => {
-  const functionsList = weddingData.functions || [
-    {
-      id: 'haldi',
-      title: 'Haldi Ceremony',
-      date: 'Friday, 13 November 2026',
-      time: '7:00 PM Onwards',
-      venue: 'Residence',
-      address: 'Plot No 9, Rathi Layout, Layout No 2, Godhani Road, Nagpur 440030',
-      description: 'Haldi Ceremony & Rituals',
-      mapUrl: 'https://maps.google.com/?q=Plot+No+9+Rathi+Layout+Godhani+Road+Nagpur',
-    },
-    {
-      id: 'wedding',
-      title: 'Wedding Ceremony',
-      date: 'Saturday, 14 November 2026',
-      time: '7:00 PM Onwards',
-      venue: 'The Grand Jashan',
-      address: 'Kamptee Road, Khairy, Nagpur 440029',
-      description: 'Wedding Ceremony & Reception',
-      mapUrl: 'https://maps.google.com/?q=The+Grand+Jashan+Kamptee+Road+Khairy+Nagpur',
-    },
-  ];
-
+export default function Functions() {
   return (
-    <section className="py-8 px-4 max-w-md mx-auto space-y-6">
-      {functionsList.map((event, index) => {
-        // Fallbacks for data compatibility
-        const title = event.title;
-        const date = event.date;
-        const time = event.time;
-        const venue = (event as any).venue || '';
-        const address = event.address;
-        const description = (event as any).description || '';
-        const mapUrl = (event as any).mapUrl || (event as any).mapLink || '#';
+    <section className="py-20 px-4">
+      <div className="max-w-4xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-serif text-white mb-4">Wedding Events</h2>
+          <div className="w-16 h-0.5 bg-amber-400/60 mx-auto"></div>
+        </div>
 
-        return (
-          <div
-            key={event.id || index}
-            className="bg-white rounded-[28px] p-6 text-gray-900 space-y-4 text-left shadow-lg border border-gray-100"
-          >
-            {/* Ceremony Title */}
-            <h3 className="text-2xl font-serif font-medium text-gray-900 tracking-wide">
-              {title}
-            </h3>
-
-            {/* Date & Time */}
-            <div className="space-y-1.5 text-sm text-amber-900/80">
-              <div className="flex items-center gap-2.5">
-                <Calendar className="w-4 h-4 text-amber-800/70 shrink-0" />
-                <span className="font-normal">{date}</span>
+        <div className="space-y-8">
+          {weddingData.functions.map((func) => (
+            <div 
+              key={func.id} 
+              className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-amber-500/20 hover:border-amber-500/50 transition-all duration-300 text-left"
+            >
+              <h3 className="text-2xl font-serif text-gray-900 mb-3">{func.title}</h3>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-700 mb-4">
+                <div className="flex items-center gap-2">
+                  <Calendar className="w-4 h-4 text-amber-600 flex-shrink-0" />
+                  <span>{func.date}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Clock className="w-4 h-4 text-amber-600 flex-shrink-0" />
+                  <span>{func.time}</span>
+                </div>
               </div>
-              <div className="flex items-center gap-2.5">
-                <Clock className="w-4 h-4 text-amber-800/70 shrink-0" />
-                <span className="font-normal">{time}</span>
-              </div>
-            </div>
 
-            {/* Venue & Location Address */}
-            <div className="space-y-1 pt-1">
-              {venue && (
-                <h4 className="font-semibold text-gray-900 text-base">
-                  {venue}
-                </h4>
+              <div className="mb-4">
+                <p className="font-semibold text-gray-900">{func.venue}</p>
+                <p className="text-sm text-gray-600 flex items-start gap-2 mt-1">
+                  <MapPin className="w-4 h-4 text-amber-600 flex-shrink-0 mt-0.5" />
+                  <span>{func.address}</span>
+                </p>
+              </div>
+
+              <p className="text-gray-700 text-sm mb-6 italic">{func.description}</p>
+
+              {func.mapUrl && (
+                <a
+                  href={func.mapUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-4 py-2 bg-[#0047AB] text-white text-sm rounded-lg hover:bg-[#00388a] transition-colors shadow-sm"
+                >
+                  <MapPin className="w-4 h-4" />
+                  <span>View on Google Maps</span>
+                </a>
               )}
-              <div className="flex items-start gap-2.5 text-sm text-gray-600 leading-relaxed">
-                <MapPin className="w-4 h-4 text-amber-800/70 shrink-0 mt-0.5" />
-                <span>{address}</span>
-              </div>
             </div>
-
-            {/* Subtitle / Description */}
-            {description && (
-              <p className="text-sm text-gray-500 pt-1">
-                {description}
-              </p>
-            )}
-
-            {/* Google Maps Button */}
-            <div className="pt
-            
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
