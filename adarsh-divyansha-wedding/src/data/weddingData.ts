@@ -1,78 +1,172 @@
+import img10 from '../assets/photos/10.jpg';
+import img4 from '../assets/photos/4.jpg';
+import img5 from '../assets/photos/5.jpg';
+import img6 from '../assets/photos/6.jpg';
+import img7 from '../assets/photos/7.jpg';
+import img8 from '../assets/photos/8.jpg';
+import img9 from '../assets/photos/9.jpg';
+
+export interface FunctionEvent {
+  id?: string;
+  title: string;
+  date: string;
+  time: string;
+  venue: string;
+  address: string;
+  mapLink?: string;
+  mapUrl?: string;
+  description?: string;
+}
+
+export interface ThingToKnow {
+  title: string;
+  description: string;
+  iconName: string;
+}
+
 export const weddingData = {
   couple: {
     groom: "Adarsh",
     bride: "Divyansha",
-    groomParents: "Son of Smt. Vandana & Shri Anil Tabhane",
-    brideParents: "Daughter of Late Smt. Sangita & Shri Sanjay Bagde",
+    groomParents: "Smt. Vandana & Shri Anil Tabhane",
+    brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
     hashtag: "#DIVYADARSHAN",
-    coupleImage: "/Photos/1.jpg",
+    coupleImage: img10, // Image 10 on top
+    note: "Two Souls. One Promise • A Lifetime Together",
   },
+
   eventDetails: {
-    tagline: "In the peaceful and sacred light of the Triratna",
-    blessingText: "Atta Deep Bhava — Be a light unto yourself.",
-    motto: "Two Souls. One Promise. A Lifetime Together",
-    weddingDateDisplay: "14 November 2026",
-    weddingDateISO: "2026-11-14T19:00:00+05:30",
+    tagline: "Two Souls. One Promise • A Lifetime Together",
+    blessingText: "In the peaceful and sacred light of the Triratna",
+    motto: "Atta Deep Bhava",
+    weddingDateDisplay: "Saturday, 14 November 2026",
   },
-  weddingDateISO: "2026-11-14T19:00:00+05:30",
-  weddingDateDisplay: "14 November 2026",
+
+  weddingDateISO: "2026-11-14T19:00:00",
+  weddingDateDisplay: "Saturday, 14 November 2026",
+
+  // Browsable carousel & gallery in requested order: 6, 7, 5, 4, 9, 8 (No 10)
+  photos: [
+    img6,
+    img7,
+    img5,
+    img4,
+    img9,
+    img8,
+  ],
+
+  galleryImages: [
+    img6,
+    img7,
+    img5,
+    img4,
+    img9,
+    img8,
+  ],
+
   hero: {
-    title: "Adarsh & Divyansha",
-    subtitle: "#DIVYADARSHAN",
-    locationName: "The Grand Jashan Lawn",
-    locationCity: "Nagpur",
+    title: "#DIVYADARSHAN",
+    subtitle: "Adarsh & Divyansha",
+    date: "14 November 2026",
+    image: img10, // Image 10 on top
+    locationName: "Deekshabhoomi Stupa & Torana Gateway",
+    locationCity: "Nagpur, Maharashtra",
   },
-  events: [
+
+  invitation: {
+    heading: "Wedding Invitation",
+    text: "In the peaceful and sacred light of the Triratna",
+    greeting: "In the peaceful and sacred light of the Triratna",
+    message: "We cordially invite you to celebrate with us.",
+    familyNames: "The Tabhane & Bagde Family",
+    groomParents: "Smt. Vandana & Shri Anil Tabhane",
+    brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
+  },
+
+  functions: [
     {
-      name: "Haldi Ceremony",
-      time: "7:00 PM Onwards",
+      id: "haldi",
+      title: "Haldi Ceremony",
       date: "Friday, 13 November 2026",
-      venue: "Groom's Residence",
-      address: "Plot No. 9, Rathi Layout, Layout No. 2, Godhani Road, Nagpur",
-      mapLink: "#"
+      time: "7:00 PM Onwards",
+      venue: "Residence",
+      address: "Plot No 9, Rathi Layout, Layout No 2, Godhani Road, Nagpur 440030",
+      description: "Haldi Ceremony & Rituals",
+      mapLink: "https://maps.google.com/?q=Plot+No+9+Rathi+Layout+Godhani+Road+Nagpur",
+      mapUrl: "https://maps.google.com/?q=Plot+No+9+Rathi+Layout+Godhani+Road+Nagpur",
     },
     {
-      name: "Wedding & Reception",
-      time: "7:00 PM Onwards",
+      id: "wedding",
+      title: "Wedding Ceremony & Rituals",
       date: "Saturday, 14 November 2026",
-      venue: "The Grand Jashan Lawn",
-      address: "Kamptee Road, Khairy, Nagpur, Maharashtra",
-      mapLink: "#"
-    }
-  ],
-  footer: {
-    message: "Awaiting to Welcome You",
-    familyName: "The Tabhane & Bagde Family",
-    text: "Awaiting to Welcome You"
-  },
-  instagram: {
-    handle: "@divyadarshan",
-    url: "#",
-    title: "#DIVYADARSHAN",
-    text: "Share your moments with us"
-  },
-  music: {
-    title: "Wedding Ambient",
-    src: "https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3"
-  },
-  venue: {
-    name: "The Grand Jashan Lawn",
-    address: "Kamptee Road, Khairy, Nagpur, Maharashtra"
-  },
-  contact: {
-    phone: "+91 9876543210",
-    email: "contact@divyadarshan.com",
-    label: "Contact Us"
-  },
-  reminder: {
-    text: "Save the Date",
-    label: "Add to Calendar"
-  },
-  video: {
-    url: "#",
-    title: "Our Journey",
-    youtubeEmbedUrl: "#"
-  }
-};
+      time: "7:00 PM Onwards",
+      venue: "The Grand Jashan",
+      address: "Kamptee Road, Khairy, Nagpur 440029",
+      description: "Wedding Ceremony & Reception",
+      mapLink: "https://maps.google.com/?q=The+Grand+Jashan+Kamptee+Road+Khairy+Nagpur",
+      mapUrl: "https://maps.google.com/?q=The+Grand+Jashan+Kamptee+Road+Khairy+Nagpur",
+    },
+  ] as FunctionEvent[],
 
-export default weddingData;
+  thingsToKnow: [
+    {
+      title: "Venue & Parking",
+      description: "Ample parking space available at both venues with valet assistance.",
+      iconName: "MapPin",
+    },
+    {
+      title: "Dress Code",
+      description: "Traditional / Ethnic wear for both events.",
+      iconName: "Sparkles",
+    },
+    {
+      title: "Photography",
+      description: "Tag your photos with #DIVYADARSHAN on Instagram!",
+      iconName: "Camera",
+    },
+  ] as ThingToKnow[],
+
+  venue: {
+    name: "The Grand Jashan",
+    address: "Kamptee Road, Khairy, Nagpur 440029",
+    label: "Venue Details",
+  },
+
+  contact: {
+    name: "Tabhane & Bagde Family",
+    phone: "Nagpur, Maharashtra",
+    label: "Contact Us",
+    description: "We look forward to welcoming you with family and friends.",
+  },
+
+  reminder: {
+    text: "Please join us on time to grace the auspicious occasion.",
+    label: "Save the Date",
+  },
+
+  footer: {
+    text: "Awaiting to Welcome You",
+    family: "Tabhane Family, Relatives & Friends",
+    weddingDateDisplay: "Saturday, 14 November 2026",
+  },
+
+  instagram: {
+    hashtag: "#DIVYADARSHAN",
+    handle: "@adarsh_divyansha",
+    title: "Instagram",
+    text: "Tag your moments",
+  },
+
+  music: {
+    track: "wedding-song.mp3",
+    title: "Our Special Song",
+    src: "wedding-song.mp3",
+  },
+
+  video: {
+    url: "",
+    youtubeEmbedUrl: "",
+    title: "Our Story",
+    thumbnail: img6,
+  },
+};
