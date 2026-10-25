@@ -8,10 +8,13 @@
   }
 }
 
-/* Fixed Background Layer for Buddha.png */
+/* Scrolling Background Layer for Buddha.png */
 .sacred-bg-layer {
-  position: fixed;
-  inset: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-image: url('/Photos/Buddha.png');
   background-size: cover;
   background-position: center top;
@@ -21,7 +24,7 @@
   z-index: 0;
 }
 
-/* Soft Dark Overlay for Readability */
+/* Fixed Soft Dark Overlay for Readability */
 .sacred-overlay-layer {
   position: fixed;
   inset: 0;
