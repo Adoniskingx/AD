@@ -1,11 +1,3 @@
-import photo4 from '../assets/photos/4.jpg';
-import photo5 from '../assets/photos/5.jpg';
-import photo6 from '../assets/photos/6.jpg';
-import photo7 from '../assets/photos/7.jpg';
-import photo8 from '../assets/photos/8.jpg';
-import photo9 from '../assets/photos/9.jpg';
-import photo10 from '../assets/photos/10.jpg';
-
 export interface FunctionEvent {
   id?: string;
   title: string;
@@ -31,12 +23,12 @@ export const weddingData = {
     groomParents: "Smt. Vandana & Shri Anil Tabhane",
     brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
     hashtag: "#DIVYADARSHAN",
-    coupleImage: photo10,
+    coupleImage: "/Photos/1 (1).jpg",
     note: "Two Souls. One Promise • A Lifetime Together",
   },
   
   eventDetails: {
-    tagline: "Two Souls. One Promise. <br /> A Lifetime Together",
+    tagline: "Two Souls. One Promise • A Lifetime Together",
     blessingText: "In the peaceful and sacred light of the Triratna",
     motto: "Atta Deep Bhava",
     weddingDateDisplay: "Saturday, 14 November 2026",
@@ -45,23 +37,36 @@ export const weddingData = {
   weddingDateISO: "2026-11-14T19:00:00",
   weddingDateDisplay: "Saturday, 14 November 2026",
 
-  photos: [photo6, photo7, photo5, photo4, photo9, photo8],
-  galleryImages: [photo6, photo7, photo5, photo4, photo9, photo8],
+  photos: [
+    "/Photos/1 (1).jpg",
+    "/Photos/1 (2).jpg",
+    "/Photos/1 (3).jpg",
+    "/Photos/1 (4).jpg",
+    "/Photos/1 (5).jpg",
+  ],
+
+  galleryImages: [
+    "/Photos/1 (1).jpg",
+    "/Photos/1 (2).jpg",
+    "/Photos/1 (3).jpg",
+    "/Photos/1 (4).jpg",
+    "/Photos/1 (5).jpg",
+  ],
 
   hero: {
     title: "#DIVYADARSHAN",
     subtitle: "Adarsh & Divyansha",
     date: "14 November 2026",
-    image: photo10,
-    locationName: "Deekshabhoomi Stupa & Torana Gateway",
-    locationCity: "Nagpur, Maharashtra",
+    image: "/Photos/1 (1).jpg",
+    locationName: "The Grand Jashan",
+    locationCity: "Kamptee Road, Khairy, Nagpur 440029",
   },
 
   invitation: {
     heading: "Wedding Invitation",
     text: "In the peaceful and sacred light of the Triratna",
     greeting: "In the peaceful and sacred light of the Triratna",
-    message: "We cordially invite you to celebrate with us.",
+    message: "We cordially invite your esteemed presence and blessings with family on the auspicious occasion of the wedding ceremony of",
     familyNames: "The Tabhane & Bagde Family",
     groomParents: "Smt. Vandana & Shri Anil Tabhane",
     brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
@@ -151,6 +156,6 @@ export const weddingData = {
     url: "",
     youtubeEmbedUrl: "",
     title: "Our Story",
-    thumbnail: photo6,
+    thumbnail: "/Photos/1 (3).jpg",
   },
 };
