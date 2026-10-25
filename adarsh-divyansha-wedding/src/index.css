@@ -8,7 +8,7 @@
   }
 }
 
-/* Scrolling & Repeating Background Layer for Buddha.png */
+/* Background Layer: Fits exact screen view and tiles cleanly per screen height */
 .sacred-bg-layer {
   position: absolute;
   top: 0;
@@ -16,8 +16,8 @@
   right: 0;
   bottom: 0;
   background-image: url('/Photos/Buddha.png');
-  background-size: 100% auto; /* Fits screen width, maintains image proportions */
-  background-repeat: repeat-y; /* Repeats vertically as you scroll down */
+  background-size: 100vw 100vh; /* Forces each background instance to match the exact viewport width and height */
+  background-repeat: repeat-y; /* Repeats downwards page-by-page as you scroll */
   background-position: center top;
   opacity: 0.35;
   pointer-events: none;
