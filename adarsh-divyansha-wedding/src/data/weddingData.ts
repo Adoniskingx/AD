@@ -25,18 +25,18 @@ export interface ThingToKnow {
 }
 
 export const weddingData = {
-    couple: {
+  couple: {
     groom: "Adarsh",
     bride: "Divyansha",
     groomParents: "Smt. Vandana & Shri Anil Tabhane",
     brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
     hashtag: "#DIVYADARSHAN",
     coupleImage: photo10,
-    note: "Two Souls. One Promise.\nA Lifetime Together" // Using \n forces a clean new line
+    note: "Two Souls. One Promise.\nA Lifetime Together"
   },
 
   eventDetails: {
-    tagline: "Two Souls. One Promise.\nA Lifetime Together", // Using \n forces a clean new line
+    tagline: "Two Souls. One Promise.\nA Lifetime Together",
     blessingText: "In the peaceful and sacred light of the Triratna,",
     motto: "|| Atta Deep Bhava ||",
     weddingDateDisplay: "Saturday, 14 November 2026"
@@ -64,9 +64,12 @@ export const weddingData = {
   ],
 
   hero: {
-    title: "#DIVYADARSHAN",
+    motto: "|| Atta Deep Bhava ||",
+    blessing: "In the peaceful and sacred light of the Triratna,",
+    invitationText: "We cordially invite your esteemed presence and blessings with family on the auspicious occasion of the wedding ceremony of",
     subtitle: "Adarsh & Divyansha",
-    date: "14 November 2026",
+    title: "#DIVYADARSHAN",
+    date: "Saturday, 14 November 2026",
     image: photo10,
     locationName: "The Grand Jashan",
     locationCity: "Kamptee Road, Khairy, Nagpur"
