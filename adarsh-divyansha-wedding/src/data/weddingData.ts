@@ -1,7 +1,6 @@
 export const weddingData = {
   couple: {
     groom: "Adarsh",
-    divyansha: "Divyansha", // added for component compatibility if needed
     bride: "Divyansha",
     groomParents: "Son of Smt. Vandana & Shri Anil Tabhane",
     brideParents: "Daughter of Late Smt. Sangita & Shri Sanjay Bagde",
@@ -20,6 +19,8 @@ export const weddingData = {
   hero: {
     title: "Adarsh & Divyansha",
     subtitle: "#DIVYADARSHAN",
+    locationName: "The Grand Jashan Lawn",
+    locationCity: "Nagpur",
   },
   events: [
     {
@@ -41,32 +42,10 @@ export const weddingData = {
   ],
   footer: {
     message: "Awaiting to Welcome You",
-    familyName: "The Tabhane & Bagde Family"
+    familyName: "The Tabhane & Bagde Family",
+    text: "Awaiting to Welcome You"
   },
   instagram: {
     handle: "@divyadarshan",
-    url: "#"
-  },
-  music: {
-    title: "Wedding Ambient",
-    src: "https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3"
-  },
-  venue: {
-    name: "The Grand Jashan Lawn",
-    address: "Kamptee Road, Khairy, Nagpur, Maharashtra"
-  },
-  contact: {
-    phone: "+91 9876543210",
-    email: "contact@divyadarshan.com"
-  },
-  reminder: {
-    text: "Save the Date"
-  },
-  video: {
-    url: "#",
-    title: "Our Journey"
-  }
-};
 
-export default weddingData;
-  
+    
