@@ -47,10 +47,24 @@ export const Hero: React.FC = () => {
         )}
 
         {/* Divyansha Name */}
-        <div className="mt-2 mb-6">
+        <div className="mt-2 mb-4">
           <h2 className="text-3xl md:text-4xl font-serif text-amber-200 tracking-wider">
             {weddingData.couple.bride}
           </h2>
+        </div>
+
+        {/* Parent Names */}
+        <div className="mt-4 pt-4 border-t border-amber-500/20 text-xs md:text-sm text-amber-100/80 space-y-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <p className="text-[10px] uppercase tracking-widest text-amber-400/70 mb-0.5">Groom's Parents</p>
+              <p className="font-medium text-amber-100">{weddingData.hero.groomParents}</p>
+            </div>
+            <div>
+              <p className="text-[10px] uppercase tracking-widest text-amber-400/70 mb-0.5">Bride's Parents</p>
+              <p className="font-medium text-amber-100">{weddingData.hero.brideParents}</p>
+            </div>
+          </div>
         </div>
 
         {/* Hashtag / Main Title (Italicized and reduced font size) */}
