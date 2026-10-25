@@ -1,11 +1,3 @@
-import photo4 from '../assets/photos/4.jpg';
-import photo5 from '../assets/photos/5.jpg';
-import photo6 from '../assets/photos/6.jpg';
-import photo7 from '../assets/photos/7.jpg';
-import photo8 from '../assets/photos/8.jpg';
-import photo9 from '../assets/photos/9.jpg';
-import photo10 from '../assets/photos/10.jpg';
-
 export interface FunctionEvent {
   id?: string;
   title: string;
@@ -25,61 +17,62 @@ export interface ThingToKnow {
 }
 
 export const weddingData = {
-    couple: {
+  couple: {
     groom: "Adarsh",
     bride: "Divyansha",
     groomParents: "Smt. Vandana & Shri Anil Tabhane",
     brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
     hashtag: "#DIVYADARSHAN",
-    coupleImage: photo10,
-    note: "Two Souls. One Promise.\nA Lifetime Together" // Using \n forces a clean new line
+    coupleImage: "/Photos/10.jpg",
+    note: "Two Souls. One Promise • A Lifetime Together",
   },
 
   eventDetails: {
-    tagline: "Two Souls. One Promise.\nA Lifetime Together", // Using \n forces a clean new line
-    blessingText: "In the peaceful and sacred light of the Triratna",
-    motto: "Atta Deep Bhava",
-    weddingDateDisplay: "Saturday, 14 November 2026"
+    tagline: "Two Souls. One Promise • A Lifetime Together",
+    blessingText: "In the peaceful and sacred light of the Triratna,",
+    motto: "|| Atta Deep Bhava ||",
+    weddingDateDisplay: "Saturday, 14 November 2026",
   },
 
   weddingDateISO: "2026-11-14T19:00:00",
   weddingDateDisplay: "Saturday, 14 November 2026",
 
   photos: [
-    photo6,
-    photo7,
-    photo5,
-    photo4,
-    photo9,
-    photo8
+    "/Photos/6.jpg",
+    "/Photos/7.jpg",
+    "/Photos/5.jpg",
+    "/Photos/4.jpg",
+    "/Photos/9.jpg",
+    "/Photos/8.jpg",
   ],
 
   galleryImages: [
-    photo6,
-    photo7,
-    photo5,
-    photo4,
-    photo9,
-    photo8
+    "/Photos/6.jpg",
+    "/Photos/7.jpg",
+    "/Photos/5.jpg",
+    "/Photos/4.jpg",
+    "/Photos/9.jpg",
+    "/Photos/8.jpg",
   ],
 
   hero: {
     title: "#DIVYADARSHAN",
     subtitle: "Adarsh & Divyansha",
     date: "14 November 2026",
-    image: photo10,
-    locationName: "The Grand Jashan",
-    locationCity: "Kamptee Road, Khairy, Nagpur"
+    image: "/Photos/10.jpg",
+    locationName: "The Grand Jashan, Kamptee Road, Khairy",
+    locationCity: "Nagpur, Maharashtra",
   },
 
   invitation: {
     heading: "Wedding Invitation",
-    text: "In the peaceful and sacred light of the Triratna",
-    greeting: "In the peaceful and sacred light of the Triratna",
-    message: "We cordially invite you to celebrate with us.",
+    motto: "|| Atta Deep Bhava ||",
+    text: "In the peaceful and sacred light of the Triratna,",
+    greeting: "In the peaceful and sacred light of the Triratna,",
+    message: "We cordially invite your esteemed presence and blessings with family on the auspicious occasion of the wedding ceremony of",
     familyNames: "The Tabhane & Bagde Family",
     groomParents: "Smt. Vandana & Shri Anil Tabhane",
-    brideParents: "Late Smt. Sangita & Shri Sanjay Bagde"
+    brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
   },
 
   functions: [
@@ -92,80 +85,80 @@ export const weddingData = {
       address: "Plot No 9, Rathi Layout, Layout No 2, Godhani Road, Nagpur 440030",
       description: "Haldi Ceremony & Rituals",
       mapLink: "https://maps.google.com/?q=Plot+No+9+Rathi+Layout+Godhani+Road+Nagpur",
-      mapUrl: "https://maps.google.com/?q=Plot+No+9+Rathi+Layout+Godhani+Road+Nagpur"
+      mapUrl: "https://maps.google.com/?q=Plot+No+9+Rathi+Layout+Godhani+Road+Nagpur",
     },
     {
       id: "wedding",
-      title: "Wedding Ceremony",
+      title: "Wedding Ceremony & Rituals",
       date: "Saturday, 14 November 2026",
       time: "7:00 PM Onwards",
       venue: "The Grand Jashan",
       address: "Kamptee Road, Khairy, Nagpur 440029",
       description: "Wedding Ceremony & Reception",
       mapLink: "https://maps.google.com/?q=The+Grand+Jashan+Kamptee+Road+Khairy+Nagpur",
-      mapUrl: "https://maps.google.com/?q=The+Grand+Jashan+Kamptee+Road+Khairy+Nagpur"
-    }
+      mapUrl: "https://maps.google.com/?q=The+Grand+Jashan+Kamptee+Road+Khairy+Nagpur",
+    },
   ] as FunctionEvent[],
 
   thingsToKnow: [
     {
       title: "Venue & Parking",
       description: "Ample parking space available at both venues with valet assistance.",
-      iconName: "MapPin"
+      iconName: "MapPin",
     },
     {
       title: "Dress Code",
       description: "Traditional / Ethnic wear for both events.",
-      iconName: "Sparkles"
+      iconName: "Sparkles",
     },
     {
       title: "Photography",
       description: "Tag your photos with #DIVYADARSHAN on Instagram!",
-      iconName: "Camera"
-    }
+      iconName: "Camera",
+    },
   ] as ThingToKnow[],
 
   venue: {
     name: "The Grand Jashan",
     address: "Kamptee Road, Khairy, Nagpur 440029",
-    label: "Venue Details"
+    label: "Venue Details",
   },
 
   contact: {
     name: "Tabhane & Bagde Family",
-    phone: "8087142596, 9922337877",
+    phone: "Nagpur, Maharashtra",
     label: "Contact Us",
-    description: "We look forward to welcoming you with family and friends."
+    description: "We look forward to welcoming you with family and friends.",
   },
 
   reminder: {
-    text: "At 7:00 PM \nPlease join us on time to grace the auspicious occasion.",
-    label: "Save the Date: 14 November 2026"
+    text: "Please join us on time to grace the auspicious occasion.",
+    label: "Save the Date",
   },
 
   footer: {
     text: "Awaiting to Welcome You",
     family: "Tabhane Family, Relatives & Friends",
-    weddingDateDisplay: "Saturday, 14 November 2026"
+    weddingDateDisplay: "Saturday, 14 November 2026",
   },
 
   instagram: {
     hashtag: "#DIVYADARSHAN",
     handle: "@adarsh_divyansha",
     title: "Instagram",
-    text: "Tag your moments"
+    text: "Tag your moments",
   },
 
   music: {
     track: "wedding-song.mp3",
     title: "Our Special Song",
-    src: "wedding-song.mp3"
+    src: "wedding-song.mp3",
   },
 
   video: {
     url: "",
     youtubeEmbedUrl: "",
     title: "Our Story",
-    thumbnail: photo6
-  }
+    thumbnail: "/Photos/6.jpg",
+  },
 };
