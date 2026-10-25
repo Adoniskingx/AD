@@ -4,11 +4,11 @@
 
 @layer base {
   html, body {
-    @apply bg-[#0D0C0B] text-[#FDF8F0] antialiased selection:bg-amber-200 selection:text-amber-900 min-h-screen m-0 p-0;
+    @apply bg-[#0D0C0B] text-[#FDF8F0] antialiased selection:bg-amber-200 selection:text-amber-900 min-h-screen m-0 p-0 overflow-x-hidden;
   }
 }
 
-/* Background Layer: Fits exact screen view and tiles cleanly per screen height */
+/* Background Layer: Scales to the screen width and repeats naturally as you scroll */
 .sacred-bg-layer {
   position: absolute;
   top: 0;
@@ -16,8 +16,8 @@
   right: 0;
   bottom: 0;
   background-image: url('/Photos/Buddha.png');
-  background-size: 100vw 100vh; /* Forces each background instance to match the exact viewport width and height */
-  background-repeat: repeat-y; /* Repeats downwards page-by-page as you scroll */
+  background-size: 100% auto; /* Fits the width perfectly while keeping image proportions */
+  background-repeat: repeat-y; /* Repeats vertically as you scroll down the page */
   background-position: center top;
   opacity: 0.35;
   pointer-events: none;
