@@ -3,7 +3,7 @@ import { weddingData } from '../data/weddingData';
 
 export default function Couple() {
   return (
-    <section className="text-center">
+    <section className="text-center max-w-xl mx-auto px-4">
       <div className="bg-[#FAF7F2] text-stone-900 rounded-[2.5rem] p-6 md:p-10 shadow-2xl border-2 border-amber-400/40 space-y-8">
         <div>
           <div className="flex items-center justify-center gap-2 mb-2 text-amber-600">
