@@ -22,7 +22,7 @@ export const App: React.FC = () => {
       {/* Dark Ambient Vignette Overlay */}
       <div className="fixed inset-0 z-[1] pointer-events-none bg-[radial-gradient(circle_at_center,rgba(10,7,7,0.3)_0%,rgba(10,7,7,0.92)_100%)]" />
 
-      {/* Main Streamlined Luxury Flow */}
+      {/* Main Clean Flow */}
       <main className="relative z-10 space-y-12 py-8 max-w-xl mx-auto px-4">
         <Hero />
         <Invitation />
