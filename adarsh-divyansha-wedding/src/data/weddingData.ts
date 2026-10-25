@@ -1,3 +1,11 @@
+import photo4 from '../assets/photos/4.jpg';
+import photo5 from '../assets/photos/5.jpg';
+import photo6 from '../assets/photos/6.jpg';
+import photo7 from '../assets/photos/7.jpg';
+import photo8 from '../assets/photos/8.jpg';
+import photo9 from '../assets/photos/9.jpg';
+import photo10 from '../assets/photos/10.jpg';
+
 export interface FunctionEvent {
   id?: string;
   title: string;
@@ -23,7 +31,7 @@ export const weddingData = {
     groomParents: "Smt. Vandana & Shri Anil Tabhane",
     brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
     hashtag: "#DIVYADARSHAN",
-    coupleImage: "/Photos/10.jpg",
+    coupleImage: photo10,
     note: "Two Souls. One Promise • A Lifetime Together"
   },
 
@@ -37,23 +45,22 @@ export const weddingData = {
   weddingDateISO: "2026-11-14T19:00:00",
   weddingDateDisplay: "Saturday, 14 November 2026",
 
-  // Carousel & Gallery in exact requested order: 6, 7, 5, 4, 9, 8 (No 10 repetition)
   photos: [
-    "/Photos/6.jpg",
-    "/Photos/7.jpg",
-    "/Photos/5.jpg",
-    "/Photos/4.jpg",
-    "/Photos/9.jpg",
-    "/Photos/8.jpg"
+    photo6,
+    photo7,
+    photo5,
+    photo4,
+    photo9,
+    photo8
   ],
 
   galleryImages: [
-    "/Photos/6.jpg",
-    "/Photos/7.jpg",
-    "/Photos/5.jpg",
-    "/Photos/4.jpg",
-    "/Photos/9.jpg",
-    "/Photos/8.jpg"
+    photo6,
+    photo7,
+    photo5,
+    photo4,
+    photo9,
+    photo8
   ],
 
   hero: {
@@ -62,12 +69,9 @@ export const weddingData = {
     invitationText: "We cordially invite your esteemed presence and blessings with family on the auspicious occasion of the wedding ceremony of",
     title: "#DIVYADARSHAN",
     date: "Saturday, 14 November 2026",
-    image: "/Photos/10.jpg",
+    image: photo10,
     locationName: "The Grand Jashan",
-    locationCity: "Kamptee Road, Khairy, Nagpur",
-    groomParents: "Smt. Vandana & Shri Anil Tabhane",
-    brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
-    familyNames: "The Tabhane & Bagde Family"
+    locationCity: "Kamptee Road, Khairy, Nagpur"
   },
 
   functions: [
@@ -133,7 +137,7 @@ export const weddingData = {
 
   footer: {
     text: "Awaiting to Welcome You",
-    family: "Tabhane Family, Relatives & Friends",
+    family: "The Tabhane & Bagde Family",
     weddingDateDisplay: "Saturday, 14 November 2026"
   },
 
@@ -154,6 +158,6 @@ export const weddingData = {
     url: "",
     youtubeEmbedUrl: "",
     title: "Our Story",
-    thumbnail: "/Photos/6.jpg"
+    thumbnail: photo6
   }
 };
