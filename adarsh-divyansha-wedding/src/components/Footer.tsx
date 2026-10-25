@@ -1,11 +1,22 @@
-import { weddingData } from "../data/weddingData";
+import React from 'react';
+import { weddingData } from '../data/weddingData';
 
-export default function Footer() {
+export const Footer: React.FC = () => {
   return (
-    <footer className="bg-ivory-100 px-6 py-16 text-center">
-      <div className="editorial-rule mx-auto mb-8 w-32" />
-      <p className="serif text-3xl text-maroon-700">{weddingData.footer.text}</p>
-      <p className="mt-4 text-[10px] uppercase tracking-[0.25em] text-brown/45">{weddingData.weddingDateDisplay}</p>
+    <footer className="py-16 px-4 text-center">
+      <div className="max-w-xl mx-auto card-dark-gold rounded-2xl p-8 shadow-xl border border-amber-500/30">
+        <p className="text-amber-300 font-serif italic text-lg mb-2">
+          {weddingData.footer.text}
+        </p>
+        <h3 className="text-2xl md:text-3xl font-serif text-gold tracking-wide mb-3">
+          {weddingData.footer.family}
+        </h3>
+        <p className="text-amber-100/80 text-sm md:text-base tracking-widest uppercase">
+          {weddingData.footer.weddingDateDisplay}
+        </p>
+      </div>
     </footer>
   );
-}
+};
+
+export default Footer;
