@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-stone-950 text-[#FDF8F0] antialiased min-h-screen font-sans;
+    background-color: #0c0a09;
+  }
+}
+
+.line-break-text {
+  white-space: pre-line;
+}
