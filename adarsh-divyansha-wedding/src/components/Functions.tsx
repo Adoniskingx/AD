@@ -1,6 +1,25 @@
 import React from 'react';
-import { weddingData } from '../data/weddingData';
 import { MapPin, Calendar, Clock } from 'lucide-react';
+
+interface WeddingEvent {
+  name: string;
+  time: string;
+  date: string;
+  venue: string;
+  address: string;
+  mapLink?: string;
+}
+
+const events: WeddingEvent[] = [
+  {
+    name: "Wedding Ceremony",
+    time: "10:00 AM Onwards",
+    date: "Selected Date",
+    venue: "Sacred Venue",
+    address: "Ceremony Location Address",
+    mapLink: "https://maps.google.com"
+  }
+];
 
 export const Functions: React.FC = () => {
   return (
@@ -15,7 +34,7 @@ export const Functions: React.FC = () => {
       </div>
 
       <div className="space-y-8">
-        {weddingData.events.map((event, index) => (
+        {events.map((event: WeddingEvent, index: number) => (
           <div key={index} className="space-y-3">
             
             {/* Crimson Banner */}
