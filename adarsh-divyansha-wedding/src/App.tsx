@@ -1,40 +1,33 @@
 import React from 'react';
-import Hero from './components/Hero';
-import Countdown from './components/Countdown';
-import Couple from './components/Couple';
-import Carousel from './components/Carousel';
-import Functions from './components/Functions';
-import ThingsToKnow from './components/ThingsToKnow';
-import Video from './components/Video';
-import { Invitation } from './components/Invitation';
-import Footer from './components/Footer';
+import { Hero } from './components/Hero';
+import { Functions } from './components/Functions';
+import { Gallery } from './components/Gallery';
+import { Venue } from './components/Venue';
+import { ThingsToKnow } from './components/ThingsToKnow';
+import { Contact } from './components/Contact';
+import { Footer } from './components/Footer';
+import { MusicPlayer } from './components/MusicPlayer';
 
-export const App: React.FC = () => {
+export function App() {
   return (
-    <div className="relative min-h-screen text-[#FDF8F0] overflow-x-hidden bg-stone-950">
-      {/* Sacred Background Layer via Public Asset URL */}
-      <div 
-        className="fixed inset-0 z-0 pointer-events-none bg-cover bg-center bg-no-repeat opacity-35"
-        style={{ backgroundImage: `url('/Buddha.png')` }}
-      />
-      
-      {/* Soft Dark Radial Gradient Overlay */}
-      <div className="fixed inset-0 z-[1] pointer-events-none bg-[radial-gradient(circle_at_center,rgba(12,10,9,0.3)_0%,rgba(12,10,9,0.85)_100%)]" />
+    <div className="min-h-screen relative overflow-x-hidden">
+      {/* Fixed Sacred Background Layer */}
+      <div className="sacred-bg-layer" />
+      <div className="sacred-overlay-layer" />
 
-      {/* Main Site Content Wrapper */}
-      <main className="relative z-10 space-y-12 py-6">
+      {/* Main Content */}
+      <div className="site-content-wrapper">
         <Hero />
-        <Countdown />
-        <Couple />
-        <Invitation />
-        <Carousel />
         <Functions />
-        <Video />
+        <Gallery />
+        <Venue />
         <ThingsToKnow />
+        <Contact />
         <Footer />
-      </main>
+        <MusicPlayer />
+      </div>
     </div>
   );
-};
+}
 
 export default App;
