@@ -33,7 +33,7 @@ export const Hero: React.FC = () => {
           </h2>
         </div>
 
-        {/* Enlarged Couple Photo (And.jpg with built-in & overlay) */}
+        {/* Enlarged Couple Photo (And.jpg centered) */}
         {weddingData.hero.image && (
           <div className="my-4 flex justify-center">
             <div className="relative w-60 h-60 md:w-72 md:h-72 rounded-full overflow-hidden border-2 border-amber-400/60 shadow-2xl p-1 bg-black/40">
