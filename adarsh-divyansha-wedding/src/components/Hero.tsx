@@ -33,19 +33,15 @@ export const Hero: React.FC = () => {
           </h2>
         </div>
 
-        {/* Enlarged Couple Photo with '&' Overlaid Inside */}
+        {/* Enlarged Couple Photo (And.jpg with built-in & overlay) */}
         {weddingData.hero.image && (
-          <div className="my-4 flex justify-center relative">
-            <div className="relative w-52 h-52 md:w-60 md:h-60 rounded-full overflow-hidden border-2 border-amber-400/60 shadow-xl p-1 bg-black/40">
+          <div className="my-4 flex justify-center">
+            <div className="relative w-60 h-60 md:w-72 md:h-72 rounded-full overflow-hidden border-2 border-amber-400/60 shadow-2xl p-1 bg-black/40">
               <img 
                 src={weddingData.hero.image} 
                 alt="Adarsh & Divyansha" 
                 className="w-full h-full object-cover rounded-full"
               />
-              {/* Overlaid '&' Symbol slightly inside the image frame */}
-              <div className="absolute bottom-3 right-6 md:bottom-4 md:right-8 w-11 h-11 md:w-12 md:h-12 bg-[#1A1816]/90 backdrop-blur-sm border-2 border-amber-400 rounded-full flex items-center justify-center shadow-2xl z-20">
-                <span className="text-amber-300 font-serif italic text-xl">&</span>
-              </div>
             </div>
           </div>
         )}
