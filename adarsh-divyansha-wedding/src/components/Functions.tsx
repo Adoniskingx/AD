@@ -37,5 +37,51 @@ export const Functions: React.FC = () => {
               <div className="relative pl-6 border-l-2 border-amber-500/50 space-y-5">
                 
                 <div className="relative">
-                  <div className="absolute -left-[31px] top-1 w-3.5 h-3.5 rounded
-                  
+                  <div className="absolute -left-[31px] top-1 w-3.5 h-3.5 rounded-full bg-amber-400 border-2 border-stone-900 shadow" />
+                  <div className="flex items-center gap-2 text-amber-200 font-serif text-sm">
+                    <Clock className="w-4 h-4 text-amber-400" />
+                    <span>{event.time}</span>
+                  </div>
+                </div>
+
+                <div className="relative">
+                  <div className="absolute -left-[31px] top-1 w-3.5 h-3.5 rounded-full bg-amber-400 border-2 border-stone-900 shadow" />
+                  <div className="flex items-center gap-2 text-amber-200 font-serif text-sm">
+                    <Calendar className="w-4 h-4 text-amber-400" />
+                    <span>{event.date}</span>
+                  </div>
+                </div>
+
+                <div className="relative">
+                  <div className="absolute -left-[31px] top-1 w-3.5 h-3.5 rounded-full bg-amber-400 border-2 border-stone-900 shadow" />
+                  <div className="flex items-start gap-2 text-stone-200 font-serif text-sm">
+                    <MapPin className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
+                    <div>
+                      <p className="font-semibold text-amber-100">{event.venue}</p>
+                      <p className="text-xs text-stone-300 mt-0.5">{event.address}</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              {event.mapLink && (
+                <a
+                  href={event.mapLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full text-center bg-amber-500 hover:bg-amber-600 text-stone-950 font-serif font-semibold py-2.5 rounded-xl shadow transition-colors text-xs uppercase tracking-wider"
+                >
+                  Get Directions
+                </a>
+              )}
+
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Functions;
