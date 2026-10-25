@@ -23,7 +23,7 @@ export default function Couple() {
             alt="Adarsh & Divyansha" 
             className="w-full h-full object-cover" 
             onError={(e) => {
-              (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80';
+              (e.target as HTMLImageElement).src = '/Photos/1.jpg';
             }}
           />
         </div>
