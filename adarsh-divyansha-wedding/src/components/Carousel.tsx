@@ -34,4 +34,39 @@ export default function Carousel() {
         {/* Main Carousel Display */}
         <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl shadow-md border-2 border-amber-300/50 bg-stone-950">
           <img 
-            
+            src={photos[activeIdx]} 
+            alt={`Moment ${activeIdx + 1}`} 
+            className="w-full h-full object-cover transition-all duration-500" 
+            onError={(e) => {
+              (e.target as HTMLImageElement).src = '/Photos/1.jpg';
+            }}
+          />
+          
+          <button onClick={prevPhoto} className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/60 text-amber-300 p-2 rounded-full border border-amber-400/40 hover:bg-black/80 transition-colors">
+            <ChevronLeft className="w-5 h-5" />
+          </button>
+          <button onClick={nextPhoto} className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/60 text-amber-300 p-2 rounded-full border border-amber-400/40 hover:bg-black/80 transition-colors">
+            <ChevronRight className="w-5 h-5" />
+          </button>
+        </div>
+
+        {/* Thumbnail Strip */}
+        <div className="flex items-center gap-3 overflow-x-auto pb-2 no-scrollbar justify-center">
+          {photos.map((photo, idx) => (
+            <button
+              key={idx}
+              onClick={() => selectPhoto(idx)}
+              className={`relative flex-shrink-0 w-16 h-20 rounded-xl overflow-hidden transition-all duration-300 ${
+                idx === activeIdx 
+                  ? 'ring-4 ring-amber-500 scale-105 shadow-md opacity-100' 
+                  : 'opacity-60 hover:opacity-90 ring-1 ring-amber-300/50'
+              }`}
+            >
+              <img src={photo} alt={`Thumbnail ${idx + 1}`} className="w-full h-full object-cover" />
+            </button>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
