@@ -7,29 +7,29 @@ export const Hero: React.FC = () => {
     <section className="relative min-h-screen flex items-center justify-center px-4 py-12">
       <div className="w-full max-w-3xl mx-auto card-dark-gold rounded-2xl p-6 md:p-12 text-center relative overflow-hidden shadow-2xl">
         
-        {/* Top Motto with Emojis */}
-        <div className="flex items-center justify-center space-x-3 mb-6">
-          <div className="h-[1px] w-12 bg-amber-400/50"></div>
-          <span className="text-amber-300 tracking-widest text-sm md:text-base uppercase font-semibold flex items-center gap-2">
+        {/* Top Motto: Single-line alignment with sparkles */}
+        <div className="flex items-center justify-center space-x-2 mb-6">
+          <div className="h-[1px] w-8 md:w-12 bg-amber-400/50"></div>
+          <span className="text-amber-300 tracking-wider text-xs md:text-sm uppercase font-semibold whitespace-nowrap">
             ✨ {weddingData.hero.motto} ✨
           </span>
-          <div className="h-[1px] w-12 bg-amber-400/50"></div>
+          <div className="h-[1px] w-8 md:w-12 bg-amber-400/50"></div>
         </div>
 
-        {/* Blessing Text with Emoji */}
+        {/* Blessing Text (Inverted commas removed) */}
         <p className="text-amber-100/90 italic font-serif text-base md:text-lg mb-4">
-          "{weddingData.hero.blessing}" 🪷
+          {weddingData.hero.blessing} 🪷
         </p>
 
-        {/* Invitation Message with Emoji */}
+        {/* Invitation Message */}
         <p className="text-[#FDF8F0]/80 text-sm md:text-base leading-relaxed max-w-xl mx-auto mb-6">
           {weddingData.hero.invitationText} 🌸
         </p>
 
-        {/* Adarsh Name with Emoji */}
+        {/* Adarsh Name (Emojis removed) */}
         <div className="mt-4 mb-2">
           <h2 className="text-3xl md:text-4xl font-serif text-amber-200 tracking-wider">
-            {weddingData.couple.groom} 🤵‍♂️
+            {weddingData.couple.groom}
           </h2>
         </div>
 
@@ -46,10 +46,10 @@ export const Hero: React.FC = () => {
           </div>
         )}
 
-        {/* Divyansha Name with Emoji */}
+        {/* Divyansha Name (Emojis removed) */}
         <div className="mt-2 mb-4">
           <h2 className="text-3xl md:text-4xl font-serif text-amber-200 tracking-wider">
-            👰‍♀️ {weddingData.couple.bride}
+            {weddingData.couple.bride}
           </h2>
         </div>
 
@@ -67,7 +67,7 @@ export const Hero: React.FC = () => {
           </div>
         </div>
 
-        {/* Hashtag / Main Title with Trendy Script Font & Emoji */}
+        {/* Hashtag / Main Title (Bradley Hand style font) */}
         <div className="my-6 py-4 border-y border-amber-500/25">
           <h1 className="text-4xl md:text-5xl font-script text-gold tracking-wider">
             {weddingData.hero.title} 💖
