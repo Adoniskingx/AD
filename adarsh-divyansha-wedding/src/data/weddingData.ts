@@ -65,7 +65,8 @@ export const weddingData = {
     locationName: "The Grand Jashan",
     locationCity: "Kamptee Road, Khairy, Nagpur",
     groomParents: "Smt. Vandana & Shri Anil Tabhane",
-    brideParents: "Late Smt. Sangita & Shri Sanjay Bagde"
+    brideParents: "Late Smt. Sangita & Shri Sanjay Bagde",
+    guestName: "Valued Guest" // Default fallback if no URL parameter is passed
   },
 
   functions: [
