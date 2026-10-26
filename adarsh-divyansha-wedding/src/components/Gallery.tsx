@@ -17,21 +17,21 @@ export const Gallery: React.FC = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 py-8">
-      <div className="w-full max-w-3xl mx-auto card-dark-gold rounded-2xl p-6 md:p-10 shadow-2xl text-center flex flex-col justify-between max-h-[92vh]">
+    <section className="relative min-h-screen flex items-center justify-center px-4 py-6">
+      <div className="w-full max-w-3xl mx-auto card-dark-gold rounded-2xl p-5 md:p-8 shadow-2xl text-center flex flex-col justify-between h-[88vh] md:h-[85vh]">
         
         {/* Section Heading */}
-        <h2 className="text-3xl md:text-4xl font-serif text-gold mb-4 tracking-wide">
+        <h2 className="text-3xl md:text-4xl font-serif text-gold mb-2 tracking-wide">
           Our Moments 📸
         </h2>
         
-        {/* Main Carousel Image View */}
-        <div className="relative w-full aspect-[4/3] md:aspect-[16/10] overflow-hidden rounded-xl border border-amber-500/40 bg-black/60 shadow-2xl mb-4 my-auto">
+        {/* Main Carousel Image View (Optimized height for single-screen fit) */}
+        <div className="relative w-full flex-1 max-h-[55vh] overflow-hidden rounded-xl border border-amber-500/40 bg-black/60 shadow-2xl my-2 flex items-center justify-center">
           <img 
             src={images[currentIndex]} 
             alt={`Wedding Memory ${currentIndex + 1}`} 
             loading="lazy"
-            className="w-full h-full object-cover transition-all duration-500"
+            className="w-full h-full object-contain transition-all duration-500"
           />
 
           {/* Navigation Buttons */}
@@ -58,7 +58,7 @@ export const Gallery: React.FC = () => {
         </div>
 
         {/* Thumbnail Selector Grid */}
-        <div className="grid grid-cols-6 gap-2 max-w-lg mx-auto">
+        <div className="grid grid-cols-6 gap-2 max-w-md mx-auto mt-2">
           {images.map((img: string, idx: number) => (
             <button
               key={idx}
