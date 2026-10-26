@@ -1,14 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  html, body {
-    @apply bg-[#0D0C0B] text-[#FDF8F0] antialiased selection:bg-amber-200 selection:text-amber-900 min-h-screen m-0 p-0 overflow-x-hidden;
-  }
-}
-
-/* Background Layer: Each tile is exactly 1 full screen (100vw x 100vh) and repeats cleanly on scroll */
+/* Base default background layer */
 .sacred-bg-layer {
   position: absolute;
   top: 0;
@@ -16,43 +6,54 @@
   right: 0;
   bottom: 0;
   background-image: url('/Photos/Buddha.webp');
-  background-size: 100vw 100vh; /* Forces each background tile to match exact screen width and height */
-  background-repeat: repeat-y;   /* Repeats the full image vertically as you scroll down */
-  background-position: center top;
+  background-repeat: no-repeat;
   opacity: 0.35;
   pointer-events: none;
   z-index: 0;
 }
 
-/* Fixed Soft Dark Overlay for Readability */
-.sacred-overlay-layer {
+/* Option 1: Fixed Full Cover */
+body.bg-mode-fixed-cover .sacred-bg-layer {
   position: fixed;
   inset: 0;
-  background: radial-gradient(circle at 50% 30%, rgba(13, 12, 11, 0.45) 0%, rgba(13, 12, 11, 0.90) 85%);
-  pointer-events: none;
-  z-index: 1;
+  background-size: cover;
+  background-position: center center;
 }
 
-/* Content Container Wrapper */
-.site-content-wrapper {
-  position: relative;
-  z-index: 10;
+/* Option 2: Single-Screen Fit & Scroll */
+body.bg-mode-scroll-fit-screen .sacred-bg-layer {
+  background-size: 100% 100vh;
+  background-position: center top;
 }
 
-/* Glassmorphic Dark-Gold Card Styling */
-.card-dark-gold {
-  background: rgba(26, 24, 22, 0.88);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(212, 175, 55, 0.4);
-  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 175, 55, 0.15);
+/* Option 3: Elongated Seamless Fill */
+body.bg-mode-scroll-stretched .sacred-bg-layer {
+  background-size: 100% 100%;
+  background-position: center center;
 }
 
-.text-gold {
-  color: #E5C158;
+/* Option 4: Parallax Depth Layer */
+body.bg-mode-parallax-fixed .sacred-bg-layer {
+  position: fixed;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-/* Bradley Hand Style Font for #DIVYADARSHAN */
-.font-script {
-  font-family: 'Bradley Hand ITC', 'Bradley Hand', 'Patrick Hand', cursive;
+/* Option 5: Centered Top Watermark */
+body.bg-mode-centered-watermark .sacred-bg-layer {
+  height: 100vh;
+  background-size: contain;
+  background-position: center top;
+}
+
+/* Option 6: Smooth Gradient Blend */
+body.bg-mode-gradient-fade .sacred-bg-layer {
+  position: fixed;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
 }
