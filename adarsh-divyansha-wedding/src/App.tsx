@@ -147,5 +147,32 @@ export function App() {
 
         {/* Gallery Display Size */}
         <div>
-          <label className="block text-[11px] font-serif text-amber-200/90 mb
-          
+          <label className="block text-[11px] font-serif text-amber-200/90 mb-1">📸 Gallery Display Size</label>
+          <select value={gallerySize} onChange={(e) => setGallerySize(e.target.value)} className="w-full bg-[#1A1816] text-amber-100 border border-amber-500/40 rounded-lg p-1.5">
+            <option value="compact">Compact View</option>
+            <option value="standard">Standard View</option>
+            <option value="immersive">Immersive Large View</option>
+          </select>
+        </div>
+      </div>
+
+      {/* Background Layers */}
+      <div className="sacred-bg-layer" />
+      <div className="sacred-overlay-layer" />
+
+      {/* Main Content Sections */}
+      <div className="site-content-wrapper">
+        <div className="hero-section"><Hero /></div>
+        <div className="functions-section"><Functions /></div>
+        <div className="gallery-section"><Gallery /></div>
+        <div className="video-section"><VideoSection /></div>
+        <div className="things-section"><ThingsToKnow /></div>
+        <div className="footer-section"><Footer /></div>
+        <MusicPlayer />
+      </div>
+
+    </div>
+  );
+}
+
+export default App;
