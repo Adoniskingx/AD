@@ -6,15 +6,15 @@ export const VideoSection: React.FC = () => {
   const youtubeUrl = weddingData.video?.youtubeEmbedUrl;
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 py-12">
-      <div className="w-full max-w-3xl mx-auto card-dark-gold rounded-2xl p-6 md:p-12 shadow-2xl text-center flex flex-col justify-center">
+    <section className="relative py-8 px-3 flex items-center justify-center">
+      <div className="w-full max-w-3xl mx-auto card-dark-gold rounded-2xl p-5 md:p-10 shadow-2xl text-center flex flex-col justify-center">
         
-        <h2 className="text-3xl md:text-4xl font-serif text-gold mb-6 tracking-wide">
+        <h2 className="text-2xl md:text-4xl font-serif text-gold mb-5 tracking-wide">
           {weddingData.video?.title || "Our Story"} 🎬
         </h2>
 
-        {/* Fully Expanded Video Box */}
-        <div className="relative w-full aspect-video overflow-hidden rounded-xl border border-amber-500/50 bg-black shadow-2xl">
+        {/* Responsive Video Box */}
+        <div className="relative w-full aspect-video overflow-hidden rounded-xl border border-amber-500/40 bg-black shadow-2xl">
           {youtubeUrl ? (
             <iframe 
               src={`${youtubeUrl}?autoplay=0&mute=0&controls=1`} 
@@ -24,11 +24,11 @@ export const VideoSection: React.FC = () => {
               allowFullScreen
             />
           ) : (
-            <div className="flex flex-col items-center justify-center p-8 text-amber-200/70 space-y-3 h-full">
-              <div className="w-16 h-16 rounded-full bg-amber-500/20 border border-amber-400/50 flex items-center justify-center text-amber-300 shadow-lg">
-                <Play className="w-8 h-8 ml-1" />
+            <div className="flex flex-col items-center justify-center p-6 text-amber-200/70 space-y-2 h-full">
+              <div className="w-14 h-14 rounded-full bg-amber-500/20 border border-amber-400/50 flex items-center justify-center text-amber-300 shadow-lg">
+                <Play className="w-7 h-7 ml-1" />
               </div>
-              <p className="font-serif italic text-sm md:text-base">Video coming soon...</p>
+              <p className="font-serif italic text-xs md:text-sm">Video coming soon...</p>
             </div>
           )}
         </div>
