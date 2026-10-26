@@ -148,9 +148,9 @@ export const weddingData = {
     src: "wedding-song.mp3"
   },
 
-  video: {
+video: {
     url: "",
-    youtubeEmbedUrl: "",
+    youtubeEmbedUrl: "https://www.youtube.com/embed/UaTI3azxTO8",
     title: "Our Story",
     thumbnail: "/Photos/6.webp"
   }
