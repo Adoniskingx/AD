@@ -5,20 +5,69 @@
 @layer base {
   html, body {
     @apply bg-[#0D0C0B] text-[#FDF8F0] antialiased selection:bg-amber-200 selection:text-amber-900 min-h-screen m-0 p-0 overflow-x-hidden;
-    font-size: 20px; /* Locked to +4 larger scale */
+    font-size: 18px;
     font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 }
 
-/* Ensure headings and paragraphs scale uniformly across all sections */
-.site-content-wrapper h2 {
-  font-size: 2.1rem !important;
-}
+/* --- Section Font Size Scalers --- */
+body.hero-font-sm .hero-section { font-size: 14px; }
+body.hero-font-normal .hero-section { font-size: 18px; }
+body.hero-font-lg .hero-section { font-size: 20px; }
+body.hero-font-xl .hero-section { font-size: 23px; }
 
-.site-content-wrapper p, 
-.site-content-wrapper span:not(.font-script) {
-  font-size: 1.05rem !important;
-}
+body.func-font-sm .functions-section { font-size: 14px; }
+body.func-font-normal .functions-section { font-size: 18px; }
+body.func-font-lg .functions-section { font-size: 20px; }
+body.func-font-xl .functions-section { font-size: 23px; }
+
+body.gallery-font-sm .gallery-section { font-size: 14px; }
+body.gallery-font-normal .gallery-section { font-size: 18px; }
+body.gallery-font-lg .gallery-section { font-size: 20px; }
+body.gallery-font-xl .gallery-section { font-size: 23px; }
+
+body.video-font-sm .video-section { font-size: 14px; }
+body.video-font-normal .video-section { font-size: 18px; }
+body.video-font-lg .video-section { font-size: 20px; }
+body.video-font-xl .video-section { font-size: 23px; }
+
+body.things-font-sm .things-section { font-size: 14px; }
+body.things-font-normal .things-section { font-size: 18px; }
+body.things-font-lg .things-section { font-size: 20px; }
+body.things-font-xl .things-section { font-size: 23px; }
+
+body.footer-font-sm .footer-section { font-size: 14px; }
+body.footer-font-normal .footer-section { font-size: 18px; }
+body.footer-font-lg .footer-section { font-size: 20px; }
+body.footer-font-xl .footer-section { font-size: 23px; }
+
+/* --- Hero Image Shapes --- */
+body.hero-shape-arch .hero-img-box { border-radius: 120px 120px 16px 16px; }
+body.hero-shape-arch .hero-img-inner { border-radius: 110px 110px 12px 12px; }
+
+body.hero-shape-oval .hero-img-box { border-radius: 50%; width: 220px; height: 310px; }
+body.hero-shape-oval .hero-img-inner { border-radius: 50%; }
+
+body.hero-shape-rounded .hero-img-box { border-radius: 24px; }
+body.hero-shape-rounded .hero-img-inner { border-radius: 18px; }
+
+body.hero-shape-circle .hero-img-box { border-radius: 9999px; width: 260px; height: 260px; }
+body.hero-shape-circle .hero-img-inner { border-radius: 9999px; }
+
+/* --- Hero Image Sizes --- */
+body.hero-imgsize-sm .hero-img-box { width: 200px; height: 260px; }
+body.hero-imgsize-md .hero-img-box { width: 260px; height: 340px; }
+body.hero-imgsize-lg .hero-img-box { width: 310px; height: 400px; }
+
+/* --- Video Box Sizes --- */
+body.video-size-compact .video-container { height: 240px; }
+body.video-size-standard .video-container { height: 340px; }
+body.video-size-large .video-container { height: 440px; }
+
+/* --- Gallery Display Sizes --- */
+body.gallery-size-compact .gallery-container { height: 260px; }
+body.gallery-size-standard .gallery-container { height: 360px; }
+body.gallery-size-immersive .gallery-container { height: 480px; }
 
 /* Background Layer: Aspect-Ratio Banner Tile (Y-Axis Repeating) */
 .sacred-bg-layer {
@@ -36,7 +85,6 @@
   z-index: 0;
 }
 
-/* Fixed Soft Dark Overlay for Readability */
 .sacred-overlay-layer {
   position: fixed;
   inset: 0;
@@ -45,13 +93,11 @@
   z-index: 1;
 }
 
-/* Content Container Wrapper */
 .site-content-wrapper {
   position: relative;
   z-index: 10;
 }
 
-/* Locked Card Style: Midnight Obsidian Black */
 .card-dark-gold {
   background: rgba(5, 5, 5, 0.95);
   backdrop-filter: blur(12px);
@@ -64,7 +110,6 @@
   color: #E5C158;
 }
 
-/* Bradley Hand Style Font for #DIVYADARSHAN */
 .font-script {
   font-family: 'Bradley Hand ITC', 'Bradley Hand', 'Patrick Hand', cursive;
 }
