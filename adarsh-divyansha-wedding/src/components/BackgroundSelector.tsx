@@ -24,6 +24,8 @@ export const BackgroundSelector: React.FC = () => {
 <option value="repeat-space-fy">6. Balanced Space-Fit Tile</option>
 <option value="repeat-compact-half">7. Compact Dense Repeating Tile</option>
 <option value="repeat-wide-fit">8. Aspect-Ratio Banner Tile</option>
+        <option value="repeat-aspect-y">9. Vertical Aspect-Ratio Banner Tile</option>
+        
       </select>
     </div>
   );
