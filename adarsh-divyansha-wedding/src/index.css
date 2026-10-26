@@ -8,7 +8,7 @@
   }
 }
 
-/* Default Background Layer */
+/* Background Layer: Locked to Aspect-Ratio Banner Tile (Y-Axis Repeating) */
 .sacred-bg-layer {
   position: absolute;
   top: 0;
@@ -16,114 +16,12 @@
   right: 0;
   bottom: 0;
   background-image: url('/Photos/Buddha.webp');
-  opacity: 0.35;
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Option 1: Parallax Depth Layer */
-body.bg-mode-parallax-fixed .sacred-bg-layer {
-  position: fixed;
-  inset: 0;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-
-/* Option 2: Continuous Tiled Repeating Scroll */
-body.bg-mode-scroll-repeat-tile .sacred-bg-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: 100% auto;
-  background-position: center top;
-  background-repeat: repeat-y;
-}
-
-/* Option 3: Smooth Vertical Flow */
-body.bg-mode-scroll-vertical-pan .sacred-bg-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-}
-
-/* Option 4: Dual-Layer Momentum Drift */
-body.bg-mode-scroll-momentum-drift .sacred-bg-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: 100% 120vh;
-  background-position: center center;
-  background-repeat: repeat-y;
-}
-
-/* Option 5: Full Grid Tile (X & Y Axis) */
-body.bg-mode-repeat-both .sacred-bg-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: 50vw auto;
-  background-position: center top;
-  background-repeat: repeat;
-}
-
-/* Option 6: Balanced Space-Fit Tile */
-body.bg-mode-repeat-space-fy .sacred-bg-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: 100% 100vh;
-  background-position: center top;
-  background-repeat: space;
-}
-
-/* Option 7: Compact Dense Repeating Tile */
-body.bg-mode-repeat-compact-half .sacred-bg-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: 100% 60vh;
-  background-position: center top;
-  background-repeat: repeat-y;
-}
-
-/* Option 8: Aspect-Ratio Banner Tile */
-body.bg-mode-repeat-wide-fit .sacred-bg-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: auto 100vh;
-  background-position: center top;
-  background-repeat: repeat-y;
-}
-/* Option 9: Vertical Aspect-Ratio Banner Tile (Y-Axis Only) */
-body.bg-mode-repeat-aspect-y .sacred-bg-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   background-size: 100vw auto; /* Locks width to screen width while keeping natural image proportions */
   background-position: center top;
   background-repeat: repeat-y;  /* Tiles strictly vertically along the Y-axis */
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* Fixed Soft Dark Overlay for Readability */
