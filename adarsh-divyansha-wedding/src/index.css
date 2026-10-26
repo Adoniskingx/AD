@@ -8,7 +8,7 @@
   }
 }
 
-/* Background Layer: Locked to Aspect-Ratio Banner Tile (Y-Axis Repeating) */
+/* Background Layer: Larger Aspect-Ratio Banner Tile (Y-Axis Repeating) */
 .sacred-bg-layer {
   position: absolute;
   top: 0;
@@ -16,9 +16,9 @@
   right: 0;
   bottom: 0;
   background-image: url('/Photos/Buddha.webp');
-  background-size: 100vw auto; /* Locks width to screen width while keeping natural image proportions */
+  background-size: 135vw auto; /* Makes the Buddha image larger and more majestic while keeping natural proportions */
   background-position: center top;
-  background-repeat: repeat-y;  /* Tiles strictly vertically along the Y-axis */
+  background-repeat: repeat-y;  /* Tiles strictly vertically along the Y-axis as you scroll */
   opacity: 0.35;
   pointer-events: none;
   z-index: 0;
