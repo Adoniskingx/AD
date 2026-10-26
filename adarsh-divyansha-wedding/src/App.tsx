@@ -8,13 +8,13 @@ import Footer from './components/Footer';
 import MusicPlayer from './components/MusicPlayer';
 
 export function App() {
-  // Font Size States per Section
-  const [heroFontSize, setHeroFontSize] = useState('18px');
-  const [functionsFontSize, setFunctionsFontSize] = useState('18px');
-  const [galleryFontSize, setGalleryFontSize] = useState('18px');
-  const [videoFontSize, setVideoFontSize] = useState('18px');
-  const [thingsFontSize, setThingsFontSize] = useState('18px');
-  const [footerFontSize, setFooterFontSize] = useState('18px');
+  // Font Size States per Section (percentage scale)
+  const [heroFontSize, setHeroFontSize] = useState('100%');
+  const [functionsFontSize, setFunctionsFontSize] = useState('100%');
+  const [galleryFontSize, setGalleryFontSize] = useState('100%');
+  const [videoFontSize, setVideoFontSize] = useState('100%');
+  const [thingsFontSize, setThingsFontSize] = useState('100%');
+  const [footerFontSize, setFooterFontSize] = useState('100%');
 
   return (
     <div className="min-h-screen relative overflow-x-hidden">
@@ -29,10 +29,10 @@ export function App() {
         <div>
           <label className="block text-[11px] font-serif text-amber-200/90 mb-1">📏 Hero Font Size</label>
           <select value={heroFontSize} onChange={(e) => setHeroFontSize(e.target.value)} className="w-full bg-[#1A1816] text-amber-100 border border-amber-500/40 rounded-lg p-1.5">
-            <option value="15px">Compact (Small)</option>
-            <option value="18px">Standard (Normal)</option>
-            <option value="20px">Large (+2)</option>
-            <option value="23px">Extra Large (+4)</option>
+            <option value="85%">Compact (Small)</option>
+            <option value="100%">Standard (Normal)</option>
+            <option value="115%">Large (+2)</option>
+            <option value="130%">Extra Large (+4)</option>
           </select>
         </div>
 
@@ -40,10 +40,10 @@ export function App() {
         <div>
           <label className="block text-[11px] font-serif text-amber-200/90 mb-1">📏 Functions Font Size</label>
           <select value={functionsFontSize} onChange={(e) => setFunctionsFontSize(e.target.value)} className="w-full bg-[#1A1816] text-amber-100 border border-amber-500/40 rounded-lg p-1.5">
-            <option value="15px">Compact (Small)</option>
-            <option value="18px">Standard (Normal)</option>
-            <option value="20px">Large (+2)</option>
-            <option value="23px">Extra Large (+4)</option>
+            <option value="85%">Compact (Small)</option>
+            <option value="100%">Standard (Normal)</option>
+            <option value="115%">Large (+2)</option>
+            <option value="130%">Extra Large (+4)</option>
           </select>
         </div>
 
@@ -51,10 +51,10 @@ export function App() {
         <div>
           <label className="block text-[11px] font-serif text-amber-200/90 mb-1">📏 Gallery Font Size</label>
           <select value={galleryFontSize} onChange={(e) => setGalleryFontSize(e.target.value)} className="w-full bg-[#1A1816] text-amber-100 border border-amber-500/40 rounded-lg p-1.5">
-            <option value="15px">Compact (Small)</option>
-            <option value="18px">Standard (Normal)</option>
-            <option value="20px">Large (+2)</option>
-            <option value="23px">Extra Large (+4)</option>
+            <option value="85%">Compact (Small)</option>
+            <option value="100%">Standard (Normal)</option>
+            <option value="115%">Large (+2)</option>
+            <option value="130%">Extra Large (+4)</option>
           </select>
         </div>
 
@@ -62,10 +62,10 @@ export function App() {
         <div>
           <label className="block text-[11px] font-serif text-amber-200/90 mb-1">📏 Video Font Size</label>
           <select value={videoFontSize} onChange={(e) => setVideoFontSize(e.target.value)} className="w-full bg-[#1A1816] text-amber-100 border border-amber-500/40 rounded-lg p-1.5">
-            <option value="15px">Compact (Small)</option>
-            <option value="18px">Standard (Normal)</option>
-            <option value="20px">Large (+2)</option>
-            <option value="23px">Extra Large (+4)</option>
+            <option value="85%">Compact (Small)</option>
+            <option value="100%">Standard (Normal)</option>
+            <option value="115%">Large (+2)</option>
+            <option value="130%">Extra Large (+4)</option>
           </select>
         </div>
 
@@ -73,10 +73,10 @@ export function App() {
         <div>
           <label className="block text-[11px] font-serif text-amber-200/90 mb-1">📏 Things to Know Font Size</label>
           <select value={thingsFontSize} onChange={(e) => setThingsFontSize(e.target.value)} className="w-full bg-[#1A1816] text-amber-100 border border-amber-500/40 rounded-lg p-1.5">
-            <option value="15px">Compact (Small)</option>
-            <option value="18px">Standard (Normal)</option>
-            <option value="20px">Large (+2)</option>
-            <option value="23px">Extra Large (+4)</option>
+            <option value="85%">Compact (Small)</option>
+            <option value="100%">Standard (Normal)</option>
+            <option value="115%">Large (+2)</option>
+            <option value="130%">Extra Large (+4)</option>
           </select>
         </div>
 
@@ -84,10 +84,10 @@ export function App() {
         <div>
           <label className="block text-[11px] font-serif text-amber-200/90 mb-1">📏 Footer Font Size</label>
           <select value={footerFontSize} onChange={(e) => setFooterFontSize(e.target.value)} className="w-full bg-[#1A1816] text-amber-100 border border-amber-500/40 rounded-lg p-1.5">
-            <option value="15px">Compact (Small)</option>
-            <option value="18px">Standard (Normal)</option>
-            <option value="20px">Large (+2)</option>
-            <option value="23px">Extra Large (+4)</option>
+            <option value="85%">Compact (Small)</option>
+            <option value="100%">Standard (Normal)</option>
+            <option value="115%">Large (+2)</option>
+            <option value="130%">Extra Large (+4)</option>
           </select>
         </div>
       </div>
@@ -96,24 +96,24 @@ export function App() {
       <div className="sacred-bg-layer" />
       <div className="sacred-overlay-layer" />
 
-      {/* Main Content Sections with Dynamic Font Sizes */}
+      {/* Main Content Sections with Direct CSS Scaling */}
       <div className="site-content-wrapper">
-        <div style={{ fontSize: heroFontSize }}>
+        <div style={{ zoom: heroFontSize }}>
           <Hero />
         </div>
-        <div style={{ fontSize: functionsFontSize }}>
+        <div style={{ zoom: functionsFontSize }}>
           <Functions />
         </div>
-        <div style={{ fontSize: galleryFontSize }}>
+        <div style={{ zoom: galleryFontSize }}>
           <Gallery />
         </div>
-        <div style={{ fontSize: videoFontSize }}>
+        <div style={{ zoom: videoFontSize }}>
           <VideoSection />
         </div>
-        <div style={{ fontSize: thingsFontSize }}>
+        <div style={{ zoom: thingsFontSize }}>
           <ThingsToKnow />
         </div>
-        <div style={{ fontSize: footerFontSize }}>
+        <div style={{ zoom: footerFontSize }}>
           <Footer />
         </div>
         <MusicPlayer />
