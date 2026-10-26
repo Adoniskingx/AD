@@ -67,6 +67,54 @@ body.bg-mode-scroll-momentum-drift .sacred-bg-layer {
   background-repeat: repeat-y;
 }
 
+/* Option 5: Full Grid Tile (X & Y Axis) */
+body.bg-mode-repeat-both .sacred-bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 50vw auto;
+  background-position: center top;
+  background-repeat: repeat;
+}
+
+/* Option 6: Balanced Space-Fit Tile */
+body.bg-mode-repeat-space-fy .sacred-bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 100% 100vh;
+  background-position: center top;
+  background-repeat: space;
+}
+
+/* Option 7: Compact Dense Repeating Tile */
+body.bg-mode-repeat-compact-half .sacred-bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 100% 60vh;
+  background-position: center top;
+  background-repeat: repeat-y;
+}
+
+/* Option 8: Aspect-Ratio Banner Tile */
+body.bg-mode-repeat-wide-fit .sacred-bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: auto 100vh;
+  background-position: center top;
+  background-repeat: repeat-y;
+}
+
 /* Fixed Soft Dark Overlay for Readability */
 .sacred-overlay-layer {
   position: fixed;
