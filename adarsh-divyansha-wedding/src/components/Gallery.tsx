@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { weddingData } from '../data/weddingData';
 
 export const Gallery: React.FC = () => {
-  const images = weddingData.gallery || [];
-  const [selectedImage, setSelectedImage] = useState(images[0] || '');
+  const images: string[] = weddingData.photos || [];
+  const [selectedImage, setSelectedImage] = useState<string>(images[0] || '');
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-8">
@@ -24,7 +24,7 @@ export const Gallery: React.FC = () => {
 
         {/* Enlarged Gallery Thumbnails */}
         <div className="flex items-center justify-center gap-3 overflow-x-auto py-2 px-1">
-          {images.map((img, idx) => (
+          {images.map((img: string, idx: number) => (
             <button
               key={idx}
               onClick={() => setSelectedImage(img)}
