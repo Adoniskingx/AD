@@ -41,41 +41,30 @@ body.footer-font-normal .footer-section { font-size: 18px; }
 body.footer-font-lg .footer-section { font-size: 20px; }
 body.footer-font-xl .footer-section { font-size: 23px; }
 
-/* --- Hero Image Shapes --- */
-body.hero-shape-arch .hero-img-box { border-radius: 120px 120px 16px 16px; }
-body.hero-shape-arch .hero-img-inner { border-radius: 110px 110px 12px 12px; }
+/* --- Hero Image Shapes & Sizes --- */
+body.hero-shape-arch .hero-section img { border-radius: 120px 120px 16px 16px; }
+body.hero-shape-oval .hero-section img { border-radius: 50%; }
+body.hero-shape-rounded .hero-section img { border-radius: 20px; }
+body.hero-shape-circle .hero-section img { border-radius: 9999px; }
 
-body.hero-shape-oval .hero-img-box { border-radius: 50%; width: 220px; height: 310px; }
-body.hero-shape-oval .hero-img-inner { border-radius: 50%; }
-
-body.hero-shape-rounded .hero-img-box { border-radius: 24px; }
-body.hero-shape-rounded .hero-img-inner { border-radius: 18px; }
-
-body.hero-shape-circle .hero-img-box { border-radius: 9999px; width: 260px; height: 260px; }
-body.hero-shape-circle .hero-img-inner { border-radius: 9999px; }
-
-/* --- Hero Image Sizes --- */
-body.hero-imgsize-sm .hero-img-box { width: 200px; height: 260px; }
-body.hero-imgsize-md .hero-img-box { width: 260px; height: 340px; }
-body.hero-imgsize-lg .hero-img-box { width: 310px; height: 400px; }
+body.hero-imgsize-sm .hero-section .relative.overflow-hidden { width: 200px; height: 260px; margin: 0 auto; }
+body.hero-imgsize-md .hero-section .relative.overflow-hidden { width: 260px; height: 340px; margin: 0 auto; }
+body.hero-imgsize-lg .hero-section .relative.overflow-hidden { width: 310px; height: 400px; margin: 0 auto; }
 
 /* --- Video Box Sizes --- */
-body.video-size-compact .video-container { height: 240px; }
-body.video-size-standard .video-container { height: 340px; }
-body.video-size-large .video-container { height: 440px; }
+body.video-size-compact .video-section iframe { height: 220px !important; }
+body.video-size-standard .video-section iframe { height: 320px !important; }
+body.video-size-large .video-section iframe { height: 420px !important; }
 
 /* --- Gallery Display Sizes --- */
-body.gallery-size-compact .gallery-container { height: 260px; }
-body.gallery-size-standard .gallery-container { height: 360px; }
-body.gallery-size-immersive .gallery-container { height: 480px; }
+body.gallery-size-compact .gallery-section .relative.overflow-hidden { height: 260px; }
+body.gallery-size-standard .gallery-section .relative.overflow-hidden { height: 360px; }
+body.gallery-size-immersive .gallery-section .relative.overflow-hidden { height: 480px; }
 
-/* Background Layer: Aspect-Ratio Banner Tile (Y-Axis Repeating) */
+/* Background & Theme */
 .sacred-bg-layer {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   background-image: url('/Photos/Buddha.webp');
   background-size: 135vw auto;
   background-position: center top;
