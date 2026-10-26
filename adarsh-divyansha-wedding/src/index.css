@@ -114,6 +114,17 @@ body.bg-mode-repeat-wide-fit .sacred-bg-layer {
   background-position: center top;
   background-repeat: repeat-y;
 }
+/* Option 9: Vertical Aspect-Ratio Banner Tile (Y-Axis Only) */
+body.bg-mode-repeat-aspect-y .sacred-bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 100vw auto; /* Locks width to screen width while keeping natural image proportions */
+  background-position: center top;
+  background-repeat: repeat-y;  /* Tiles strictly vertically along the Y-axis */
+}
 
 /* Fixed Soft Dark Overlay for Readability */
 .sacred-overlay-layer {
