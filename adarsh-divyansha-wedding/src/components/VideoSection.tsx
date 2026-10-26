@@ -9,18 +9,17 @@ export const VideoSection: React.FC = () => {
     <section className="relative min-h-screen flex items-center justify-center px-4 py-8">
       <div className="w-full max-w-3xl mx-auto card-dark-gold rounded-2xl p-6 md:p-10 shadow-2xl text-center flex flex-col justify-center">
         
-        {/* Section Heading */}
         <h2 className="text-3xl md:text-4xl font-serif text-gold mb-6 tracking-wide">
           {weddingData.video?.title || "Our Story"} 🎬
         </h2>
 
-        {/* Perfectly Proportioned 16:9 Video Container */}
-        <div className="relative w-full aspect-video overflow-hidden rounded-xl border border-amber-500/40 bg-black/80 shadow-2xl">
+        {/* Object-cover container ensuring video expands to fill box */}
+        <div className="relative w-full aspect-video overflow-hidden rounded-xl border border-amber-500/40 bg-black shadow-2xl">
           {youtubeUrl ? (
             <iframe 
-              src={youtubeUrl} 
+              src={`${youtubeUrl}?autoplay=0&mute=0&controls=1`} 
               title="Wedding Video" 
-              className="w-full h-full"
+              className="w-full h-full scale-[1.02]"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowFullScreen
             />
