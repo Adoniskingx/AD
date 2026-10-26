@@ -22,7 +22,7 @@ export const Hero: React.FC = () => {
         {/* Dynamic Personalized Guest Invitation Banner */}
         {guest && (
           <div className="mb-6 inline-block bg-amber-500/15 border border-amber-400/40 px-6 py-2 rounded-full shadow-inner">
-            <p className="text-xs uppercase tracking-widest text-amber-300/80 mb-0.5 font-serif">Personal Invitation For</p>
+            <p className="text-xs uppercase tracking-widest text-amber-300/80 mb-0.5 font-serif">Dear</p>
             <p className="text-base md:text-lg font-serif text-amber-200 font-semibold tracking-wide">
               {guest}
             </p>
