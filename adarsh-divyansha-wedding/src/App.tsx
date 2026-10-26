@@ -6,15 +6,15 @@ import VideoSection from './components/VideoSection';
 import ThingsToKnow from './components/ThingsToKnow';
 import Footer from './components/Footer';
 import MusicPlayer from './components/MusicPlayer';
+import CustomizerPanel from './components/CustomizerPanel';
 
 export function App() {
   return (
     <div className="min-h-screen relative overflow-x-hidden">
-      {/* Background Layer */}
+      <CustomizerPanel />
       <div className="sacred-bg-layer" />
       <div className="sacred-overlay-layer" />
 
-      {/* Main Content */}
       <div className="site-content-wrapper">
         <Hero />
         <Functions />
