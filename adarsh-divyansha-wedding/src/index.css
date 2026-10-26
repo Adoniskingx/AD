@@ -8,17 +8,14 @@
   }
 }
 
-/* Background Layer: Matches exact screen height and width per view */
+/* Background Layer: Perfectly scales and covers any screen aspect ratio without distortion */
 .sacred-bg-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  position: fixed;
+  inset: 0;
   background-image: url('/Photos/Buddha.webp');
-  background-size: 100% 100vh; /* Forces background to match exact single-screen viewport dimensions */
-  background-repeat: repeat-y; /* Repeats cleanly on the next screen down */
-  background-position: center top;
+  background-size: cover; /* Automatically scales to cover laptops, tablets, and phones while maintaining aspect ratio */
+  background-position: center center; /* Centers the focal point of the Buddha image across all viewports */
+  background-repeat: no-repeat;
   opacity: 0.35;
   pointer-events: none;
   z-index: 0;
