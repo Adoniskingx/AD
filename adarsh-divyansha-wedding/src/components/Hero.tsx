@@ -54,10 +54,10 @@ export const Hero: React.FC = () => {
           </h2>
         </div>
 
-        {/* Slightly Enlarged Couple Photo (And.webp centered) */}
+        {/* Optimized Couple Photo Sized to Fit First Screen */}
         {weddingData.hero.image && (
-          <div className="my-5 flex justify-center">
-            <div className="relative w-68 h-68 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-amber-400/60 shadow-2xl p-1 bg-black/40">
+          <div className="my-3 flex justify-center">
+            <div className="relative w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden border-2 border-amber-400/65 shadow-2xl p-1 bg-black/40">
               <img 
                 src={weddingData.hero.image} 
                 alt="Adarsh & Divyansha" 
