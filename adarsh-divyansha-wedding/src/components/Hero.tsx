@@ -6,7 +6,6 @@ export const Hero: React.FC = () => {
   const [guest, setGuest] = useState(weddingData.hero.guestName);
 
   useEffect(() => {
-    // Automatically read the 'to' parameter from the URL (e.g., ?to=Rahul)
     const params = new URLSearchParams(window.location.search);
     const recipient = params.get('to');
     if (recipient) {
@@ -28,7 +27,7 @@ export const Hero: React.FC = () => {
           </div>
         )}
 
-        {/* Top Motto: Single-line alignment with sparkles */}
+        {/* Top Motto */}
         <div className="flex items-center justify-center space-x-2 mb-6">
           <div className="h-[1px] w-8 md:w-12 bg-amber-400/50"></div>
           <span className="text-amber-300 tracking-wider text-xs md:text-sm uppercase font-semibold whitespace-nowrap">
@@ -54,14 +53,14 @@ export const Hero: React.FC = () => {
           </h2>
         </div>
 
-        {/* Optimized Couple Photo Sized to Fit First Screen */}
+        {/* Increased Vertical Oval Preview Photo */}
         {weddingData.hero.image && (
-          <div className="my-3 flex justify-center">
-            <div className="relative w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden border-2 border-amber-400/65 shadow-2xl p-1 bg-black/40">
+          <div className="my-4 flex justify-center">
+            <div className="relative w-56 h-72 md:w-68 md:h-88 rounded-[50%] overflow-hidden border-2 border-amber-400/65 shadow-2xl p-1 bg-black/40">
               <img 
                 src={weddingData.hero.image} 
                 alt="Adarsh & Divyansha" 
-                className="w-full h-full object-cover rounded-full"
+                className="w-full h-full object-cover rounded-[50%]"
               />
             </div>
           </div>
@@ -88,14 +87,14 @@ export const Hero: React.FC = () => {
           </div>
         </div>
 
-        {/* Hashtag / Main Title (Bradley Hand style font) */}
+        {/* Hashtag / Main Title */}
         <div className="my-6 py-4 border-y border-amber-500/25">
           <h1 className="text-4xl md:text-5xl font-script text-gold tracking-wider">
             {weddingData.hero.title} 💖
           </h1>
         </div>
 
-        {/* Date & Venue Info with Emojis */}
+        {/* Date & Venue Info */}
         <div className="mt-8 pt-6 border-t border-amber-500/20 flex flex-col md:flex-row items-center justify-center gap-4">
           <div className="inline-block border border-amber-500/40 rounded-full px-6 py-2 bg-black/30">
             <span className="text-amber-200 text-sm md:text-base font-medium tracking-wide flex items-center gap-2">
