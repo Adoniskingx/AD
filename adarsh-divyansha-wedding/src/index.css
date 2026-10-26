@@ -10,74 +10,61 @@
 
 /* Default Background Layer */
 .sacred-bg-layer {
-  position: fixed;
-  inset: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-image: url('/Photos/Buddha.webp');
-  background-repeat: no-repeat;
   opacity: 0.35;
   pointer-events: none;
   z-index: 0;
 }
 
-/* Option 1: Fixed Full Cover (Cinematic) */
-body.bg-mode-fixed-cover .sacred-bg-layer {
-  position: fixed;
-  inset: 0;
-  background-size: cover;
-  background-position: center center;
-}
-
-/* Option 2: Single-Screen Fit & Scroll */
-body.bg-mode-scroll-fit-screen .sacred-bg-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: 100% 100vh;
-  background-position: center top;
-  background-repeat: repeat-y;
-}
-
-/* Option 3: Elongated Seamless Fill */
-body.bg-mode-scroll-stretched .sacred-bg-layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-size: 100% 100%;
-  background-position: center center;
-}
-
-/* Option 4: Parallax Depth Layer */
+/* Option 1: Parallax Depth Layer */
 body.bg-mode-parallax-fixed .sacred-bg-layer {
   position: fixed;
   inset: 0;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
-/* Option 5: Centered Top Watermark */
-body.bg-mode-centered-watermark .sacred-bg-layer {
+/* Option 2: Continuous Tiled Repeating Scroll */
+body.bg-mode-scroll-repeat-tile .sacred-bg-layer {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  height: 100vh;
-  background-size: contain;
+  bottom: 0;
+  background-size: 100% auto;
   background-position: center top;
+  background-repeat: repeat-y;
 }
 
-/* Option 6: Smooth Gradient Blend */
-body.bg-mode-gradient-fade .sacred-bg-layer {
-  position: fixed;
-  inset: 0;
+/* Option 3: Smooth Vertical Flow */
+body.bg-mode-scroll-vertical-pan .sacred-bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+/* Option 4: Dual-Layer Momentum Drift */
+body.bg-mode-scroll-momentum-drift .sacred-bg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 100% 120vh;
   background-position: center center;
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+  background-repeat: repeat-y;
 }
 
 /* Fixed Soft Dark Overlay for Readability */
