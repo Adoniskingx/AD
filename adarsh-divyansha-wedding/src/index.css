@@ -8,13 +8,16 @@
   }
 }
 
-/* Background Layer: Perfectly scales and covers any screen aspect ratio without distortion */
+/* Background Layer: Fully scrollable, perfectly proportioned, and covers all devices */
 .sacred-bg-layer {
-  position: fixed;
-  inset: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-image: url('/Photos/Buddha.webp');
-  background-size: cover; /* Automatically scales to cover laptops, tablets, and phones while maintaining aspect ratio */
-  background-position: center center; /* Centers the focal point of the Buddha image across all viewports */
+  background-size: cover; /* Scales smoothly to cover laptops, tablets, and phones while keeping aspect ratio */
+  background-position: center top; /* Centers the image nicely from the top */
   background-repeat: no-repeat;
   opacity: 0.35;
   pointer-events: none;
