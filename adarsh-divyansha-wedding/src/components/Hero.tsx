@@ -1,12 +1,34 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { weddingData } from '../data/weddingData';
 import { MapPin } from 'lucide-react';
 
 export const Hero: React.FC = () => {
+  const [guest, setGuest] = useState(weddingData.hero.guestName);
+
+  useEffect(() => {
+    // Automatically read the 'to' parameter from the URL (e.g., ?to=Rahul)
+    const params = new URLSearchParams(window.location.search);
+    const recipient = params.get('to');
+    if (recipient) {
+      // Decode and replace hyphens/pluses with spaces if needed
+      setGuest(decodeURIComponent(recipient.replace(/[-+]/g, ' ')));
+    }
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-12">
       <div className="w-full max-w-3xl mx-auto card-dark-gold rounded-2xl p-6 md:p-12 text-center relative overflow-hidden shadow-2xl">
         
+        {/* Dynamic Personalized Guest Invitation Banner */}
+        {guest && (
+          <div className="mb-6 inline-block bg-amber-500/15 border border-amber-400/40 px-6 py-2 rounded-full shadow-inner">
+            <p className="text-xs uppercase tracking-widest text-amber-300/80 mb-0.5 font-serif">Personal Invitation For</p>
+            <p className="text-base md:text-lg font-serif text-amber-200 font-semibold tracking-wide">
+              {guest}
+            </p>
+          </div>
+        )}
+
         {/* Top Motto: Single-line alignment with sparkles */}
         <div className="flex items-center justify-center space-x-2 mb-6">
           <div className="h-[1px] w-8 md:w-12 bg-amber-400/50"></div>
@@ -16,7 +38,7 @@ export const Hero: React.FC = () => {
           <div className="h-[1px] w-8 md:w-12 bg-amber-400/50"></div>
         </div>
 
-        {/* Blessing Text (Inverted commas removed) */}
+        {/* Blessing Text */}
         <p className="text-amber-100/90 italic font-serif text-base md:text-lg mb-4">
           {weddingData.hero.blessing} 🪷
         </p>
@@ -26,7 +48,7 @@ export const Hero: React.FC = () => {
           {weddingData.hero.invitationText} 🌸
         </p>
 
-        {/* Adarsh Name (Emojis removed) */}
+        {/* Adarsh Name */}
         <div className="mt-4 mb-2">
           <h2 className="text-3xl md:text-4xl font-serif text-amber-200 tracking-wider">
             {weddingData.couple.groom}
@@ -46,7 +68,7 @@ export const Hero: React.FC = () => {
           </div>
         )}
 
-        {/* Divyansha Name (Emojis removed) */}
+        {/* Divyansha Name */}
         <div className="mt-2 mb-4">
           <h2 className="text-3xl md:text-4xl font-serif text-amber-200 tracking-wider">
             {weddingData.couple.bride}
