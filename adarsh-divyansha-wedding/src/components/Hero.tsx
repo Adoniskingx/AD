@@ -53,7 +53,7 @@ export const Hero: React.FC = () => {
           </h2>
         </div>
 
-        {/* Arched / Dome-Top Preview Photo (Slightly larger) */}
+        {/* Arched / Dome-Top Preview Photo */}
         {weddingData.hero.image && (
           <div className="my-4 flex justify-center">
             <div className="relative w-64 h-80 md:w-76 md:h-96 rounded-t-[120px] rounded-b-2xl overflow-hidden border-2 border-amber-400/65 shadow-2xl p-1 bg-black/40">
@@ -104,5 +104,14 @@ export const Hero: React.FC = () => {
           <div className="inline-flex items-center space-x-2 text-amber-100/90 text-xs md:text-sm bg-black/40 px-4 py-2.5 rounded-xl border border-amber-500/30">
             <MapPin className="w-4 h-4 text-amber-400 shrink-0" />
             <span>
-              {wedding
-                
+              {weddingData.hero.locationName}, {weddingData.hero.locationCity} 📍
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
