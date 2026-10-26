@@ -14,20 +14,22 @@ export function App() {
   const [heroImageSize, setHeroImageSize] = useState('w-64 md:w-76 h-80 md:h-96');
 
   return (
-    <div className="min-h-screen relative overflow-x-hidden">
+    <div className="min-h-screen relative overflow-x-hidden pt-16">
       
-      {/* 🎛️ Minimal Hero Control Bar */}
-      <div className="bg-black/90 border-b border-amber-500/40 p-3 relative z-50 text-xs text-amber-100 shadow-xl">
-        <div className="max-w-4xl mx-auto flex flex-wrap items-center justify-center gap-6">
-          <span className="font-serif text-amber-300 font-bold tracking-wider">🎛️ Hero Studio:</span>
+      {/* 🎛️ Fixed Sticky Studio Bar at the Top */}
+      <nav className="fixed top-0 left-0 right-0 z-[100] bg-black/95 border-b-2 border-amber-400 py-2.5 px-4 shadow-2xl backdrop-blur-md">
+        <div className="max-w-4xl mx-auto flex flex-wrap items-center justify-center gap-4 text-xs text-amber-100">
+          <span className="font-serif text-amber-300 font-bold tracking-wider text-sm flex items-center gap-1">
+            🎛️ Hero Studio:
+          </span>
 
           {/* Hero Font Size Dropdown */}
-          <div className="flex items-center gap-1.5">
-            <label className="text-amber-200">Font Size:</label>
+          <div className="flex items-center gap-1.5 bg-[#1A1816] px-2.5 py-1 rounded-lg border border-amber-500/50">
+            <label className="text-amber-200 font-medium">Font:</label>
             <select 
               value={heroFontSize} 
               onChange={(e) => setHeroFontSize(e.target.value)} 
-              className="bg-[#1A1816] text-amber-100 border border-amber-500/40 rounded-md p-1"
+              className="bg-black text-amber-100 border border-amber-500/40 rounded px-1.5 py-0.5 focus:outline-none"
             >
               <option value="85%">Compact</option>
               <option value="100%">Standard</option>
@@ -37,22 +39,22 @@ export function App() {
           </div>
 
           {/* Hero Image Shape Dropdown */}
-          <div className="flex items-center gap-1.5">
-            <label className="text-amber-200">Image Shape:</label>
+          <div className="flex items-center gap-1.5 bg-[#1A1816] px-2.5 py-1 rounded-lg border border-amber-500/50">
+            <label className="text-amber-200 font-medium">Shape:</label>
             <select 
               value={heroImageShape} 
               onChange={(e) => setHeroImageShape(e.target.value)} 
-              className="bg-[#1A1816] text-amber-100 border border-amber-500/40 rounded-md p-1"
+              className="bg-black text-amber-100 border border-amber-500/40 rounded px-1.5 py-0.5 focus:outline-none"
             >
-              <option value="rounded-t-[120px] rounded-b-2xl">Arched Dome-Top</option>
-              <option value="rounded-full">Vertical Oval / Circle</option>
+              <option value="rounded-t-[120px] rounded-b-2xl">Arched Dome</option>
+              <option value="rounded-full">Vertical Oval</option>
               <option value="rounded-2xl">Soft Rectangle</option>
             </select>
           </div>
 
           {/* Hero Image Size Dropdown */}
-          <div className="flex items-center gap-1.5">
-            <label className="text-amber-200">Image Size:</label>
+          <div className="flex items-center gap-1.5 bg-[#1A1816] px-2.5 py-1 rounded-lg border border-amber-500/50">
+            <label className="text-amber-200 font-medium">Size:</label>
             <select 
               onChange={(e) => {
                 const val = e.target.value;
@@ -60,17 +62,17 @@ export function App() {
                 if (val === 'md') setHeroImageSize('w-64 md:w-76 h-80 md:h-96');
                 if (val === 'lg') setHeroImageSize('w-76 md:w-92 h-96 md:h-[450px]');
               }} 
-              className="bg-[#1A1816] text-amber-100 border border-amber-500/40 rounded-md p-1"
+              className="bg-black text-amber-100 border border-amber-500/40 rounded px-1.5 py-0.5 focus:outline-none"
               defaultValue="md"
             >
               <option value="sm">Compact</option>
               <option value="md">Standard</option>
-              <option value="lg">Immersive Large</option>
+              <option value="lg">Immersive</option>
             </select>
           </div>
 
         </div>
-      </div>
+      </nav>
 
       {/* Background Layers */}
       <div className="sacred-bg-layer" />
