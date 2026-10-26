@@ -6,20 +6,17 @@ export const CustomizerPanel: React.FC = () => {
   const [fontStyle, setFontStyle] = useState('serif-custom');
 
   useEffect(() => {
-    // Apply card color theme class to root body
     document.body.classList.remove('theme-dark-gold', 'theme-royal-navy', 'theme-maroon', 'theme-emerald', 'theme-ivory', 'theme-midnight');
     document.body.classList.add(`theme-${cardTheme}`);
   }, [cardTheme]);
 
   useEffect(() => {
-    // Apply text size class to root body
     document.body.classList.remove('text-scale-sm', 'text-scale-normal', 'text-scale-lg', 'text-scale-xl');
     document.body.classList.add(`text-scale-${textSize}`);
   }, [textSize]);
 
   useEffect(() => {
-    // Apply font style class to root body
-    document.body.classList.remove('font-mode-serif', 'font-mode-sans', 'font-mode-script', 'font-mode-classic', 'font-mode-playfair', 'font-mode-cormorant');
+    document.body.classList.remove('font-mode-serif-custom', 'font-mode-sans', 'font-mode-script', 'font-mode-classic', 'font-mode-playfair', 'font-mode-cormorant');
     document.body.classList.add(`font-mode-${fontStyle}`);
   }, [fontStyle]);
 
