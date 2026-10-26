@@ -6,14 +6,14 @@ export const VideoSection: React.FC = () => {
   const youtubeUrl = weddingData.video?.youtubeEmbedUrl;
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 py-8">
-      <div className="w-full max-w-3xl mx-auto card-dark-gold rounded-2xl p-6 md:p-10 shadow-2xl text-center flex flex-col justify-center">
+    <section className="relative min-h-screen flex items-center justify-center px-4 py-12">
+      <div className="w-full max-w-3xl mx-auto card-dark-gold rounded-2xl p-6 md:p-12 shadow-2xl text-center flex flex-col justify-center">
         
         <h2 className="text-3xl md:text-4xl font-serif text-gold mb-6 tracking-wide">
           {weddingData.video?.title || "Our Story"} 🎬
         </h2>
 
-        {/* Full-width responsive video container matching card box bounds */}
+        {/* Fully Expanded Video Box */}
         <div className="relative w-full aspect-video overflow-hidden rounded-xl border border-amber-500/50 bg-black shadow-2xl">
           {youtubeUrl ? (
             <iframe 
