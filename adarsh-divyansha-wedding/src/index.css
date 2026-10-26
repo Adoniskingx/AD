@@ -8,6 +8,10 @@
   }
 }
 
+:root {
+  --card-bg: rgba(26, 24, 22, 0.88);
+}
+
 /* Background Layer: Larger Aspect-Ratio Banner Tile (Y-Axis Repeating) */
 .sacred-bg-layer {
   position: absolute;
@@ -16,9 +20,9 @@
   right: 0;
   bottom: 0;
   background-image: url('/Photos/Buddha.webp');
-  background-size: 135vw auto; /* Makes the Buddha image larger and more majestic while keeping natural proportions */
+  background-size: 135vw auto;
   background-position: center top;
-  background-repeat: repeat-y;  /* Tiles strictly vertically along the Y-axis as you scroll */
+  background-repeat: repeat-y;
   opacity: 0.35;
   pointer-events: none;
   z-index: 0;
@@ -39,9 +43,9 @@
   z-index: 10;
 }
 
-/* Glassmorphic Dark-Gold Card Styling */
+/* Dynamic Glassmorphic Card Styling (Controlled by Dropdown) */
 .card-dark-gold {
-  background: rgba(26, 24, 22, 0.88);
+  background: var(--card-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(212, 175, 55, 0.4);
@@ -56,3 +60,15 @@
 .font-script {
   font-family: 'Bradley Hand ITC', 'Bradley Hand', 'Patrick Hand', cursive;
 }
+
+/* Text Size Scaling Classes */
+body.text-scale-sm { font-size: 13px; }
+body.text-scale-normal { font-size: 16px; }
+body.text-scale-lg { font-size: 18px; }
+body.text-scale-xl { font-size: 20px; }
+
+/* Font Family Mode Classes */
+body.font-mode-serif-custom { font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif; }
+body.font-mode-sans { font-family: ui-sans-serif, system-ui, -apple-system, sans-serif; }
+body.font-mode-script { font-family: 'Patrick Hand', cursive, sans-serif; }
+body.font-mode-classic { font-family: Garamond, Baskerville, "Baskerville Old Face", serif; }
