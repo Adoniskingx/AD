@@ -7,20 +7,20 @@ export const VideoSection: React.FC = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-8">
-      <div className="w-full max-w-3xl mx-auto card-dark-gold rounded-2xl p-5 md:p-8 shadow-2xl text-center flex flex-col justify-between max-h-[92vh]">
+      <div className="w-full max-w-4xl mx-auto card-dark-gold rounded-2xl p-6 md:p-10 shadow-2xl text-center flex flex-col justify-between min-h-[85vh] md:min-h-[88vh]">
         
         {/* Section Heading */}
         <h2 className="text-3xl md:text-4xl font-serif text-gold mb-4 tracking-wide">
           {weddingData.video?.title || "Our Story"} 🎬
         </h2>
 
-        {/* Video Frame Container */}
-        <div className="relative w-full aspect-video overflow-hidden rounded-xl border border-amber-500/40 bg-black/80 shadow-2xl my-auto flex items-center justify-center">
+        {/* Enlarged Video Frame Container */}
+        <div className="relative w-full flex-1 max-h-[68vh] overflow-hidden rounded-xl border border-amber-500/40 bg-black/80 shadow-2xl my-auto flex items-center justify-center">
           {youtubeUrl ? (
             <iframe 
               src={youtubeUrl} 
               title="Wedding Video" 
-              className="w-full h-full"
+              className="w-full h-full min-h-[350px] md:min-h-[450px]"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowFullScreen
             />
