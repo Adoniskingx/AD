@@ -119,24 +119,4 @@ export function App() {
         </div>
         <div style={{ fontSize: functionsFontSize }} className={sectionSpacing}>
           <Functions />
-        </div>
-        <div style={{ fontSize: galleryFontSize }} className={sectionSpacing}>
-          <Gallery />
-        </div>
-        <div style={{ fontSize: videoFontSize }} className={sectionSpacing}>
-          <VideoSection />
-        </div>
-        <div style={{ fontSize: thingsFontSize }} className={sectionSpacing}>
-          <ThingsToKnow />
-        </div>
-        <div style={{ fontSize: footerFontSize }} className={sectionSpacing}>
-          <Footer />
-        </div>
-        <MusicPlayer />
-      </div>
-
-    </div>
-  );
-}
-
-exports default App;
+          
