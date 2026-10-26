@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from './components/Hero';
 import Functions from './components/Functions';
 import Gallery from './components/Gallery';
-import VideoSection from './components/VideoSection'; // Import the video component
+import VideoSection from './components/VideoSection';
 import ThingsToKnow from './components/ThingsToKnow';
 import Footer from './components/Footer';
 import MusicPlayer from './components/MusicPlayer';
@@ -10,7 +10,7 @@ import MusicPlayer from './components/MusicPlayer';
 export function App() {
   return (
     <div className="min-h-screen relative overflow-x-hidden">
-      {/* Fixed Sacred Background Layer */}
+      {/* Background Layer */}
       <div className="sacred-bg-layer" />
       <div className="sacred-overlay-layer" />
 
@@ -19,7 +19,7 @@ export function App() {
         <Hero />
         <Functions />
         <Gallery />
-        <VideoSection /> {/* Render the video section right here */}
+        <VideoSection />
         <ThingsToKnow />
         <Footer />
         <MusicPlayer />
