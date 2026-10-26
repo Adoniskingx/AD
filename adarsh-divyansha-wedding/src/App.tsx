@@ -6,10 +6,14 @@ import VideoSection from './components/VideoSection';
 import ThingsToKnow from './components/ThingsToKnow';
 import Footer from './components/Footer';
 import MusicPlayer from './components/MusicPlayer';
+import BackgroundSelector from './components/BackgroundSelector';
 
 export function App() {
   return (
     <div className="min-h-screen relative overflow-x-hidden">
+      {/* Background Selector Dropdown */}
+      <BackgroundSelector />
+
       {/* Background Layer */}
       <div className="sacred-bg-layer" />
       <div className="sacred-overlay-layer" />
