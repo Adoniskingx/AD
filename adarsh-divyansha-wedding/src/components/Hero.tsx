@@ -10,7 +10,6 @@ export const Hero: React.FC = () => {
     const params = new URLSearchParams(window.location.search);
     const recipient = params.get('to');
     if (recipient) {
-      // Decode and replace hyphens/pluses with spaces if needed
       setGuest(decodeURIComponent(recipient.replace(/[-+]/g, ' ')));
     }
   }, []);
@@ -55,10 +54,10 @@ export const Hero: React.FC = () => {
           </h2>
         </div>
 
-        {/* Enlarged Couple Photo (And.webp centered) */}
+        {/* Slightly Enlarged Couple Photo (And.webp centered) */}
         {weddingData.hero.image && (
-          <div className="my-4 flex justify-center">
-            <div className="relative w-60 h-60 md:w-72 md:h-72 rounded-full overflow-hidden border-2 border-amber-400/60 shadow-2xl p-1 bg-black/40">
+          <div className="my-5 flex justify-center">
+            <div className="relative w-68 h-68 md:w-80 md:h-80 rounded-full overflow-hidden border-2 border-amber-400/60 shadow-2xl p-1 bg-black/40">
               <img 
                 src={weddingData.hero.image} 
                 alt="Adarsh & Divyansha" 
