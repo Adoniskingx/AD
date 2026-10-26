@@ -6,14 +6,10 @@ import VideoSection from './components/VideoSection';
 import ThingsToKnow from './components/ThingsToKnow';
 import Footer from './components/Footer';
 import MusicPlayer from './components/MusicPlayer';
-import CustomizerPanel from './components/CustomizerPanel';
 
 export function App() {
   return (
     <div className="min-h-screen relative overflow-x-hidden">
-      {/* Live Customizer Dropdown Panel */}
-      <CustomizerPanel />
-
       {/* Background Layer */}
       <div className="sacred-bg-layer" />
       <div className="sacred-overlay-layer" />
