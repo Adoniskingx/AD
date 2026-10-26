@@ -5,9 +5,19 @@
 @layer base {
   html, body {
     @apply bg-[#0D0C0B] text-[#FDF8F0] antialiased selection:bg-amber-200 selection:text-amber-900 min-h-screen m-0 p-0 overflow-x-hidden;
-    font-size: 20px; /* Increased by +4 total from original 16px */
+    font-size: 20px; /* Locked to +4 larger scale */
     font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   }
+}
+
+/* Ensure headings and paragraphs scale uniformly across all sections */
+.site-content-wrapper h2 {
+  font-size: 2.1rem !important;
+}
+
+.site-content-wrapper p, 
+.site-content-wrapper span:not(.font-script) {
+  font-size: 1.05rem !important;
 }
 
 /* Background Layer: Aspect-Ratio Banner Tile (Y-Axis Repeating) */
