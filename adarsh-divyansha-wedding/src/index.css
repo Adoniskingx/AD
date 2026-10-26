@@ -8,7 +8,7 @@
   }
 }
 
-/* Background Layer: Fully scrollable, perfectly proportioned, and covers all devices */
+/* Background Layer: Each tile is exactly 1 full screen (100vw x 100vh) and repeats cleanly on scroll */
 .sacred-bg-layer {
   position: absolute;
   top: 0;
@@ -16,9 +16,9 @@
   right: 0;
   bottom: 0;
   background-image: url('/Photos/Buddha.webp');
-  background-size: cover; /* Scales smoothly to cover laptops, tablets, and phones while keeping aspect ratio */
-  background-position: center top; /* Centers the image nicely from the top */
-  background-repeat: no-repeat;
+  background-size: 100vw 100vh; /* Forces each background tile to match exact screen width and height */
+  background-repeat: repeat-y;   /* Repeats the full image vertically as you scroll down */
+  background-position: center top;
   opacity: 0.35;
   pointer-events: none;
   z-index: 0;
