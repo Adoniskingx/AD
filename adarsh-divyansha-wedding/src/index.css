@@ -5,66 +5,31 @@
 @layer base {
   html, body {
     @apply bg-[#0D0C0B] text-[#FDF8F0] antialiased selection:bg-amber-200 selection:text-amber-900 min-h-screen m-0 p-0 overflow-x-hidden;
-    font-size: 18px;
+    font-size: 17px;
     font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 }
 
-/* --- Section Font Size Scalers --- */
-body.hero-font-sm .hero-section { font-size: 14px; }
-body.hero-font-normal .hero-section { font-size: 18px; }
-body.hero-font-lg .hero-section { font-size: 20px; }
-body.hero-font-xl .hero-section { font-size: 23px; }
+/* --- Unified Section Font Scaling --- */
+.site-content-wrapper h2 {
+  font-size: 1.85rem !important;
+  letter-spacing: 0.05em;
+}
 
-body.func-font-sm .functions-section { font-size: 14px; }
-body.func-font-normal .functions-section { font-size: 18px; }
-body.func-font-lg .functions-section { font-size: 20px; }
-body.func-font-xl .functions-section { font-size: 23px; }
+.site-content-wrapper p, 
+.site-content-wrapper span:not(.font-script),
+.site-content-wrapper li {
+  font-size: 1.05rem !important;
+  line-height: 1.6;
+}
 
-body.gallery-font-sm .gallery-section { font-size: 14px; }
-body.gallery-font-normal .gallery-section { font-size: 18px; }
-body.gallery-font-lg .gallery-section { font-size: 20px; }
-body.gallery-font-xl .gallery-section { font-size: 23px; }
-
-body.video-font-sm .video-section { font-size: 14px; }
-body.video-font-normal .video-section { font-size: 18px; }
-body.video-font-lg .video-section { font-size: 20px; }
-body.video-font-xl .video-section { font-size: 23px; }
-
-body.things-font-sm .things-section { font-size: 14px; }
-body.things-font-normal .things-section { font-size: 18px; }
-body.things-font-lg .things-section { font-size: 20px; }
-body.things-font-xl .things-section { font-size: 23px; }
-
-body.footer-font-sm .footer-section { font-size: 14px; }
-body.footer-font-normal .footer-section { font-size: 18px; }
-body.footer-font-lg .footer-section { font-size: 20px; }
-body.footer-font-xl .footer-section { font-size: 23px; }
-
-/* --- Hero Image Shapes & Sizes --- */
-body.hero-shape-arch .hero-section img { border-radius: 120px 120px 16px 16px; }
-body.hero-shape-oval .hero-section img { border-radius: 50%; }
-body.hero-shape-rounded .hero-section img { border-radius: 20px; }
-body.hero-shape-circle .hero-section img { border-radius: 9999px; }
-
-body.hero-imgsize-sm .hero-section .relative.overflow-hidden { width: 200px; height: 260px; margin: 0 auto; }
-body.hero-imgsize-md .hero-section .relative.overflow-hidden { width: 260px; height: 340px; margin: 0 auto; }
-body.hero-imgsize-lg .hero-section .relative.overflow-hidden { width: 310px; height: 400px; margin: 0 auto; }
-
-/* --- Video Box Sizes --- */
-body.video-size-compact .video-section iframe { height: 220px !important; }
-body.video-size-standard .video-section iframe { height: 320px !important; }
-body.video-size-large .video-section iframe { height: 420px !important; }
-
-/* --- Gallery Display Sizes --- */
-body.gallery-size-compact .gallery-section .relative.overflow-hidden { height: 260px; }
-body.gallery-size-standard .gallery-section .relative.overflow-hidden { height: 360px; }
-body.gallery-size-immersive .gallery-section .relative.overflow-hidden { height: 480px; }
-
-/* Background & Theme */
+/* Background Layer: Aspect-Ratio Banner Tile (Y-Axis Repeating) */
 .sacred-bg-layer {
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-image: url('/Photos/Buddha.webp');
   background-size: 135vw auto;
   background-position: center top;
@@ -74,6 +39,7 @@ body.gallery-size-immersive .gallery-section .relative.overflow-hidden { height:
   z-index: 0;
 }
 
+/* Fixed Soft Dark Overlay for Readability */
 .sacred-overlay-layer {
   position: fixed;
   inset: 0;
@@ -82,11 +48,13 @@ body.gallery-size-immersive .gallery-section .relative.overflow-hidden { height:
   z-index: 1;
 }
 
+/* Content Container Wrapper */
 .site-content-wrapper {
   position: relative;
   z-index: 10;
 }
 
+/* Locked Card Style: Midnight Obsidian Black */
 .card-dark-gold {
   background: rgba(5, 5, 5, 0.95);
   backdrop-filter: blur(12px);
@@ -99,6 +67,7 @@ body.gallery-size-immersive .gallery-section .relative.overflow-hidden { height:
   color: #E5C158;
 }
 
+/* Bradley Hand Style Font for #DIVYADARSHAN */
 .font-script {
   font-family: 'Bradley Hand ITC', 'Bradley Hand', 'Patrick Hand', cursive;
 }
