@@ -7,22 +7,22 @@ export const Hero: React.FC = () => {
     <section className="relative min-h-screen flex items-center justify-center px-4 py-12">
       <div className="w-full max-w-3xl mx-auto card-dark-gold rounded-2xl p-6 md:p-12 text-center relative overflow-hidden shadow-2xl">
         
-        {/* Top Motto */}
+        {/* Top Motto (Increased by +2: text-xs/sm -> text-sm/base) */}
         <div className="flex items-center justify-center space-x-3 mb-6">
           <div className="h-[1px] w-12 bg-amber-400/50"></div>
-          <span className="text-amber-300 tracking-widest text-xs md:text-sm uppercase font-semibold">
+          <span className="text-amber-300 tracking-widest text-sm md:text-base uppercase font-semibold">
             {weddingData.hero.motto}
           </span>
           <div className="h-[1px] w-12 bg-amber-400/50"></div>
         </div>
 
-        {/* Blessing Text */}
-        <p className="text-amber-100/90 italic font-serif text-sm md:text-base mb-4">
+        {/* Blessing Text (Increased by +2: text-sm/base -> text-base/lg) */}
+        <p className="text-amber-100/90 italic font-serif text-base md:text-lg mb-4">
           "{weddingData.hero.blessing}"
         </p>
 
-        {/* Invitation Message */}
-        <p className="text-[#FDF8F0]/80 text-xs md:text-sm leading-relaxed max-w-xl mx-auto mb-6">
+        {/* Invitation Message (Increased by +2: text-xs/sm -> text-sm/base) */}
+        <p className="text-[#FDF8F0]/80 text-sm md:text-base leading-relaxed max-w-xl mx-auto mb-6">
           {weddingData.hero.invitationText}
         </p>
 
@@ -33,7 +33,7 @@ export const Hero: React.FC = () => {
           </h2>
         </div>
 
-        {/* Enlarged Couple Photo (And.jpg centered) */}
+        {/* Enlarged Couple Photo (And.webp centered) */}
         {weddingData.hero.image && (
           <div className="my-4 flex justify-center">
             <div className="relative w-60 h-60 md:w-72 md:h-72 rounded-full overflow-hidden border-2 border-amber-400/60 shadow-2xl p-1 bg-black/40">
@@ -53,15 +53,15 @@ export const Hero: React.FC = () => {
           </h2>
         </div>
 
-        {/* Parent Names */}
-        <div className="mt-4 pt-4 border-t border-amber-500/20 text-xs md:text-sm text-amber-100/80 space-y-3">
+        {/* Parent Names (Increased by +2: labels text-[10px] -> text-xs, values text-xs/sm -> text-sm/base) */}
+        <div className="mt-4 pt-4 border-t border-amber-500/20 text-sm md:text-base text-amber-100/90 space-y-3">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
-              <p className="text-[10px] uppercase tracking-widest text-amber-400/70 mb-0.5">Groom's Parents</p>
+              <p className="text-xs uppercase tracking-widest text-amber-400/80 mb-0.5">Groom's Parents</p>
               <p className="font-medium text-amber-100">{weddingData.hero.groomParents}</p>
             </div>
             <div>
-              <p className="text-[10px] uppercase tracking-widest text-amber-400/70 mb-0.5">Bride's Parents</p>
+              <p className="text-xs uppercase tracking-widest text-amber-400/80 mb-0.5">Bride's Parents</p>
               <p className="font-medium text-amber-100">{weddingData.hero.brideParents}</p>
             </div>
           </div>
