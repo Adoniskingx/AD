@@ -13,13 +13,13 @@ export const VideoSection: React.FC = () => {
           {weddingData.video?.title || "Our Story"} 🎬
         </h2>
 
-        {/* Object-cover container ensuring video expands to fill box */}
-        <div className="relative w-full aspect-video overflow-hidden rounded-xl border border-amber-500/40 bg-black shadow-2xl">
+        {/* Full-width responsive video container matching card box bounds */}
+        <div className="relative w-full aspect-video overflow-hidden rounded-xl border border-amber-500/50 bg-black shadow-2xl">
           {youtubeUrl ? (
             <iframe 
               src={`${youtubeUrl}?autoplay=0&mute=0&controls=1`} 
               title="Wedding Video" 
-              className="w-full h-full scale-[1.02]"
+              className="w-full h-full absolute inset-0 border-0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
               allowFullScreen
             />
