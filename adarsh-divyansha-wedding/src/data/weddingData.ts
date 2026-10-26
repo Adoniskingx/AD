@@ -78,8 +78,8 @@ export const weddingData = {
       venue: "Residence",
       address: "Plot No 9, Rathi Layout, Layout No 2, Godhani Road, Nagpur 440030",
       description: "Haldi Ceremony & Rituals",
-      mapLink: "https://maps.google.com/?q=Plot+No+9+Rathi+Layout+Godhani+Road+Nagpur",
-      mapUrl: "https://maps.google.com/?q=Plot+No+9+Rathi+Layout+Godhani+Road+Nagpur"
+      mapLink: "https://maps.app.goo.gl/isxXegSJbt5Lkx4N9",
+      mapUrl: "https://maps.app.goo.gl/isxXegSJbt5Lkx4N9"
     },
     {
       id: "wedding",
@@ -89,8 +89,8 @@ export const weddingData = {
       venue: "The Grand Jashan",
       address: "Kamptee Road, Khairy, Nagpur 440029",
       description: "Wedding Ceremony & Reception",
-      mapLink: "https://maps.google.com/?q=The+Grand+Jashan+Kamptee+Road+Khairy+Nagpur",
-      mapUrl: "https://maps.google.com/?q=The+Grand+Jashan+Kamptee+Road+Khairy+Nagpur"
+      mapLink: "https://maps.app.goo.gl/5wLEohmUTNwQdtRj9",
+      mapUrl: "https://maps.app.goo.gl/5wLEohmUTNwQdtRj9"
     }
   ] as FunctionEvent[],
 
