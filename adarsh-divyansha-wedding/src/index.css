@@ -5,10 +5,12 @@
 @layer base {
   html, body {
     @apply bg-[#0D0C0B] text-[#FDF8F0] antialiased selection:bg-amber-200 selection:text-amber-900 min-h-screen m-0 p-0 overflow-x-hidden;
+    font-size: 16px;
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   }
 }
 
-/* Background Layer: Larger Aspect-Ratio Banner Tile (Y-Axis Repeating) */
+/* Background Layer: Aspect-Ratio Banner Tile (Y-Axis Repeating) */
 .sacred-bg-layer {
   position: absolute;
   top: 0;
@@ -39,32 +41,13 @@
   z-index: 10;
 }
 
-/* Default Card Style (Dark Gold) */
+/* Locked Card Style: Midnight Obsidian Black */
 .card-dark-gold {
-  background: rgba(26, 24, 22, 0.90);
+  background: rgba(5, 5, 5, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(212, 175, 55, 0.4);
-  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 175, 55, 0.15);
-}
-
-/* Color Theme Overrides for Cards */
-body.theme-dark-gold .card-dark-gold { background: rgba(26, 24, 22, 0.90); border-color: rgba(212, 175, 55, 0.4); }
-body.theme-royal-navy .card-dark-gold { background: rgba(15, 23, 42, 0.92); border-color: rgba(56, 189, 248, 0.4); }
-body.theme-maroon .card-dark-gold { background: rgba(45, 15, 20, 0.92); border-color: rgba(244, 63, 94, 0.4); }
-body.theme-emerald .card-dark-gold { background: rgba(10, 38, 30, 0.92); border-color: rgba(52, 211, 153, 0.4); }
-body.theme-ivory .card-dark-gold { background: rgba(248, 250, 252, 0.92); color: #1e293b; border-color: rgba(203, 213, 225, 0.8); }
-body.theme-midnight .card-dark-gold { background: rgba(5, 5, 5, 0.95); border-color: rgba(115, 115, 115, 0.4); }
-
-/* Fix Ivory theme text colors inside cards when active */
-body.theme-ivory .card-dark-gold h1,
-body.theme-ivory .card-dark-gold h2,
-body.theme-ivory .card-dark-gold p,
-body.theme-ivory .card-dark-gold span {
-  color: #1e293b !important;
-}
-body.theme-ivory .card-dark-gold .text-gold {
-  color: #b45309 !important;
+  border: 1px solid rgba(115, 115, 115, 0.4);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.9), 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .text-gold {
@@ -75,22 +58,3 @@ body.theme-ivory .card-dark-gold .text-gold {
 .font-script {
   font-family: 'Bradley Hand ITC', 'Bradley Hand', 'Patrick Hand', cursive;
 }
-
-/* Robust Text Size Scaling applied across all paragraph elements */
-body.text-scale-sm p, body.text-scale-sm span { font-size: 0.85rem !important; }
-body.text-scale-normal p, body.text-scale-normal span { font-size: 1rem !important; }
-body.text-scale-lg p, body.text-scale-lg span { font-size: 1.15rem !important; }
-body.text-scale-xl p, body.text-scale-xl span { font-size: 1.3rem !important; }
-
-body.text-scale-sm h2 { font-size: 1.5rem !important; }
-body.text-scale-normal h2 { font-size: 2rem !important; }
-body.text-scale-lg h2 { font-size: 2.3rem !important; }
-body.text-scale-xl h2 { font-size: 2.6rem !important; }
-
-/* Font Family Mode Classes */
-body.font-mode-serif-custom { font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif; }
-body.font-mode-playfair { font-family: 'Playfair Display', Georgia, serif; }
-body.font-mode-cormorant { font-family: 'Cormorant Garamond', Garamond, serif; }
-body.font-mode-sans { font-family: ui-sans-serif, system-ui, -apple-system, sans-serif; }
-body.font-mode-script { font-family: 'Patrick Hand', cursive, sans-serif; }
-body.font-mode-classic { font-family: Garamond, Baskerville, "Baskerville Old Face", serif; }
